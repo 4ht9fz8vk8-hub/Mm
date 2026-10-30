@@ -1,0 +1,1746 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>عيادات أ.د. ياسر الشهاوي | نظام الحجز وتسجيل المرضى</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+    <!-- FontAwesome Icons -->
+    <style>/* Font Awesome icons inlined as SVG masks */
+.fa-solid,.fa-brands,.fas,.fab,.far{display:inline-block;width:1em;height:1em;vertical-align:-.125em;background-color:currentColor;-webkit-mask-repeat:no-repeat;mask-repeat:no-repeat;-webkit-mask-position:center;mask-position:center;-webkit-mask-size:contain;mask-size:contain}
+.fa-address-book{-webkit-mask-image:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 512 512%22%3E%3C%21--%21 Font Awesome Free 7.1.0 by %40fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free %28Icons: CC BY 4.0%2C Fonts: SIL OFL 1.1%2C Code: MIT License%29 Copyright 2025 Fonticons%2C Inc.--%3E%3Cpath d=%22M96 0C60.7 0 32 28.7 32 64v384c0 35.3 28.7 64 64 64h288c35.3 0 64-28.7 64-64V64c0-35.3-28.7-64-64-64zm112 288h64c44.2 0 80 35.8 80 80 0 8.8-7.2 16-16 16H144c-8.8 0-16-7.2-16-16 0-44.2 35.8-80 80-80m-24-96a56 56 0 1 1 112 0 56 56 0 1 1-112 0M512 80c0-8.8-7.2-16-16-16s-16 7.2-16 16v64c0 8.8 7.2 16 16 16s16-7.2 16-16zm0 128c0-8.8-7.2-16-16-16s-16 7.2-16 16v64c0 8.8 7.2 16 16 16s16-7.2 16-16zm-16 112c-8.8 0-16 7.2-16 16v64c0 8.8 7.2 16 16 16s16-7.2 16-16v-64c0-8.8-7.2-16-16-16%22/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 512 512%22%3E%3C%21--%21 Font Awesome Free 7.1.0 by %40fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free %28Icons: CC BY 4.0%2C Fonts: SIL OFL 1.1%2C Code: MIT License%29 Copyright 2025 Fonticons%2C Inc.--%3E%3Cpath d=%22M96 0C60.7 0 32 28.7 32 64v384c0 35.3 28.7 64 64 64h288c35.3 0 64-28.7 64-64V64c0-35.3-28.7-64-64-64zm112 288h64c44.2 0 80 35.8 80 80 0 8.8-7.2 16-16 16H144c-8.8 0-16-7.2-16-16 0-44.2 35.8-80 80-80m-24-96a56 56 0 1 1 112 0 56 56 0 1 1-112 0M512 80c0-8.8-7.2-16-16-16s-16 7.2-16 16v64c0 8.8 7.2 16 16 16s16-7.2 16-16zm0 128c0-8.8-7.2-16-16-16s-16 7.2-16 16v64c0 8.8 7.2 16 16 16s16-7.2 16-16zm-16 112c-8.8 0-16 7.2-16 16v64c0 8.8 7.2 16 16 16s16-7.2 16-16v-64c0-8.8-7.2-16-16-16%22/%3E%3C/svg%3E")}
+.fa-arrow-left{-webkit-mask-image:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 512 512%22%3E%3C%21--%21 Font Awesome Free 7.1.0 by %40fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free %28Icons: CC BY 4.0%2C Fonts: SIL OFL 1.1%2C Code: MIT License%29 Copyright 2025 Fonticons%2C Inc.--%3E%3Cpath d=%22M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 288H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H109.3l105.4-105.4c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z%22/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 512 512%22%3E%3C%21--%21 Font Awesome Free 7.1.0 by %40fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free %28Icons: CC BY 4.0%2C Fonts: SIL OFL 1.1%2C Code: MIT License%29 Copyright 2025 Fonticons%2C Inc.--%3E%3Cpath d=%22M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 288H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H109.3l105.4-105.4c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z%22/%3E%3C/svg%3E")}
+.fa-ban{-webkit-mask-image:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 512 512%22%3E%3C%21--%21 Font Awesome Free 7.1.0 by %40fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free %28Icons: CC BY 4.0%2C Fonts: SIL OFL 1.1%2C Code: MIT License%29 Copyright 2025 Fonticons%2C Inc.--%3E%3Cpath d=%22M367.2 412.5 99.5 144.8C77.1 176.2 64 214.6 64 256c0 106 86 192 192 192 41.5 0 79.9-13.1 111.2-35.5m45.3-45.3C434.9 335.8 448 297.4 448 256c0-106-86-192-192-192-41.5 0-79.9 13.1-111.2 35.5zM0 256a256 256 0 1 1 512 0 256 256 0 1 1-512 0%22/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 512 512%22%3E%3C%21--%21 Font Awesome Free 7.1.0 by %40fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free %28Icons: CC BY 4.0%2C Fonts: SIL OFL 1.1%2C Code: MIT License%29 Copyright 2025 Fonticons%2C Inc.--%3E%3Cpath d=%22M367.2 412.5 99.5 144.8C77.1 176.2 64 214.6 64 256c0 106 86 192 192 192 41.5 0 79.9-13.1 111.2-35.5m45.3-45.3C434.9 335.8 448 297.4 448 256c0-106-86-192-192-192-41.5 0-79.9 13.1-111.2 35.5zM0 256a256 256 0 1 1 512 0 256 256 0 1 1-512 0%22/%3E%3C/svg%3E")}
+.fa-calendar-days{-webkit-mask-image:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 448 512%22%3E%3C%21--%21 Font Awesome Free 7.1.0 by %40fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free %28Icons: CC BY 4.0%2C Fonts: SIL OFL 1.1%2C Code: MIT License%29 Copyright 2025 Fonticons%2C Inc.--%3E%3Cpath d=%22M128 0c17.7 0 32 14.3 32 32v32h128V32c0-17.7 14.3-32 32-32s32 14.3 32 32v32h32c35.3 0 64 28.7 64 64v288c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128c0-35.3 28.7-64 64-64h32V32c0-17.7 14.3-32 32-32M64 240v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16v-32c0-8.8-7.2-16-16-16H80c-8.8 0-16 7.2-16 16m128 0v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16v-32c0-8.8-7.2-16-16-16h-32c-8.8 0-16 7.2-16 16m144-16c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16v-32c0-8.8-7.2-16-16-16zM64 368v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16v-32c0-8.8-7.2-16-16-16H80c-8.8 0-16 7.2-16 16m144-16c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16v-32c0-8.8-7.2-16-16-16zm112 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16v-32c0-8.8-7.2-16-16-16h-32c-8.8 0-16 7.2-16 16%22/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 448 512%22%3E%3C%21--%21 Font Awesome Free 7.1.0 by %40fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free %28Icons: CC BY 4.0%2C Fonts: SIL OFL 1.1%2C Code: MIT License%29 Copyright 2025 Fonticons%2C Inc.--%3E%3Cpath d=%22M128 0c17.7 0 32 14.3 32 32v32h128V32c0-17.7 14.3-32 32-32s32 14.3 32 32v32h32c35.3 0 64 28.7 64 64v288c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128c0-35.3 28.7-64 64-64h32V32c0-17.7 14.3-32 32-32M64 240v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16v-32c0-8.8-7.2-16-16-16H80c-8.8 0-16 7.2-16 16m128 0v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16v-32c0-8.8-7.2-16-16-16h-32c-8.8 0-16 7.2-16 16m144-16c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16v-32c0-8.8-7.2-16-16-16zM64 368v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16v-32c0-8.8-7.2-16-16-16H80c-8.8 0-16 7.2-16 16m144-16c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16v-32c0-8.8-7.2-16-16-16zm112 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16v-32c0-8.8-7.2-16-16-16h-32c-8.8 0-16 7.2-16 16%22/%3E%3C/svg%3E")}
+.fa-chart-column{-webkit-mask-image:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 512 512%22%3E%3C%21--%21 Font Awesome Free 7.1.0 by %40fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free %28Icons: CC BY 4.0%2C Fonts: SIL OFL 1.1%2C Code: MIT License%29 Copyright 2025 Fonticons%2C Inc.--%3E%3Cpath d=%22M32 32c17.7 0 32 14.3 32 32v336c0 8.8 7.2 16 16 16h400c17.7 0 32 14.3 32 32s-14.3 32-32 32H80c-44.2 0-80-35.8-80-80V64c0-17.7 14.3-32 32-32m112 192c17.7 0 32 14.3 32 32v64c0 17.7-14.3 32-32 32s-32-14.3-32-32v-64c0-17.7 14.3-32 32-32m144-64v160c0 17.7-14.3 32-32 32s-32-14.3-32-32V160c0-17.7 14.3-32 32-32s32 14.3 32 32m80 32c17.7 0 32 14.3 32 32v96c0 17.7-14.3 32-32 32s-32-14.3-32-32v-96c0-17.7 14.3-32 32-32m144-96v224c0 17.7-14.3 32-32 32s-32-14.3-32-32V96c0-17.7 14.3-32 32-32s32 14.3 32 32%22/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 512 512%22%3E%3C%21--%21 Font Awesome Free 7.1.0 by %40fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free %28Icons: CC BY 4.0%2C Fonts: SIL OFL 1.1%2C Code: MIT License%29 Copyright 2025 Fonticons%2C Inc.--%3E%3Cpath d=%22M32 32c17.7 0 32 14.3 32 32v336c0 8.8 7.2 16 16 16h400c17.7 0 32 14.3 32 32s-14.3 32-32 32H80c-44.2 0-80-35.8-80-80V64c0-17.7 14.3-32 32-32m112 192c17.7 0 32 14.3 32 32v64c0 17.7-14.3 32-32 32s-32-14.3-32-32v-64c0-17.7 14.3-32 32-32m144-64v160c0 17.7-14.3 32-32 32s-32-14.3-32-32V160c0-17.7 14.3-32 32-32s32 14.3 32 32m80 32c17.7 0 32 14.3 32 32v96c0 17.7-14.3 32-32 32s-32-14.3-32-32v-96c0-17.7 14.3-32 32-32m144-96v224c0 17.7-14.3 32-32 32s-32-14.3-32-32V96c0-17.7 14.3-32 32-32s32 14.3 32 32%22/%3E%3C/svg%3E")}
+.fa-check{-webkit-mask-image:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 448 512%22%3E%3C%21--%21 Font Awesome Free 7.1.0 by %40fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free %28Icons: CC BY 4.0%2C Fonts: SIL OFL 1.1%2C Code: MIT License%29 Copyright 2025 Fonticons%2C Inc.--%3E%3Cpath d=%22M434.8 70.1c14.3 10.4 17.5 30.4 7.1 44.7l-256 352c-5.5 7.6-14 12.3-23.4 13.1s-18.5-2.7-25.1-9.3l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l101.5 101.5 234-321.7c10.4-14.3 30.4-17.5 44.7-7.1z%22/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 448 512%22%3E%3C%21--%21 Font Awesome Free 7.1.0 by %40fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free %28Icons: CC BY 4.0%2C Fonts: SIL OFL 1.1%2C Code: MIT License%29 Copyright 2025 Fonticons%2C Inc.--%3E%3Cpath d=%22M434.8 70.1c14.3 10.4 17.5 30.4 7.1 44.7l-256 352c-5.5 7.6-14 12.3-23.4 13.1s-18.5-2.7-25.1-9.3l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l101.5 101.5 234-321.7c10.4-14.3 30.4-17.5 44.7-7.1z%22/%3E%3C/svg%3E")}
+.fa-circle-check{-webkit-mask-image:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 512 512%22%3E%3C%21--%21 Font Awesome Free 7.1.0 by %40fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free %28Icons: CC BY 4.0%2C Fonts: SIL OFL 1.1%2C Code: MIT License%29 Copyright 2025 Fonticons%2C Inc.--%3E%3Cpath d=%22M256 512a256 256 0 1 1 0-512 256 256 0 1 1 0 512m118-366.3c-10.7-7.8-25.7-5.4-33.5 5.3L221.1 315.2 169 263.1c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9l72 72c5 5 11.8 7.5 18.8 7s13.4-4.1 17.5-9.8l135.9-187c7.8-10.7 5.4-25.7-5.3-33.5%22/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 512 512%22%3E%3C%21--%21 Font Awesome Free 7.1.0 by %40fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free %28Icons: CC BY 4.0%2C Fonts: SIL OFL 1.1%2C Code: MIT License%29 Copyright 2025 Fonticons%2C Inc.--%3E%3Cpath d=%22M256 512a256 256 0 1 1 0-512 256 256 0 1 1 0 512m118-366.3c-10.7-7.8-25.7-5.4-33.5 5.3L221.1 315.2 169 263.1c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9l72 72c5 5 11.8 7.5 18.8 7s13.4-4.1 17.5-9.8l135.9-187c7.8-10.7 5.4-25.7-5.3-33.5%22/%3E%3C/svg%3E")}
+.fa-circle-info{-webkit-mask-image:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 512 512%22%3E%3C%21--%21 Font Awesome Free 7.1.0 by %40fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free %28Icons: CC BY 4.0%2C Fonts: SIL OFL 1.1%2C Code: MIT License%29 Copyright 2025 Fonticons%2C Inc.--%3E%3Cpath d=%22M256 512a256 256 0 1 0 0-512 256 256 0 1 0 0 512m-32-352a32 32 0 1 1 64 0 32 32 0 1 1-64 0m-8 64h48c13.3 0 24 10.7 24 24v88h8c13.3 0 24 10.7 24 24s-10.7 24-24 24h-80c-13.3 0-24-10.7-24-24s10.7-24 24-24h24v-64h-24c-13.3 0-24-10.7-24-24s10.7-24 24-24%22/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 512 512%22%3E%3C%21--%21 Font Awesome Free 7.1.0 by %40fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free %28Icons: CC BY 4.0%2C Fonts: SIL OFL 1.1%2C Code: MIT License%29 Copyright 2025 Fonticons%2C Inc.--%3E%3Cpath d=%22M256 512a256 256 0 1 0 0-512 256 256 0 1 0 0 512m-32-352a32 32 0 1 1 64 0 32 32 0 1 1-64 0m-8 64h48c13.3 0 24 10.7 24 24v88h8c13.3 0 24 10.7 24 24s-10.7 24-24 24h-80c-13.3 0-24-10.7-24-24s10.7-24 24-24h24v-64h-24c-13.3 0-24-10.7-24-24s10.7-24 24-24%22/%3E%3C/svg%3E")}
+.fa-clinic-medical{-webkit-mask-image:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 512 512%22%3E%3C%21--%21 Font Awesome Free 7.1.0 by %40fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free %28Icons: CC BY 4.0%2C Fonts: SIL OFL 1.1%2C Code: MIT License%29 Copyright 2025 Fonticons%2C Inc.--%3E%3Cpath d=%22M277.8 8.6c-12.3-11.4-31.3-11.4-43.5 0l-224 208c-9.6 9-12.8 22.9-8 35.1S18.8 272 32 272h16v176c0 35.3 28.7 64 64 64h288c35.3 0 64-28.7 64-64V272h16c13.2 0 25-8.1 29.8-20.3s1.6-26.2-8-35.1zM224 248c0-8.8 7.2-16 16-16h32c8.8 0 16 7.2 16 16v40h40c8.8 0 16 7.2 16 16v32c0 8.8-7.2 16-16 16h-40v40c0 8.8-7.2 16-16 16h-32c-8.8 0-16-7.2-16-16v-40h-40c-8.8 0-16-7.2-16-16v-32c0-8.8 7.2-16 16-16h40z%22/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 512 512%22%3E%3C%21--%21 Font Awesome Free 7.1.0 by %40fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free %28Icons: CC BY 4.0%2C Fonts: SIL OFL 1.1%2C Code: MIT License%29 Copyright 2025 Fonticons%2C Inc.--%3E%3Cpath d=%22M277.8 8.6c-12.3-11.4-31.3-11.4-43.5 0l-224 208c-9.6 9-12.8 22.9-8 35.1S18.8 272 32 272h16v176c0 35.3 28.7 64 64 64h288c35.3 0 64-28.7 64-64V272h16c13.2 0 25-8.1 29.8-20.3s1.6-26.2-8-35.1zM224 248c0-8.8 7.2-16 16-16h32c8.8 0 16 7.2 16 16v40h40c8.8 0 16 7.2 16 16v32c0 8.8-7.2 16-16 16h-40v40c0 8.8-7.2 16-16 16h-32c-8.8 0-16-7.2-16-16v-40h-40c-8.8 0-16-7.2-16-16v-32c0-8.8 7.2-16 16-16h40z%22/%3E%3C/svg%3E")}
+.fa-clock-rotate-left{-webkit-mask-image:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 576 512%22%3E%3C%21--%21 Font Awesome Free 7.1.0 by %40fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free %28Icons: CC BY 4.0%2C Fonts: SIL OFL 1.1%2C Code: MIT License%29 Copyright 2025 Fonticons%2C Inc.--%3E%3Cpath d=%22M288 64c106 0 192 86 192 192s-86 192-192 192c-65.2 0-122.9-32.5-157.6-82.3-10.1-14.5-30.1-18-44.6-7.9s-18 30.1-7.9 44.6C124.1 468.6 201 512 288 512c141.4 0 256-114.6 256-256S429.4 0 288 0C202.3 0 126.5 42.1 80 106.7V80c0-17.7-14.3-32-32-32S16 62.3 16 80v112c0 17.7 14.3 32 32 32h112.1c17.7 0 32-14.3 32-32s-14.3-32-32-32h-38.3C154.9 102.6 217 64 288 64m24 88c0-13.3-10.7-24-24-24s-24 10.7-24 24v104c0 6.4 2.5 12.5 7 17l72 72c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-65-65V152z%22/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 576 512%22%3E%3C%21--%21 Font Awesome Free 7.1.0 by %40fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free %28Icons: CC BY 4.0%2C Fonts: SIL OFL 1.1%2C Code: MIT License%29 Copyright 2025 Fonticons%2C Inc.--%3E%3Cpath d=%22M288 64c106 0 192 86 192 192s-86 192-192 192c-65.2 0-122.9-32.5-157.6-82.3-10.1-14.5-30.1-18-44.6-7.9s-18 30.1-7.9 44.6C124.1 468.6 201 512 288 512c141.4 0 256-114.6 256-256S429.4 0 288 0C202.3 0 126.5 42.1 80 106.7V80c0-17.7-14.3-32-32-32S16 62.3 16 80v112c0 17.7 14.3 32 32 32h112.1c17.7 0 32-14.3 32-32s-14.3-32-32-32h-38.3C154.9 102.6 217 64 288 64m24 88c0-13.3-10.7-24-24-24s-24 10.7-24 24v104c0 6.4 2.5 12.5 7 17l72 72c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-65-65V152z%22/%3E%3C/svg%3E")}
+.fa-crown{-webkit-mask-image:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 576 512%22%3E%3C%21--%21 Font Awesome Free 7.1.0 by %40fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free %28Icons: CC BY 4.0%2C Fonts: SIL OFL 1.1%2C Code: MIT License%29 Copyright 2025 Fonticons%2C Inc.--%3E%3Cpath d=%22M313 87.2c9.2-7.3 15-18.6 15-31.2 0-22.1-17.9-40-40-40s-40 17.9-40 40c0 12.6 5.9 23.9 15 31.2l-68.4 107.6c-10 15.7-31.3 19.6-46.2 8.4l-59.5-44.5c4.5-6.4 7.1-14.3 7.1-22.7 0-22.1-17.9-40-40-40s-40 17.9-40 40c0 21.8 17.5 39.6 39.2 40l32.6 217.5c4.7 31.3 31.6 54.5 63.3 54.5h273.8c31.7 0 58.6-23.2 63.3-54.5L520.8 176c21.7-.4 39.2-18.2 39.2-40 0-22.1-17.9-40-40-40s-40 17.9-40 40c0 8.4 2.6 16.3 7.1 22.7l-59.4 44.6c-14.9 11.2-36.2 7.3-46.2-8.4z%22/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 576 512%22%3E%3C%21--%21 Font Awesome Free 7.1.0 by %40fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free %28Icons: CC BY 4.0%2C Fonts: SIL OFL 1.1%2C Code: MIT License%29 Copyright 2025 Fonticons%2C Inc.--%3E%3Cpath d=%22M313 87.2c9.2-7.3 15-18.6 15-31.2 0-22.1-17.9-40-40-40s-40 17.9-40 40c0 12.6 5.9 23.9 15 31.2l-68.4 107.6c-10 15.7-31.3 19.6-46.2 8.4l-59.5-44.5c4.5-6.4 7.1-14.3 7.1-22.7 0-22.1-17.9-40-40-40s-40 17.9-40 40c0 21.8 17.5 39.6 39.2 40l32.6 217.5c4.7 31.3 31.6 54.5 63.3 54.5h273.8c31.7 0 58.6-23.2 63.3-54.5L520.8 176c21.7-.4 39.2-18.2 39.2-40 0-22.1-17.9-40-40-40s-40 17.9-40 40c0 8.4 2.6 16.3 7.1 22.7l-59.4 44.6c-14.9 11.2-36.2 7.3-46.2-8.4z%22/%3E%3C/svg%3E")}
+.fa-database{-webkit-mask-image:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 448 512%22%3E%3C%21--%21 Font Awesome Free 7.1.0 by %40fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free %28Icons: CC BY 4.0%2C Fonts: SIL OFL 1.1%2C Code: MIT License%29 Copyright 2025 Fonticons%2C Inc.--%3E%3Cpath d=%22M448 205.8c-14.8 9.8-31.8 17.7-49.5 24-47 16.8-108.7 26.2-174.5 26.2s-127.6-9.5-174.5-26.2c-17.6-6.3-34.7-14.2-49.5-24V288c0 44.2 100.3 80 224 80s224-35.8 224-80zm0-77.8V80c0-44.2-100.3-80-224-80S0 35.8 0 80v48c0 44.2 100.3 80 224 80s224-35.8 224-80m-49.5 261.8C351.6 406.5 289.9 416 224 416s-127.6-9.5-174.5-26.2c-17.6-6.3-34.7-14.2-49.5-24V432c0 44.2 100.3 80 224 80s224-35.8 224-80v-66.2c-14.8 9.8-31.8 17.7-49.5 24%22/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 448 512%22%3E%3C%21--%21 Font Awesome Free 7.1.0 by %40fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free %28Icons: CC BY 4.0%2C Fonts: SIL OFL 1.1%2C Code: MIT License%29 Copyright 2025 Fonticons%2C Inc.--%3E%3Cpath d=%22M448 205.8c-14.8 9.8-31.8 17.7-49.5 24-47 16.8-108.7 26.2-174.5 26.2s-127.6-9.5-174.5-26.2c-17.6-6.3-34.7-14.2-49.5-24V288c0 44.2 100.3 80 224 80s224-35.8 224-80zm0-77.8V80c0-44.2-100.3-80-224-80S0 35.8 0 80v48c0 44.2 100.3 80 224 80s224-35.8 224-80m-49.5 261.8C351.6 406.5 289.9 416 224 416s-127.6-9.5-174.5-26.2c-17.6-6.3-34.7-14.2-49.5-24V432c0 44.2 100.3 80 224 80s224-35.8 224-80v-66.2c-14.8 9.8-31.8 17.7-49.5 24%22/%3E%3C/svg%3E")}
+.fa-file-excel{-webkit-mask-image:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 384 512%22%3E%3C%21--%21 Font Awesome Free 7.1.0 by %40fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free %28Icons: CC BY 4.0%2C Fonts: SIL OFL 1.1%2C Code: MIT License%29 Copyright 2025 Fonticons%2C Inc.--%3E%3Cpath d=%22M0 64C0 28.7 28.7 0 64 0h149.5c17 0 33.3 6.7 45.3 18.7l106.5 106.6c12 12 18.7 28.3 18.7 45.3V448c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64zm208-5.5V152c0 13.3 10.7 24 24 24h93.5zm-44 208.2c-7.4-11-22.3-14-33.3-6.7s-14 22.3-6.7 33.3l39.2 58.7-39.2 58.7c-7.4 11-4.4 25.9 6.7 33.3s25.9 4.4 33.3-6.7l28-42 28 42c7.4 11 22.3 14 33.3 6.7s14-22.3 6.7-33.3L220.8 352l39.2-58.7c7.4-11 4.4-25.9-6.7-33.3s-25.9-4.4-33.3 6.7l-28 42z%22/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 384 512%22%3E%3C%21--%21 Font Awesome Free 7.1.0 by %40fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free %28Icons: CC BY 4.0%2C Fonts: SIL OFL 1.1%2C Code: MIT License%29 Copyright 2025 Fonticons%2C Inc.--%3E%3Cpath d=%22M0 64C0 28.7 28.7 0 64 0h149.5c17 0 33.3 6.7 45.3 18.7l106.5 106.6c12 12 18.7 28.3 18.7 45.3V448c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64zm208-5.5V152c0 13.3 10.7 24 24 24h93.5zm-44 208.2c-7.4-11-22.3-14-33.3-6.7s-14 22.3-6.7 33.3l39.2 58.7-39.2 58.7c-7.4 11-4.4 25.9 6.7 33.3s25.9 4.4 33.3-6.7l28-42 28 42c7.4 11 22.3 14 33.3 6.7s14-22.3 6.7-33.3L220.8 352l39.2-58.7c7.4-11 4.4-25.9-6.7-33.3s-25.9-4.4-33.3 6.7l-28 42z%22/%3E%3C/svg%3E")}
+.fa-file-invoice-dollar{-webkit-mask-image:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 384 512%22%3E%3C%21--%21 Font Awesome Free 7.1.0 by %40fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free %28Icons: CC BY 4.0%2C Fonts: SIL OFL 1.1%2C Code: MIT License%29 Copyright 2025 Fonticons%2C Inc.--%3E%3Cpath d=%22M0 64C0 28.7 28.7 0 64 0h149.5c17 0 33.3 6.7 45.3 18.7l106.5 106.6c12 12 18.7 28.3 18.7 45.3V448c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64zm208-5.5V152c0 13.3 10.7 24 24 24h93.5zM64 88c0 13.3 10.7 24 24 24h48c13.3 0 24-10.7 24-24s-10.7-24-24-24H88c-13.3 0-24 10.7-24 24m0 96c0 13.3 10.7 24 24 24h48c13.3 0 24-10.7 24-24s-10.7-24-24-24H88c-13.3 0-24 10.7-24 24m112 76v4c-28.8.3-52 23.7-52 52.5 0 25.7 18.5 47.6 43.9 51.8l41.7 7c6 1 10.4 6.2 10.4 12.3 0 6.9-5.6 12.5-12.5 12.5L152 400c-11 0-20 9-20 20s9 20 20 20h24v4c0 11 9 20 20 20s20-9 20-20v-4.7c25-4.1 44-25.7 44-51.8 0-25.7-18.5-47.6-43.9-51.8l-41.7-7c-6-1-10.4-6.2-10.4-12.3 0-6.9 5.6-12.5 12.5-12.5H224c11 0 20-9 20-20s-9-20-20-20h-8v-4c0-11-9-20-20-20s-20 9-20 20z%22/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 384 512%22%3E%3C%21--%21 Font Awesome Free 7.1.0 by %40fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free %28Icons: CC BY 4.0%2C Fonts: SIL OFL 1.1%2C Code: MIT License%29 Copyright 2025 Fonticons%2C Inc.--%3E%3Cpath d=%22M0 64C0 28.7 28.7 0 64 0h149.5c17 0 33.3 6.7 45.3 18.7l106.5 106.6c12 12 18.7 28.3 18.7 45.3V448c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64zm208-5.5V152c0 13.3 10.7 24 24 24h93.5zM64 88c0 13.3 10.7 24 24 24h48c13.3 0 24-10.7 24-24s-10.7-24-24-24H88c-13.3 0-24 10.7-24 24m0 96c0 13.3 10.7 24 24 24h48c13.3 0 24-10.7 24-24s-10.7-24-24-24H88c-13.3 0-24 10.7-24 24m112 76v4c-28.8.3-52 23.7-52 52.5 0 25.7 18.5 47.6 43.9 51.8l41.7 7c6 1 10.4 6.2 10.4 12.3 0 6.9-5.6 12.5-12.5 12.5L152 400c-11 0-20 9-20 20s9 20 20 20h24v4c0 11 9 20 20 20s20-9 20-20v-4.7c25-4.1 44-25.7 44-51.8 0-25.7-18.5-47.6-43.9-51.8l-41.7-7c-6-1-10.4-6.2-10.4-12.3 0-6.9 5.6-12.5 12.5-12.5H224c11 0 20-9 20-20s-9-20-20-20h-8v-4c0-11-9-20-20-20s-20 9-20 20z%22/%3E%3C/svg%3E")}
+.fa-file-pdf{-webkit-mask-image:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 576 512%22%3E%3C%21--%21 Font Awesome Free 7.1.0 by %40fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free %28Icons: CC BY 4.0%2C Fonts: SIL OFL 1.1%2C Code: MIT License%29 Copyright 2025 Fonticons%2C Inc.--%3E%3Cpath d=%22M96 0C60.7 0 32 28.7 32 64v384c0 35.3 28.7 64 64 64h80V400c0-35.3 28.7-64 64-64h176V170.5c0-17-6.7-33.3-18.7-45.3L290.7 18.7C278.7 6.7 262.5 0 245.5 0zm261.5 176H264c-13.3 0-24-10.7-24-24V58.5zM240 380c-11 0-20 9-20 20v128c0 11 9 20 20 20s20-9 20-20v-28h12c33.1 0 60-26.9 60-60s-26.9-60-60-60zm32 80h-12v-40h12c11 0 20 9 20 20s-9 20-20 20m96-80c-11 0-20 9-20 20v128c0 11 9 20 20 20h32c28.7 0 52-23.3 52-52v-64c0-28.7-23.3-52-52-52zm20 128v-88h12c6.6 0 12 5.4 12 12v64c0 6.6-5.4 12-12 12zm88-108v128c0 11 9 20 20 20s20-9 20-20v-44h28c11 0 20-9 20-20s-9-20-20-20h-28v-24h28c11 0 20-9 20-20s-9-20-20-20h-48c-11 0-20 9-20 20%22/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 576 512%22%3E%3C%21--%21 Font Awesome Free 7.1.0 by %40fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free %28Icons: CC BY 4.0%2C Fonts: SIL OFL 1.1%2C Code: MIT License%29 Copyright 2025 Fonticons%2C Inc.--%3E%3Cpath d=%22M96 0C60.7 0 32 28.7 32 64v384c0 35.3 28.7 64 64 64h80V400c0-35.3 28.7-64 64-64h176V170.5c0-17-6.7-33.3-18.7-45.3L290.7 18.7C278.7 6.7 262.5 0 245.5 0zm261.5 176H264c-13.3 0-24-10.7-24-24V58.5zM240 380c-11 0-20 9-20 20v128c0 11 9 20 20 20s20-9 20-20v-28h12c33.1 0 60-26.9 60-60s-26.9-60-60-60zm32 80h-12v-40h12c11 0 20 9 20 20s-9 20-20 20m96-80c-11 0-20 9-20 20v128c0 11 9 20 20 20h32c28.7 0 52-23.3 52-52v-64c0-28.7-23.3-52-52-52zm20 128v-88h12c6.6 0 12 5.4 12 12v64c0 6.6-5.4 12-12 12zm88-108v128c0 11 9 20 20 20s20-9 20-20v-44h28c11 0 20-9 20-20s-9-20-20-20h-28v-24h28c11 0 20-9 20-20s-9-20-20-20h-48c-11 0-20 9-20 20%22/%3E%3C/svg%3E")}
+.fa-floppy-disk{-webkit-mask-image:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 448 512%22%3E%3C%21--%21 Font Awesome Free 7.1.0 by %40fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free %28Icons: CC BY 4.0%2C Fonts: SIL OFL 1.1%2C Code: MIT License%29 Copyright 2025 Fonticons%2C Inc.--%3E%3Cpath d=%22M64 32C28.7 32 0 60.7 0 96v320c0 35.3 28.7 64 64 64h320c35.3 0 64-28.7 64-64V173.3c0-17-6.7-33.3-18.7-45.3L352 50.7c-12-12-28.3-18.7-45.3-18.7zm32 96c0-17.7 14.3-32 32-32h160c17.7 0 32 14.3 32 32v64c0 17.7-14.3 32-32 32H128c-17.7 0-32-14.3-32-32zm128 160a64 64 0 1 1 0 128 64 64 0 1 1 0-128%22/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 448 512%22%3E%3C%21--%21 Font Awesome Free 7.1.0 by %40fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free %28Icons: CC BY 4.0%2C Fonts: SIL OFL 1.1%2C Code: MIT License%29 Copyright 2025 Fonticons%2C Inc.--%3E%3Cpath d=%22M64 32C28.7 32 0 60.7 0 96v320c0 35.3 28.7 64 64 64h320c35.3 0 64-28.7 64-64V173.3c0-17-6.7-33.3-18.7-45.3L352 50.7c-12-12-28.3-18.7-45.3-18.7zm32 96c0-17.7 14.3-32 32-32h160c17.7 0 32 14.3 32 32v64c0 17.7-14.3 32-32 32H128c-17.7 0-32-14.3-32-32zm128 160a64 64 0 1 1 0 128 64 64 0 1 1 0-128%22/%3E%3C/svg%3E")}
+.fa-gear{-webkit-mask-image:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 512 512%22%3E%3C%21--%21 Font Awesome Free 7.1.0 by %40fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free %28Icons: CC BY 4.0%2C Fonts: SIL OFL 1.1%2C Code: MIT License%29 Copyright 2025 Fonticons%2C Inc.--%3E%3Cpath d=%22M195.1 9.5c3-14.8 16.1-25.5 31.3-25.5h59.8c15.2 0 28.3 10.7 31.3 25.5l14.5 70c14.1 6 27.3 13.7 39.3 22.8l67.8-22.5c14.4-4.8 30.2 1.2 37.8 14.4l29.9 51.8c7.6 13.2 4.9 29.8-6.5 39.9L447 233.3c.9 7.4 1.3 15 1.3 22.7s-.5 15.3-1.3 22.7l53.4 47.5c11.4 10.1 14 26.8 6.5 39.9L477 417.9c-7.6 13.1-23.4 19.2-37.8 14.4l-67.8-22.5c-12.1 9.1-25.3 16.7-39.3 22.8l-14.4 69.9c-3.1 14.9-16.2 25.5-31.3 25.5h-59.8c-15.2 0-28.3-10.7-31.3-25.5l-14.4-69.9c-14.1-6-27.2-13.7-39.3-22.8l-68.1 22.5c-14.4 4.8-30.2-1.2-37.8-14.4L5.8 366.1c-7.6-13.2-4.9-29.8 6.5-39.9l53.4-47.5c-.9-7.4-1.3-15-1.3-22.7s.5-15.3 1.3-22.7l-53.4-47.5C.9 175.7-1.7 159 5.8 145.9l29.9-51.8c7.6-13.2 23.4-19.2 37.8-14.4l67.8 22.5c12.1-9.1 25.3-16.7 39.3-22.8zM256.3 336a80 80 0 1 0-.6-160 80 80 0 1 0 .6 160%22/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 512 512%22%3E%3C%21--%21 Font Awesome Free 7.1.0 by %40fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free %28Icons: CC BY 4.0%2C Fonts: SIL OFL 1.1%2C Code: MIT License%29 Copyright 2025 Fonticons%2C Inc.--%3E%3Cpath d=%22M195.1 9.5c3-14.8 16.1-25.5 31.3-25.5h59.8c15.2 0 28.3 10.7 31.3 25.5l14.5 70c14.1 6 27.3 13.7 39.3 22.8l67.8-22.5c14.4-4.8 30.2 1.2 37.8 14.4l29.9 51.8c7.6 13.2 4.9 29.8-6.5 39.9L447 233.3c.9 7.4 1.3 15 1.3 22.7s-.5 15.3-1.3 22.7l53.4 47.5c11.4 10.1 14 26.8 6.5 39.9L477 417.9c-7.6 13.1-23.4 19.2-37.8 14.4l-67.8-22.5c-12.1 9.1-25.3 16.7-39.3 22.8l-14.4 69.9c-3.1 14.9-16.2 25.5-31.3 25.5h-59.8c-15.2 0-28.3-10.7-31.3-25.5l-14.4-69.9c-14.1-6-27.2-13.7-39.3-22.8l-68.1 22.5c-14.4 4.8-30.2-1.2-37.8-14.4L5.8 366.1c-7.6-13.2-4.9-29.8 6.5-39.9l53.4-47.5c-.9-7.4-1.3-15-1.3-22.7s.5-15.3 1.3-22.7l-53.4-47.5C.9 175.7-1.7 159 5.8 145.9l29.9-51.8c7.6-13.2 23.4-19.2 37.8-14.4l67.8 22.5c12.1-9.1 25.3-16.7 39.3-22.8zM256.3 336a80 80 0 1 0-.6-160 80 80 0 1 0 .6 160%22/%3E%3C/svg%3E")}
+.fa-globe{-webkit-mask-image:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 512 512%22%3E%3C%21--%21 Font Awesome Free 7.1.0 by %40fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free %28Icons: CC BY 4.0%2C Fonts: SIL OFL 1.1%2C Code: MIT License%29 Copyright 2025 Fonticons%2C Inc.--%3E%3Cpath d=%22M351.9 280H161c2.9 64.5 17.2 123.9 37.5 167.4 11.4 24.5 23.7 41.8 35.1 52.4 11.2 10.5 18.9 12.2 22.9 12.2s11.7-1.7 22.9-12.2c11.4-10.6 23.7-28 35.1-52.4 20.3-43.5 34.6-102.9 37.5-167.4zm-191-48h190.9c-2.8-64.5-17.1-123.9-37.4-167.4-11.4-24.4-23.7-41.8-35.1-52.4C268.1 1.7 260.4 0 256.4 0s-11.7 1.7-22.9 12.2c-11.4 10.6-23.7 28-35.1 52.4-20.3 43.5-34.6 102.9-37.5 167.4m-48 0c3.5-85.6 25.6-165.1 57.9-217.3C78.7 47.3 10.9 131.2 1.5 232zM1.5 280c9.4 100.8 77.2 184.7 169.3 217.3-32.3-52.2-54.4-131.7-57.9-217.3zm398.4 0c-3.5 85.6-25.6 165.1-57.9 217.3 92.1-32.7 159.9-116.5 169.3-217.3zm111.4-48C501.9 131.2 434.1 47.3 342 14.7c32.3 52.2 54.4 131.7 57.9 217.3z%22/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 512 512%22%3E%3C%21--%21 Font Awesome Free 7.1.0 by %40fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free %28Icons: CC BY 4.0%2C Fonts: SIL OFL 1.1%2C Code: MIT License%29 Copyright 2025 Fonticons%2C Inc.--%3E%3Cpath d=%22M351.9 280H161c2.9 64.5 17.2 123.9 37.5 167.4 11.4 24.5 23.7 41.8 35.1 52.4 11.2 10.5 18.9 12.2 22.9 12.2s11.7-1.7 22.9-12.2c11.4-10.6 23.7-28 35.1-52.4 20.3-43.5 34.6-102.9 37.5-167.4zm-191-48h190.9c-2.8-64.5-17.1-123.9-37.4-167.4-11.4-24.4-23.7-41.8-35.1-52.4C268.1 1.7 260.4 0 256.4 0s-11.7 1.7-22.9 12.2c-11.4 10.6-23.7 28-35.1 52.4-20.3 43.5-34.6 102.9-37.5 167.4m-48 0c3.5-85.6 25.6-165.1 57.9-217.3C78.7 47.3 10.9 131.2 1.5 232zM1.5 280c9.4 100.8 77.2 184.7 169.3 217.3-32.3-52.2-54.4-131.7-57.9-217.3zm398.4 0c-3.5 85.6-25.6 165.1-57.9 217.3 92.1-32.7 159.9-116.5 169.3-217.3zm111.4-48C501.9 131.2 434.1 47.3 342 14.7c32.3 52.2 54.4 131.7 57.9 217.3z%22/%3E%3C/svg%3E")}
+.fa-hospital{-webkit-mask-image:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 576 512%22%3E%3C%21--%21 Font Awesome Free 7.1.0 by %40fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free %28Icons: CC BY 4.0%2C Fonts: SIL OFL 1.1%2C Code: MIT License%29 Copyright 2025 Fonticons%2C Inc.--%3E%3Cpath d=%22M128 64c0-35.3 28.7-64 64-64h192c35.3 0 64 28.7 64 64v64h64c35.3 0 64 28.7 64 64v256c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V192c0-35.3 28.7-64 64-64h64zm144 288c-17.7 0-32 14.3-32 32v80h96v-80c0-17.7-14.3-32-32-32zm-144 16v-32c0-8.8-7.2-16-16-16H80c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16m-16-112c8.8 0 16-7.2 16-16v-32c0-8.8-7.2-16-16-16H80c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16zm400 112v-32c0-8.8-7.2-16-16-16h-32c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16m-16-112c8.8 0 16-7.2 16-16v-32c0-8.8-7.2-16-16-16h-32c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16zM264 104v32h-32c-8.8 0-16 7.2-16 16v16c0 8.8 7.2 16 16 16h32v32c0 8.8 7.2 16 16 16h16c8.8 0 16-7.2 16-16v-32h32c8.8 0 16-7.2 16-16v-16c0-8.8-7.2-16-16-16h-32v-32c0-8.8-7.2-16-16-16h-16c-8.8 0-16 7.2-16 16%22/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 576 512%22%3E%3C%21--%21 Font Awesome Free 7.1.0 by %40fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free %28Icons: CC BY 4.0%2C Fonts: SIL OFL 1.1%2C Code: MIT License%29 Copyright 2025 Fonticons%2C Inc.--%3E%3Cpath d=%22M128 64c0-35.3 28.7-64 64-64h192c35.3 0 64 28.7 64 64v64h64c35.3 0 64 28.7 64 64v256c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V192c0-35.3 28.7-64 64-64h64zm144 288c-17.7 0-32 14.3-32 32v80h96v-80c0-17.7-14.3-32-32-32zm-144 16v-32c0-8.8-7.2-16-16-16H80c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16m-16-112c8.8 0 16-7.2 16-16v-32c0-8.8-7.2-16-16-16H80c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16zm400 112v-32c0-8.8-7.2-16-16-16h-32c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16m-16-112c8.8 0 16-7.2 16-16v-32c0-8.8-7.2-16-16-16h-32c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16zM264 104v32h-32c-8.8 0-16 7.2-16 16v16c0 8.8 7.2 16 16 16h32v32c0 8.8 7.2 16 16 16h16c8.8 0 16-7.2 16-16v-32h32c8.8 0 16-7.2 16-16v-16c0-8.8-7.2-16-16-16h-32v-32c0-8.8-7.2-16-16-16h-16c-8.8 0-16 7.2-16 16%22/%3E%3C/svg%3E")}
+.fa-hospital-user{-webkit-mask-image:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 640 512%22%3E%3C%21--%21 Font Awesome Free 7.1.0 by %40fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free %28Icons: CC BY 4.0%2C Fonts: SIL OFL 1.1%2C Code: MIT License%29 Copyright 2025 Fonticons%2C Inc.--%3E%3Cpath d=%22M64 64c0-35.3 28.7-64 64-64h256c35.3 0 64 28.7 64 64v121.3c-46.9 19-80 65-80 118.7 0 27.7 8.8 53.4 23.8 74.4-51.5 21-87.8 71.6-87.8 130.7v2.9H128c-35.3 0-64-28.7-64-64zm144 336v64h53.4c7.2-29.4 21.3-56.1 40.4-78.3-6.1-19.5-24.3-33.7-45.8-33.7-26.5 0-48 21.5-48 48m40-312c-8.8 0-16 7.2-16 16v32h-32c-8.8 0-16 7.2-16 16v16c0 8.8 7.2 16 16 16h32v32c0 8.8 7.2 16 16 16h16c8.8 0 16-7.2 16-16v-32h32c8.8 0 16-7.2 16-16v-16c0-8.8-7.2-16-16-16h-32v-32c0-8.8-7.2-16-16-16zm168 216a80 80 0 1 1 160 0 80 80 0 1 1-160 0m-64 208c0-53 43-96 96-96h96c53 0 96 43 96 96 0 17.7-14.3 32-32 32H384c-17.7 0-32-14.3-32-32%22/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 640 512%22%3E%3C%21--%21 Font Awesome Free 7.1.0 by %40fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free %28Icons: CC BY 4.0%2C Fonts: SIL OFL 1.1%2C Code: MIT License%29 Copyright 2025 Fonticons%2C Inc.--%3E%3Cpath d=%22M64 64c0-35.3 28.7-64 64-64h256c35.3 0 64 28.7 64 64v121.3c-46.9 19-80 65-80 118.7 0 27.7 8.8 53.4 23.8 74.4-51.5 21-87.8 71.6-87.8 130.7v2.9H128c-35.3 0-64-28.7-64-64zm144 336v64h53.4c7.2-29.4 21.3-56.1 40.4-78.3-6.1-19.5-24.3-33.7-45.8-33.7-26.5 0-48 21.5-48 48m40-312c-8.8 0-16 7.2-16 16v32h-32c-8.8 0-16 7.2-16 16v16c0 8.8 7.2 16 16 16h32v32c0 8.8 7.2 16 16 16h16c8.8 0 16-7.2 16-16v-32h32c8.8 0 16-7.2 16-16v-16c0-8.8-7.2-16-16-16h-32v-32c0-8.8-7.2-16-16-16zm168 216a80 80 0 1 1 160 0 80 80 0 1 1-160 0m-64 208c0-53 43-96 96-96h96c53 0 96 43 96 96 0 17.7-14.3 32-32 32H384c-17.7 0-32-14.3-32-32%22/%3E%3C/svg%3E")}
+.fa-id-card{-webkit-mask-image:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 576 512%22%3E%3C%21--%21 Font Awesome Free 7.1.0 by %40fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free %28Icons: CC BY 4.0%2C Fonts: SIL OFL 1.1%2C Code: MIT License%29 Copyright 2025 Fonticons%2C Inc.--%3E%3Cpath d=%22M0 96c0-35.3 28.7-64 64-64h448c35.3 0 64 28.7 64 64zm0 48h576v272c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64zm247.3 272c20.2 0 35.3-19.4 22.4-35-14.7-17.7-36.9-29-61.7-29h-64c-24.8 0-47 11.3-61.7 29-12.9 15.6 2.2 35 22.4 35h142.5zM176 312a56 56 0 1 0 0-112 56 56 0 1 0 0 112m184-104c-13.3 0-24 10.7-24 24s10.7 24 24 24h112c13.3 0 24-10.7 24-24s-10.7-24-24-24zm0 96c-13.3 0-24 10.7-24 24s10.7 24 24 24h112c13.3 0 24-10.7 24-24s-10.7-24-24-24z%22/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 576 512%22%3E%3C%21--%21 Font Awesome Free 7.1.0 by %40fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free %28Icons: CC BY 4.0%2C Fonts: SIL OFL 1.1%2C Code: MIT License%29 Copyright 2025 Fonticons%2C Inc.--%3E%3Cpath d=%22M0 96c0-35.3 28.7-64 64-64h448c35.3 0 64 28.7 64 64zm0 48h576v272c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64zm247.3 272c20.2 0 35.3-19.4 22.4-35-14.7-17.7-36.9-29-61.7-29h-64c-24.8 0-47 11.3-61.7 29-12.9 15.6 2.2 35 22.4 35h142.5zM176 312a56 56 0 1 0 0-112 56 56 0 1 0 0 112m184-104c-13.3 0-24 10.7-24 24s10.7 24 24 24h112c13.3 0 24-10.7 24-24s-10.7-24-24-24zm0 96c-13.3 0-24 10.7-24 24s10.7 24 24 24h112c13.3 0 24-10.7 24-24s-10.7-24-24-24z%22/%3E%3C/svg%3E")}
+.fa-key{-webkit-mask-image:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 512 512%22%3E%3C%21--%21 Font Awesome Free 7.1.0 by %40fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free %28Icons: CC BY 4.0%2C Fonts: SIL OFL 1.1%2C Code: MIT License%29 Copyright 2025 Fonticons%2C Inc.--%3E%3Cpath d=%22M336 352c97.2 0 176-78.8 176-176S433.2 0 336 0 160 78.8 160 176c0 18.7 2.9 36.8 8.3 53.7L7 391c-4.5 4.5-7 10.6-7 17v80c0 13.3 10.7 24 24 24h80c13.3 0 24-10.7 24-24v-40h40c13.3 0 24-10.7 24-24v-40h40c6.4 0 12.5-2.5 17-7l33.3-33.3c16.9 5.4 35 8.3 53.7 8.3m40-256a40 40 0 1 1 0 80 40 40 0 1 1 0-80%22/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 512 512%22%3E%3C%21--%21 Font Awesome Free 7.1.0 by %40fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free %28Icons: CC BY 4.0%2C Fonts: SIL OFL 1.1%2C Code: MIT License%29 Copyright 2025 Fonticons%2C Inc.--%3E%3Cpath d=%22M336 352c97.2 0 176-78.8 176-176S433.2 0 336 0 160 78.8 160 176c0 18.7 2.9 36.8 8.3 53.7L7 391c-4.5 4.5-7 10.6-7 17v80c0 13.3 10.7 24 24 24h80c13.3 0 24-10.7 24-24v-40h40c13.3 0 24-10.7 24-24v-40h40c6.4 0 12.5-2.5 17-7l33.3-33.3c16.9 5.4 35 8.3 53.7 8.3m40-256a40 40 0 1 1 0 80 40 40 0 1 1 0-80%22/%3E%3C/svg%3E")}
+.fa-link{-webkit-mask-image:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 576 512%22%3E%3C%21--%21 Font Awesome Free 7.1.0 by %40fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free %28Icons: CC BY 4.0%2C Fonts: SIL OFL 1.1%2C Code: MIT License%29 Copyright 2025 Fonticons%2C Inc.--%3E%3Cpath d=%22M419.5 96c-16.6 0-32.7 4.5-46.8 12.7-15.8-16-34.2-29.4-54.5-39.5 28.2-24 64.1-37.2 101.3-37.2C505.9 32 576 102 576 188.5c0 41.5-16.5 81.3-45.8 110.6l-71.1 71.1C429.8 399.5 390 416 348.5 416 262.1 416 192 346 192 259.5c0-1.5 0-3 .1-4.5.5-17.7 15.2-31.6 32.9-31.1s31.6 15.2 31.1 32.9v2.6c0 51.1 41.4 92.5 92.5 92.5 24.5 0 48-9.7 65.4-27.1l71.1-71.1c17.3-17.3 27.1-40.9 27.1-65.4 0-51.1-41.4-92.5-92.5-92.5zm-144.3 77.3c-1.9-.8-3.8-1.9-5.5-3.1-12.6-6.5-27-10.2-42.1-10.2-24.5 0-48 9.7-65.4 27.1l-71.1 71.1C73.8 275.5 64 299.1 64 323.6c0 51.1 41.4 92.5 92.5 92.5 16.5 0 32.6-4.4 46.7-12.6 15.8 16 34.2 29.4 54.6 39.5-28.2 23.9-64 37.2-101.3 37.2C70.1 480.2 0 410.2 0 323.7c0-41.5 16.5-81.3 45.8-110.6l71.1-71.1c29.3-29.3 69.1-45.8 110.6-45.8 86.6 0 156.5 70.6 156.5 156.9v3.9c-.4 17.7-15.1 31.6-32.8 31.2s-31.6-15.1-31.2-32.8v-2.3c0-33.7-18-63.3-44.8-79.6z%22/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 576 512%22%3E%3C%21--%21 Font Awesome Free 7.1.0 by %40fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free %28Icons: CC BY 4.0%2C Fonts: SIL OFL 1.1%2C Code: MIT License%29 Copyright 2025 Fonticons%2C Inc.--%3E%3Cpath d=%22M419.5 96c-16.6 0-32.7 4.5-46.8 12.7-15.8-16-34.2-29.4-54.5-39.5 28.2-24 64.1-37.2 101.3-37.2C505.9 32 576 102 576 188.5c0 41.5-16.5 81.3-45.8 110.6l-71.1 71.1C429.8 399.5 390 416 348.5 416 262.1 416 192 346 192 259.5c0-1.5 0-3 .1-4.5.5-17.7 15.2-31.6 32.9-31.1s31.6 15.2 31.1 32.9v2.6c0 51.1 41.4 92.5 92.5 92.5 24.5 0 48-9.7 65.4-27.1l71.1-71.1c17.3-17.3 27.1-40.9 27.1-65.4 0-51.1-41.4-92.5-92.5-92.5zm-144.3 77.3c-1.9-.8-3.8-1.9-5.5-3.1-12.6-6.5-27-10.2-42.1-10.2-24.5 0-48 9.7-65.4 27.1l-71.1 71.1C73.8 275.5 64 299.1 64 323.6c0 51.1 41.4 92.5 92.5 92.5 16.5 0 32.6-4.4 46.7-12.6 15.8 16 34.2 29.4 54.6 39.5-28.2 23.9-64 37.2-101.3 37.2C70.1 480.2 0 410.2 0 323.7c0-41.5 16.5-81.3 45.8-110.6l71.1-71.1c29.3-29.3 69.1-45.8 110.6-45.8 86.6 0 156.5 70.6 156.5 156.9v3.9c-.4 17.7-15.1 31.6-32.8 31.2s-31.6-15.1-31.2-32.8v-2.3c0-33.7-18-63.3-44.8-79.6z%22/%3E%3C/svg%3E")}
+.fa-lock{-webkit-mask-image:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 384 512%22%3E%3C%21--%21 Font Awesome Free 7.1.0 by %40fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free %28Icons: CC BY 4.0%2C Fonts: SIL OFL 1.1%2C Code: MIT License%29 Copyright 2025 Fonticons%2C Inc.--%3E%3Cpath d=%22M128 96v64h128V96c0-35.3-28.7-64-64-64s-64 28.7-64 64m-64 64V96c0-70.7 57.3-128 128-128S320 25.3 320 96v64c35.3 0 64 28.7 64 64v224c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V224c0-35.3 28.7-64 64-64%22/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 384 512%22%3E%3C%21--%21 Font Awesome Free 7.1.0 by %40fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free %28Icons: CC BY 4.0%2C Fonts: SIL OFL 1.1%2C Code: MIT License%29 Copyright 2025 Fonticons%2C Inc.--%3E%3Cpath d=%22M128 96v64h128V96c0-35.3-28.7-64-64-64s-64 28.7-64 64m-64 64V96c0-70.7 57.3-128 128-128S320 25.3 320 96v64c35.3 0 64 28.7 64 64v224c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V224c0-35.3 28.7-64 64-64%22/%3E%3C/svg%3E")}
+.fa-pause{-webkit-mask-image:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 384 512%22%3E%3C%21--%21 Font Awesome Free 7.1.0 by %40fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free %28Icons: CC BY 4.0%2C Fonts: SIL OFL 1.1%2C Code: MIT License%29 Copyright 2025 Fonticons%2C Inc.--%3E%3Cpath d=%22M48 32C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h64c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zm224 0c-26.5 0-48 21.5-48 48v352c0 26.5 21.5 48 48 48h64c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48z%22/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 384 512%22%3E%3C%21--%21 Font Awesome Free 7.1.0 by %40fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free %28Icons: CC BY 4.0%2C Fonts: SIL OFL 1.1%2C Code: MIT License%29 Copyright 2025 Fonticons%2C Inc.--%3E%3Cpath d=%22M48 32C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h64c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zm224 0c-26.5 0-48 21.5-48 48v352c0 26.5 21.5 48 48 48h64c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48z%22/%3E%3C/svg%3E")}
+.fa-print{-webkit-mask-image:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 512 512%22%3E%3C%21--%21 Font Awesome Free 7.1.0 by %40fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free %28Icons: CC BY 4.0%2C Fonts: SIL OFL 1.1%2C Code: MIT License%29 Copyright 2025 Fonticons%2C Inc.--%3E%3Cpath d=%22M64 64c0-35.3 28.7-64 64-64h213.5c17 0 33.3 6.7 45.3 18.7l42.5 42.5c12 12 18.7 28.3 18.7 45.3V144H64zM0 256c0-35.3 28.7-64 64-64h384c35.3 0 64 28.7 64 64v96c0 17.7-14.3 32-32 32h-32v64c0 35.3-28.7 64-64 64H128c-35.3 0-64-28.7-64-64v-64H32c-17.7 0-32-14.3-32-32zm128 160v32h256v-96H128zm328-144a24 24 0 1 0-48 0 24 24 0 1 0 48 0%22/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 512 512%22%3E%3C%21--%21 Font Awesome Free 7.1.0 by %40fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free %28Icons: CC BY 4.0%2C Fonts: SIL OFL 1.1%2C Code: MIT License%29 Copyright 2025 Fonticons%2C Inc.--%3E%3Cpath d=%22M64 64c0-35.3 28.7-64 64-64h213.5c17 0 33.3 6.7 45.3 18.7l42.5 42.5c12 12 18.7 28.3 18.7 45.3V144H64zM0 256c0-35.3 28.7-64 64-64h384c35.3 0 64 28.7 64 64v96c0 17.7-14.3 32-32 32h-32v64c0 35.3-28.7 64-64 64H128c-35.3 0-64-28.7-64-64v-64H32c-17.7 0-32-14.3-32-32zm128 160v32h256v-96H128zm328-144a24 24 0 1 0-48 0 24 24 0 1 0 48 0%22/%3E%3C/svg%3E")}
+.fa-right-from-bracket{-webkit-mask-image:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 512 512%22%3E%3C%21--%21 Font Awesome Free 7.1.0 by %40fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free %28Icons: CC BY 4.0%2C Fonts: SIL OFL 1.1%2C Code: MIT License%29 Copyright 2025 Fonticons%2C Inc.--%3E%3Cpath d=%22M505 273c9.4-9.4 9.4-24.6 0-33.9L361 95c-6.9-6.9-17.2-8.9-26.2-5.2S320 102.3 320 112v80H208c-26.5 0-48 21.5-48 48v32c0 26.5 21.5 48 48 48h112v80c0 9.7 5.8 18.5 14.8 22.2s19.3 1.7 26.2-5.2zM160 96c17.7 0 32-14.3 32-32s-14.3-32-32-32H96C43 32 0 75 0 128v256c0 53 43 96 96 96h64c17.7 0 32-14.3 32-32s-14.3-32-32-32H96c-17.7 0-32-14.3-32-32V128c0-17.7 14.3-32 32-32z%22/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 512 512%22%3E%3C%21--%21 Font Awesome Free 7.1.0 by %40fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free %28Icons: CC BY 4.0%2C Fonts: SIL OFL 1.1%2C Code: MIT License%29 Copyright 2025 Fonticons%2C Inc.--%3E%3Cpath d=%22M505 273c9.4-9.4 9.4-24.6 0-33.9L361 95c-6.9-6.9-17.2-8.9-26.2-5.2S320 102.3 320 112v80H208c-26.5 0-48 21.5-48 48v32c0 26.5 21.5 48 48 48h112v80c0 9.7 5.8 18.5 14.8 22.2s19.3 1.7 26.2-5.2zM160 96c17.7 0 32-14.3 32-32s-14.3-32-32-32H96C43 32 0 75 0 128v256c0 53 43 96 96 96h64c17.7 0 32-14.3 32-32s-14.3-32-32-32H96c-17.7 0-32-14.3-32-32V128c0-17.7 14.3-32 32-32z%22/%3E%3C/svg%3E")}
+.fa-rotate-left{-webkit-mask-image:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 512 512%22%3E%3C%21--%21 Font Awesome Free 7.1.0 by %40fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free %28Icons: CC BY 4.0%2C Fonts: SIL OFL 1.1%2C Code: MIT License%29 Copyright 2025 Fonticons%2C Inc.--%3E%3Cpath d=%22M24 192h144c9.7 0 18.5-5.8 22.2-14.8s1.7-19.3-5.2-26.2l-46.7-46.7c75.3-58.6 184.3-53.3 253.5 15.9 75 75 75 196.5 0 271.5s-196.5 75-271.5 0c-10.2-10.2-19-21.3-26.4-33-9.5-14.9-29.3-19.3-44.2-9.8s-19.3 29.3-9.8 44.2c9.8 15.6 21.5 30.4 35.1 43.9 100 100 262 100 362 0s100-262 0-362C342.8-19.3 193.3-24.7 92.7 58.8L41 7C34.1.2 23.8-1.9 14.8 1.8S0 14.3 0 24v144c0 13.3 10.7 24 24 24%22/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 512 512%22%3E%3C%21--%21 Font Awesome Free 7.1.0 by %40fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free %28Icons: CC BY 4.0%2C Fonts: SIL OFL 1.1%2C Code: MIT License%29 Copyright 2025 Fonticons%2C Inc.--%3E%3Cpath d=%22M24 192h144c9.7 0 18.5-5.8 22.2-14.8s1.7-19.3-5.2-26.2l-46.7-46.7c75.3-58.6 184.3-53.3 253.5 15.9 75 75 75 196.5 0 271.5s-196.5 75-271.5 0c-10.2-10.2-19-21.3-26.4-33-9.5-14.9-29.3-19.3-44.2-9.8s-19.3 29.3-9.8 44.2c9.8 15.6 21.5 30.4 35.1 43.9 100 100 262 100 362 0s100-262 0-362C342.8-19.3 193.3-24.7 92.7 58.8L41 7C34.1.2 23.8-1.9 14.8 1.8S0 14.3 0 24v144c0 13.3 10.7 24 24 24%22/%3E%3C/svg%3E")}
+.fa-search{-webkit-mask-image:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 512 512%22%3E%3C%21--%21 Font Awesome Free 7.1.0 by %40fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free %28Icons: CC BY 4.0%2C Fonts: SIL OFL 1.1%2C Code: MIT License%29 Copyright 2025 Fonticons%2C Inc.--%3E%3Cpath d=%22M416 208c0 45.9-14.9 88.3-40 122.7l126.6 126.7c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.1-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0s208 93.1 208 208M208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288%22/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 512 512%22%3E%3C%21--%21 Font Awesome Free 7.1.0 by %40fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free %28Icons: CC BY 4.0%2C Fonts: SIL OFL 1.1%2C Code: MIT License%29 Copyright 2025 Fonticons%2C Inc.--%3E%3Cpath d=%22M416 208c0 45.9-14.9 88.3-40 122.7l126.6 126.7c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.1-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0s208 93.1 208 208M208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288%22/%3E%3C/svg%3E")}
+.fa-signal{-webkit-mask-image:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 512 512%22%3E%3C%21--%21 Font Awesome Free 7.1.0 by %40fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free %28Icons: CC BY 4.0%2C Fonts: SIL OFL 1.1%2C Code: MIT License%29 Copyright 2025 Fonticons%2C Inc.--%3E%3Cpath d=%22M488 56c0-13.3-10.7-24-24-24s-24 10.7-24 24v400c0 13.3 10.7 24 24 24s24-10.7 24-24zm-128 72c-13.3 0-24 10.7-24 24v304c0 13.3 10.7 24 24 24s24-10.7 24-24V152c0-13.3-10.7-24-24-24m-80 120c0-13.3-10.7-24-24-24s-24 10.7-24 24v208c0 13.3 10.7 24 24 24s24-10.7 24-24zm-128 72c-13.3 0-24 10.7-24 24v112c0 13.3 10.7 24 24 24s24-10.7 24-24V344c0-13.3-10.7-24-24-24M48 384c-13.3 0-24 10.7-24 24v48c0 13.3 10.7 24 24 24s24-10.7 24-24v-48c0-13.3-10.7-24-24-24%22/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 512 512%22%3E%3C%21--%21 Font Awesome Free 7.1.0 by %40fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free %28Icons: CC BY 4.0%2C Fonts: SIL OFL 1.1%2C Code: MIT License%29 Copyright 2025 Fonticons%2C Inc.--%3E%3Cpath d=%22M488 56c0-13.3-10.7-24-24-24s-24 10.7-24 24v400c0 13.3 10.7 24 24 24s24-10.7 24-24zm-128 72c-13.3 0-24 10.7-24 24v304c0 13.3 10.7 24 24 24s24-10.7 24-24V152c0-13.3-10.7-24-24-24m-80 120c0-13.3-10.7-24-24-24s-24 10.7-24 24v208c0 13.3 10.7 24 24 24s24-10.7 24-24zm-128 72c-13.3 0-24 10.7-24 24v112c0 13.3 10.7 24 24 24s24-10.7 24-24V344c0-13.3-10.7-24-24-24M48 384c-13.3 0-24 10.7-24 24v48c0 13.3 10.7 24 24 24s24-10.7 24-24v-48c0-13.3-10.7-24-24-24%22/%3E%3C/svg%3E")}
+.fa-sliders{-webkit-mask-image:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 512 512%22%3E%3C%21--%21 Font Awesome Free 7.1.0 by %40fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free %28Icons: CC BY 4.0%2C Fonts: SIL OFL 1.1%2C Code: MIT License%29 Copyright 2025 Fonticons%2C Inc.--%3E%3Cpath d=%22M32 64C14.3 64 0 78.3 0 96s14.3 32 32 32h86.7c12.3 28.3 40.5 48 73.3 48s61-19.7 73.3-48H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H265.3C253 35.7 224.8 16 192 16s-61 19.7-73.3 48zm0 160c-17.7 0-32 14.3-32 32s14.3 32 32 32h246.7c12.3 28.3 40.5 48 73.3 48s61-19.7 73.3-48H480c17.7 0 32-14.3 32-32s-14.3-32-32-32h-54.7c-12.3-28.3-40.5-48-73.3-48s-61 19.7-73.3 48zm0 160c-17.7 0-32 14.3-32 32s14.3 32 32 32h54.7c12.3 28.3 40.5 48 73.3 48s61-19.7 73.3-48H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H233.3c-12.3-28.3-40.5-48-73.3-48s-61 19.7-73.3 48z%22/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 512 512%22%3E%3C%21--%21 Font Awesome Free 7.1.0 by %40fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free %28Icons: CC BY 4.0%2C Fonts: SIL OFL 1.1%2C Code: MIT License%29 Copyright 2025 Fonticons%2C Inc.--%3E%3Cpath d=%22M32 64C14.3 64 0 78.3 0 96s14.3 32 32 32h86.7c12.3 28.3 40.5 48 73.3 48s61-19.7 73.3-48H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H265.3C253 35.7 224.8 16 192 16s-61 19.7-73.3 48zm0 160c-17.7 0-32 14.3-32 32s14.3 32 32 32h246.7c12.3 28.3 40.5 48 73.3 48s61-19.7 73.3-48H480c17.7 0 32-14.3 32-32s-14.3-32-32-32h-54.7c-12.3-28.3-40.5-48-73.3-48s-61 19.7-73.3 48zm0 160c-17.7 0-32 14.3-32 32s14.3 32 32 32h54.7c12.3 28.3 40.5 48 73.3 48s61-19.7 73.3-48H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H233.3c-12.3-28.3-40.5-48-73.3-48s-61 19.7-73.3 48z%22/%3E%3C/svg%3E")}
+.fa-stethoscope{-webkit-mask-image:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 576 512%22%3E%3C%21--%21 Font Awesome Free 7.1.0 by %40fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free %28Icons: CC BY 4.0%2C Fonts: SIL OFL 1.1%2C Code: MIT License%29 Copyright 2025 Fonticons%2C Inc.--%3E%3Cpath d=%22M32 48C32 21.5 53.5 0 80 0h48c17.7 0 32 14.3 32 32s-14.3 32-32 32H96v128c0 53 43 96 96 96s96-43 96-96V64h-32c-17.7 0-32-14.3-32-32s14.3-32 32-32h48c26.5 0 48 21.5 48 48v144c0 77.4-55 142-128 156.8V368c0 61.9 50.1 112 112 112s112-50.1 112-112v-85.5c-37.3-13.2-64-48.7-64-90.5 0-53 43-96 96-96s96 43 96 96c0 41.8-26.7 77.4-64 90.5V368c0 97.2-78.8 176-176 176s-176-78.8-176-176v-19.2C87 334 32 269.4 32 192zm448 176a32 32 0 1 0 0-64 32 32 0 1 0 0 64%22/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 576 512%22%3E%3C%21--%21 Font Awesome Free 7.1.0 by %40fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free %28Icons: CC BY 4.0%2C Fonts: SIL OFL 1.1%2C Code: MIT License%29 Copyright 2025 Fonticons%2C Inc.--%3E%3Cpath d=%22M32 48C32 21.5 53.5 0 80 0h48c17.7 0 32 14.3 32 32s-14.3 32-32 32H96v128c0 53 43 96 96 96s96-43 96-96V64h-32c-17.7 0-32-14.3-32-32s14.3-32 32-32h48c26.5 0 48 21.5 48 48v144c0 77.4-55 142-128 156.8V368c0 61.9 50.1 112 112 112s112-50.1 112-112v-85.5c-37.3-13.2-64-48.7-64-90.5 0-53 43-96 96-96s96 43 96 96c0 41.8-26.7 77.4-64 90.5V368c0 97.2-78.8 176-176 176s-176-78.8-176-176v-19.2C87 334 32 269.4 32 192zm448 176a32 32 0 1 0 0-64 32 32 0 1 0 0 64%22/%3E%3C/svg%3E")}
+.fa-tags{-webkit-mask-image:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 576 512%22%3E%3C%21--%21 Font Awesome Free 7.1.0 by %40fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free %28Icons: CC BY 4.0%2C Fonts: SIL OFL 1.1%2C Code: MIT License%29 Copyright 2025 Fonticons%2C Inc.--%3E%3Cpath d=%22m401.2 39.1 148.2 150.3c27.7 28.1 27.7 73.1 0 101.2L393 448.9c-9.3 9.4-24.5 9.5-33.9.2s-9.5-24.5-.2-33.9l156.4-158.4c9.2-9.3 9.2-24.4 0-33.7L367 72.9c-9.3-9.4-9.2-24.6.2-33.9s24.6-9.2 33.9.2zM32.1 229.5V96c0-35.3 28.7-64 64-64h133.5c17 0 33.3 6.7 45.3 18.7l144 144c25 25 25 65.5 0 90.5L285.4 418.7c-25 25-65.5 25-90.5 0l-144-144c-12-12-18.7-28.3-18.7-45.3zm144-85.5a32 32 0 1 0-64 0 32 32 0 1 0 64 0%22/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 576 512%22%3E%3C%21--%21 Font Awesome Free 7.1.0 by %40fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free %28Icons: CC BY 4.0%2C Fonts: SIL OFL 1.1%2C Code: MIT License%29 Copyright 2025 Fonticons%2C Inc.--%3E%3Cpath d=%22m401.2 39.1 148.2 150.3c27.7 28.1 27.7 73.1 0 101.2L393 448.9c-9.3 9.4-24.5 9.5-33.9.2s-9.5-24.5-.2-33.9l156.4-158.4c9.2-9.3 9.2-24.4 0-33.7L367 72.9c-9.3-9.4-9.2-24.6.2-33.9s24.6-9.2 33.9.2zM32.1 229.5V96c0-35.3 28.7-64 64-64h133.5c17 0 33.3 6.7 45.3 18.7l144 144c25 25 25 65.5 0 90.5L285.4 418.7c-25 25-65.5 25-90.5 0l-144-144c-12-12-18.7-28.3-18.7-45.3zm144-85.5a32 32 0 1 0-64 0 32 32 0 1 0 64 0%22/%3E%3C/svg%3E")}
+.fa-times{-webkit-mask-image:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 384 512%22%3E%3C%21--%21 Font Awesome Free 7.1.0 by %40fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free %28Icons: CC BY 4.0%2C Fonts: SIL OFL 1.1%2C Code: MIT License%29 Copyright 2025 Fonticons%2C Inc.--%3E%3Cpath d=%22M55.1 73.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L147.2 256 9.9 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l137.3-137.4 137.4 137.3c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.8 256l137.3-137.4c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192.5 210.7z%22/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 384 512%22%3E%3C%21--%21 Font Awesome Free 7.1.0 by %40fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free %28Icons: CC BY 4.0%2C Fonts: SIL OFL 1.1%2C Code: MIT License%29 Copyright 2025 Fonticons%2C Inc.--%3E%3Cpath d=%22M55.1 73.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L147.2 256 9.9 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l137.3-137.4 137.4 137.3c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.8 256l137.3-137.4c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192.5 210.7z%22/%3E%3C/svg%3E")}
+.fa-trash{-webkit-mask-image:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 448 512%22%3E%3C%21--%21 Font Awesome Free 7.1.0 by %40fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free %28Icons: CC BY 4.0%2C Fonts: SIL OFL 1.1%2C Code: MIT License%29 Copyright 2025 Fonticons%2C Inc.--%3E%3Cpath d=%22M136.7 5.9 128 32H32C14.3 32 0 46.3 0 64s14.3 32 32 32h384c17.7 0 32-14.3 32-32s-14.3-32-32-32h-96l-8.7-26.1C306.9-7.2 294.7-16 280.9-16H167.1c-13.8 0-26 8.8-30.4 21.9M416 144H32l21.1 323.1C54.7 492.4 75.7 512 101 512h246c25.3 0 46.3-19.6 47.9-44.9z%22/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 448 512%22%3E%3C%21--%21 Font Awesome Free 7.1.0 by %40fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free %28Icons: CC BY 4.0%2C Fonts: SIL OFL 1.1%2C Code: MIT License%29 Copyright 2025 Fonticons%2C Inc.--%3E%3Cpath d=%22M136.7 5.9 128 32H32C14.3 32 0 46.3 0 64s14.3 32 32 32h384c17.7 0 32-14.3 32-32s-14.3-32-32-32h-96l-8.7-26.1C306.9-7.2 294.7-16 280.9-16H167.1c-13.8 0-26 8.8-30.4 21.9M416 144H32l21.1 323.1C54.7 492.4 75.7 512 101 512h246c25.3 0 46.3-19.6 47.9-44.9z%22/%3E%3C/svg%3E")}
+.fa-trash-arrow-up{-webkit-mask-image:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 448 512%22%3E%3C%21--%21 Font Awesome Free 7.1.0 by %40fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free %28Icons: CC BY 4.0%2C Fonts: SIL OFL 1.1%2C Code: MIT License%29 Copyright 2025 Fonticons%2C Inc.--%3E%3Cpath d=%22M167.1-16H281c13.8 0 26 8.8 30.4 21.9L320 32h96c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 96 0 81.7 0 64s14.3-32 32-32h96l8.7-26.1C141.1-7.2 153.3-16 167.1-16M32 144h384l-21.1 323.1c-1.6 25.3-22.6 44.9-47.9 44.9H101c-25.3 0-46.3-19.6-47.9-44.9zm209 79c-9.4-9.4-24.6-9.4-33.9 0l-72 72c-9.4 9.4-9.4 24.6 0 33.9s24.6 9.4 33.9 0l31-31V400c0 13.3 10.7 24 24 24s24-10.7 24-24V297.9l31 31c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-72-72z%22/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 448 512%22%3E%3C%21--%21 Font Awesome Free 7.1.0 by %40fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free %28Icons: CC BY 4.0%2C Fonts: SIL OFL 1.1%2C Code: MIT License%29 Copyright 2025 Fonticons%2C Inc.--%3E%3Cpath d=%22M167.1-16H281c13.8 0 26 8.8 30.4 21.9L320 32h96c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 96 0 81.7 0 64s14.3-32 32-32h96l8.7-26.1C141.1-7.2 153.3-16 167.1-16M32 144h384l-21.1 323.1c-1.6 25.3-22.6 44.9-47.9 44.9H101c-25.3 0-46.3-19.6-47.9-44.9zm209 79c-9.4-9.4-24.6-9.4-33.9 0l-72 72c-9.4 9.4-9.4 24.6 0 33.9s24.6 9.4 33.9 0l31-31V400c0 13.3 10.7 24 24 24s24-10.7 24-24V297.9l31 31c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-72-72z%22/%3E%3C/svg%3E")}
+.fa-triangle-exclamation{-webkit-mask-image:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 512 512%22%3E%3C%21--%21 Font Awesome Free 7.1.0 by %40fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free %28Icons: CC BY 4.0%2C Fonts: SIL OFL 1.1%2C Code: MIT License%29 Copyright 2025 Fonticons%2C Inc.--%3E%3Cpath d=%22M256 0c14.7 0 28.2 8.1 35.2 21l216 400c6.7 12.4 6.4 27.4-.8 39.5S486.1 480 472 480H40c-14.1 0-27.2-7.4-34.4-19.5s-7.5-27.1-.8-39.5l216-400c7-12.9 20.5-21 35.2-21m0 352a32 32 0 1 0 0 64 32 32 0 1 0 0-64m0-192c-18.2 0-32.7 15.5-31.4 33.7l7.4 104c.9 12.5 11.4 22.3 23.9 22.3 12.6 0 23-9.7 23.9-22.3l7.4-104c1.3-18.2-13.1-33.7-31.4-33.7z%22/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 512 512%22%3E%3C%21--%21 Font Awesome Free 7.1.0 by %40fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free %28Icons: CC BY 4.0%2C Fonts: SIL OFL 1.1%2C Code: MIT License%29 Copyright 2025 Fonticons%2C Inc.--%3E%3Cpath d=%22M256 0c14.7 0 28.2 8.1 35.2 21l216 400c6.7 12.4 6.4 27.4-.8 39.5S486.1 480 472 480H40c-14.1 0-27.2-7.4-34.4-19.5s-7.5-27.1-.8-39.5l216-400c7-12.9 20.5-21 35.2-21m0 352a32 32 0 1 0 0 64 32 32 0 1 0 0-64m0-192c-18.2 0-32.7 15.5-31.4 33.7l7.4 104c.9 12.5 11.4 22.3 23.9 22.3 12.6 0 23-9.7 23.9-22.3l7.4-104c1.3-18.2-13.1-33.7-31.4-33.7z%22/%3E%3C/svg%3E")}
+.fa-user-circle{-webkit-mask-image:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 512 512%22%3E%3C%21--%21 Font Awesome Free 7.1.0 by %40fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free %28Icons: CC BY 4.0%2C Fonts: SIL OFL 1.1%2C Code: MIT License%29 Copyright 2025 Fonticons%2C Inc.--%3E%3Cpath d=%22M399 384.2c-22.1-38.4-63.6-64.2-111-64.2h-64c-47.4 0-88.9 25.8-111 64.2 35.2 39.2 86.2 63.8 143 63.8s107.8-24.7 143-63.8M0 256a256 256 0 1 1 512 0 256 256 0 1 1-512 0m256 16a72 72 0 1 0 0-144 72 72 0 1 0 0 144%22/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 512 512%22%3E%3C%21--%21 Font Awesome Free 7.1.0 by %40fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free %28Icons: CC BY 4.0%2C Fonts: SIL OFL 1.1%2C Code: MIT License%29 Copyright 2025 Fonticons%2C Inc.--%3E%3Cpath d=%22M399 384.2c-22.1-38.4-63.6-64.2-111-64.2h-64c-47.4 0-88.9 25.8-111 64.2 35.2 39.2 86.2 63.8 143 63.8s107.8-24.7 143-63.8M0 256a256 256 0 1 1 512 0 256 256 0 1 1-512 0m256 16a72 72 0 1 0 0-144 72 72 0 1 0 0 144%22/%3E%3C/svg%3E")}
+.fa-user-doctor{-webkit-mask-image:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 448 512%22%3E%3C%21--%21 Font Awesome Free 7.1.0 by %40fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free %28Icons: CC BY 4.0%2C Fonts: SIL OFL 1.1%2C Code: MIT License%29 Copyright 2025 Fonticons%2C Inc.--%3E%3Cpath d=%22M224 8a120 120 0 1 0 0 240 120 120 0 1 0 0-240m60 312.8c-5.4-.5-11-.8-16.6-.8h-86.9c-5.6 0-11.1.3-16.6.8v67.5c16.5 7.6 28 24.3 28 43.6 0 26.5-21.5 48-48 48s-48-21.5-48-48c0-19.4 11.5-36.1 28-43.6v-58.4C61 353 16 413.6 16 484.6c0 15.1 12.3 27.4 27.4 27.4h361.1c15.1 0 27.4-12.3 27.4-27.4 0-71-45-131.5-108-154.6v37.4c23.3 8.2 40 30.5 40 56.6v32c0 11-9 20-20 20s-20-9-20-20v-32c0-11-9-20-20-20s-20 9-20 20v32c0 11-9 20-20 20s-20-9-20-20v-32c0-26.1 16.7-48.3 40-56.6v-46.6z%22/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 448 512%22%3E%3C%21--%21 Font Awesome Free 7.1.0 by %40fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free %28Icons: CC BY 4.0%2C Fonts: SIL OFL 1.1%2C Code: MIT License%29 Copyright 2025 Fonticons%2C Inc.--%3E%3Cpath d=%22M224 8a120 120 0 1 0 0 240 120 120 0 1 0 0-240m60 312.8c-5.4-.5-11-.8-16.6-.8h-86.9c-5.6 0-11.1.3-16.6.8v67.5c16.5 7.6 28 24.3 28 43.6 0 26.5-21.5 48-48 48s-48-21.5-48-48c0-19.4 11.5-36.1 28-43.6v-58.4C61 353 16 413.6 16 484.6c0 15.1 12.3 27.4 27.4 27.4h361.1c15.1 0 27.4-12.3 27.4-27.4 0-71-45-131.5-108-154.6v37.4c23.3 8.2 40 30.5 40 56.6v32c0 11-9 20-20 20s-20-9-20-20v-32c0-11-9-20-20-20s-20 9-20 20v32c0 11-9 20-20 20s-20-9-20-20v-32c0-26.1 16.7-48.3 40-56.6v-46.6z%22/%3E%3C/svg%3E")}
+.fa-user-plus{-webkit-mask-image:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 640 512%22%3E%3C%21--%21 Font Awesome Free 7.1.0 by %40fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free %28Icons: CC BY 4.0%2C Fonts: SIL OFL 1.1%2C Code: MIT License%29 Copyright 2025 Fonticons%2C Inc.--%3E%3Cpath d=%22M136 128a120 120 0 1 1 240 0 120 120 0 1 1-240 0M48 482.3C48 383.8 127.8 304 226.3 304h59.4c98.5 0 178.3 79.8 178.3 178.3 0 16.4-13.3 29.7-29.7 29.7H77.7C61.3 512 48 498.7 48 482.3M544 96c13.3 0 24 10.7 24 24v48h48c13.3 0 24 10.7 24 24s-10.7 24-24 24h-48v48c0 13.3-10.7 24-24 24s-24-10.7-24-24v-48h-48c-13.3 0-24-10.7-24-24s10.7-24 24-24h48v-48c0-13.3 10.7-24 24-24%22/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 640 512%22%3E%3C%21--%21 Font Awesome Free 7.1.0 by %40fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free %28Icons: CC BY 4.0%2C Fonts: SIL OFL 1.1%2C Code: MIT License%29 Copyright 2025 Fonticons%2C Inc.--%3E%3Cpath d=%22M136 128a120 120 0 1 1 240 0 120 120 0 1 1-240 0M48 482.3C48 383.8 127.8 304 226.3 304h59.4c98.5 0 178.3 79.8 178.3 178.3 0 16.4-13.3 29.7-29.7 29.7H77.7C61.3 512 48 498.7 48 482.3M544 96c13.3 0 24 10.7 24 24v48h48c13.3 0 24 10.7 24 24s-10.7 24-24 24h-48v48c0 13.3-10.7 24-24 24s-24-10.7-24-24v-48h-48c-13.3 0-24-10.7-24-24s10.7-24 24-24h48v-48c0-13.3 10.7-24 24-24%22/%3E%3C/svg%3E")}
+.fa-vault{-webkit-mask-image:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 512 512%22%3E%3C%21--%21 Font Awesome Free 7.1.0 by %40fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free %28Icons: CC BY 4.0%2C Fonts: SIL OFL 1.1%2C Code: MIT License%29 Copyright 2025 Fonticons%2C Inc.--%3E%3Cpath d=%22M64 32C28.7 32 0 60.7 0 96v320c0 35.3 28.7 64 64 64 0 17.7 14.3 32 32 32s32-14.3 32-32h256c0 17.7 14.3 32 32 32s32-14.3 32-32c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64zm192 224a64 64 0 1 0-128 0 64 64 0 1 0 128 0m-192 0a128 128 0 1 1 256 0 128 128 0 1 1-256 0m384-48c0 17.8-9.7 33.3-24 41.6V328c0 13.3-10.7 24-24 24s-24-10.7-24-24v-78.4c-14.3-8.3-24-23.8-24-41.6 0-26.5 21.5-48 48-48s48 21.5 48 48%22/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 512 512%22%3E%3C%21--%21 Font Awesome Free 7.1.0 by %40fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free %28Icons: CC BY 4.0%2C Fonts: SIL OFL 1.1%2C Code: MIT License%29 Copyright 2025 Fonticons%2C Inc.--%3E%3Cpath d=%22M64 32C28.7 32 0 60.7 0 96v320c0 35.3 28.7 64 64 64 0 17.7 14.3 32 32 32s32-14.3 32-32h256c0 17.7 14.3 32 32 32s32-14.3 32-32c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64zm192 224a64 64 0 1 0-128 0 64 64 0 1 0 128 0m-192 0a128 128 0 1 1 256 0 128 128 0 1 1-256 0m384-48c0 17.8-9.7 33.3-24 41.6V328c0 13.3-10.7 24-24 24s-24-10.7-24-24v-78.4c-14.3-8.3-24-23.8-24-41.6 0-26.5 21.5-48 48-48s48 21.5 48 48%22/%3E%3C/svg%3E")}
+.fa-wand-magic-sparkles{-webkit-mask-image:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 576 512%22%3E%3C%21--%21 Font Awesome Free 7.1.0 by %40fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free %28Icons: CC BY 4.0%2C Fonts: SIL OFL 1.1%2C Code: MIT License%29 Copyright 2025 Fonticons%2C Inc.--%3E%3Cpath d=%22m263.4-27 14.8 36.8L315 24.6c3 1.2 5 4.2 5 7.4s-2 6.2-5 7.4l-36.8 14.8L263.4 91c-1.2 3-4.2 5-7.4 5s-6.2-2-7.4-5l-14.8-36.8L197 39.4c-3-1.2-5-4.2-5-7.4s2-6.2 5-7.4l36.8-14.8L248.6-27c1.2-3 4.2-5 7.4-5s6.2 2 7.4 5M110.7 41.7l21.5 50.1 50.1 21.5c5.9 2.5 9.7 8.3 9.7 14.7s-3.8 12.2-9.7 14.7l-50.1 21.5-21.5 50.1c-2.5 5.9-8.3 9.7-14.7 9.7s-12.2-3.8-14.7-9.7l-21.5-50.1-50.1-21.5C3.8 140.2 0 134.4 0 128s3.8-12.2 9.7-14.7l50.1-21.5 21.5-50.1C83.8 35.8 89.6 32 96 32s12.2 3.8 14.7 9.7M464 304c6.4 0 12.2 3.8 14.7 9.7l21.5 50.1 50.1 21.5c5.9 2.5 9.7 8.3 9.7 14.7s-3.8 12.2-9.7 14.7l-50.1 21.5-21.5 50.1c-2.5 5.9-8.3 9.7-14.7 9.7s-12.2-3.8-14.7-9.7l-21.5-50.1-50.1-21.5c-5.9-2.5-9.7-8.3-9.7-14.7s3.8-12.2 9.7-14.7l50.1-21.5 21.5-50.1c2.5-5.9 8.3-9.7 14.7-9.7M460 0c11 0 21.6 4.4 29.5 12.2l42.3 42.3C539.6 62.4 544 73 544 84s-4.4 21.6-12.2 29.5l-88.2 88.2-101.3-101.3 88.2-88.2C438.4 4.4 449 0 460 0M44.2 398.5l264.2-264.2 101.3 101.3-264.2 264.2C137.6 507.6 127 512 116 512s-21.6-4.4-29.5-12.2l-42.3-42.3C36.4 449.6 32 439 32 428s4.4-21.6 12.2-29.5%22/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 576 512%22%3E%3C%21--%21 Font Awesome Free 7.1.0 by %40fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free %28Icons: CC BY 4.0%2C Fonts: SIL OFL 1.1%2C Code: MIT License%29 Copyright 2025 Fonticons%2C Inc.--%3E%3Cpath d=%22m263.4-27 14.8 36.8L315 24.6c3 1.2 5 4.2 5 7.4s-2 6.2-5 7.4l-36.8 14.8L263.4 91c-1.2 3-4.2 5-7.4 5s-6.2-2-7.4-5l-14.8-36.8L197 39.4c-3-1.2-5-4.2-5-7.4s2-6.2 5-7.4l36.8-14.8L248.6-27c1.2-3 4.2-5 7.4-5s6.2 2 7.4 5M110.7 41.7l21.5 50.1 50.1 21.5c5.9 2.5 9.7 8.3 9.7 14.7s-3.8 12.2-9.7 14.7l-50.1 21.5-21.5 50.1c-2.5 5.9-8.3 9.7-14.7 9.7s-12.2-3.8-14.7-9.7l-21.5-50.1-50.1-21.5C3.8 140.2 0 134.4 0 128s3.8-12.2 9.7-14.7l50.1-21.5 21.5-50.1C83.8 35.8 89.6 32 96 32s12.2 3.8 14.7 9.7M464 304c6.4 0 12.2 3.8 14.7 9.7l21.5 50.1 50.1 21.5c5.9 2.5 9.7 8.3 9.7 14.7s-3.8 12.2-9.7 14.7l-50.1 21.5-21.5 50.1c-2.5 5.9-8.3 9.7-14.7 9.7s-12.2-3.8-14.7-9.7l-21.5-50.1-50.1-21.5c-5.9-2.5-9.7-8.3-9.7-14.7s3.8-12.2 9.7-14.7l50.1-21.5 21.5-50.1c2.5-5.9 8.3-9.7 14.7-9.7M460 0c11 0 21.6 4.4 29.5 12.2l42.3 42.3C539.6 62.4 544 73 544 84s-4.4 21.6-12.2 29.5l-88.2 88.2-101.3-101.3 88.2-88.2C438.4 4.4 449 0 460 0M44.2 398.5l264.2-264.2 101.3 101.3-264.2 264.2C137.6 507.6 127 512 116 512s-21.6-4.4-29.5-12.2l-42.3-42.3C36.4 449.6 32 439 32 428s4.4-21.6 12.2-29.5%22/%3E%3C/svg%3E")}
+.fa-whatsapp{-webkit-mask-image:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 448 512%22%3E%3C%21--%21 Font Awesome Free 7.1.0 by %40fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free %28Icons: CC BY 4.0%2C Fonts: SIL OFL 1.1%2C Code: MIT License%29 Copyright 2025 Fonticons%2C Inc.--%3E%3Cpath d=%22M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157m-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1s56.2 81.2 56.1 130.5c0 101.8-84.9 184.6-186.6 184.6m101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8s-14.3 18-17.6 21.8c-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7s-12.5-30.1-17.1-41.2c-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2s-9.7 1.4-14.8 6.9c-5.1 5.6-19.4 19-19.4 46.3s19.9 53.7 22.6 57.4c2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4s4.6-24.1 3.2-26.4c-1.3-2.5-5-3.9-10.5-6.6%22/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 448 512%22%3E%3C%21--%21 Font Awesome Free 7.1.0 by %40fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free %28Icons: CC BY 4.0%2C Fonts: SIL OFL 1.1%2C Code: MIT License%29 Copyright 2025 Fonticons%2C Inc.--%3E%3Cpath d=%22M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157m-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1s56.2 81.2 56.1 130.5c0 101.8-84.9 184.6-186.6 184.6m101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8s-14.3 18-17.6 21.8c-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7s-12.5-30.1-17.1-41.2c-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2s-9.7 1.4-14.8 6.9c-5.1 5.6-19.4 19-19.4 46.3s19.9 53.7 22.6 57.4c2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4s4.6-24.1 3.2-26.4c-1.3-2.5-5-3.9-10.5-6.6%22/%3E%3C/svg%3E")}
+</style>
+    <!-- Chart.js for Financial & Profit Analytics -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+    <!-- Google Font: Cairo -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Cairo', sans-serif;
+            background-color: #0f172a;
+            position: relative;
+            overflow-x: hidden;
+        }
+        /* Subtle moving dynamic background effect matching exact color palette */
+        .dynamic-bg-glow {
+            position: fixed;
+            width: 500px;
+            height: 500px;
+            background: radial-gradient(circle, rgba(2, 132, 199, 0.08) 0%, rgba(13, 148, 136, 0.04) 50%, transparent 70%);
+            top: -100px;
+            right: -100px;
+            z-index: -1;
+            border-radius: 50%;
+            animation: floatGlow 12s ease-in-out infinite alternate;
+        }
+        .dynamic-bg-glow-2 {
+            position: fixed;
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, rgba(13, 148, 136, 0.06) 0%, rgba(99, 102, 241, 0.03) 50%, transparent 70%);
+            bottom: -150px;
+            left: -150px;
+            z-index: -1;
+            border-radius: 50%;
+            animation: floatGlow2 15s ease-in-out infinite alternate;
+        }
+        @keyframes floatGlow {
+            0% { transform: translate(0, 0) scale(1); }
+            100% { transform: translate(-80px, 100px) scale(1.15); }
+        }
+        @keyframes floatGlow2 {
+            0% { transform: translate(0, 0) scale(1); }
+            100% { transform: translate(100px, -80px) scale(1.2); }
+        }
+        .tab-active {
+            border-bottom: 3px solid #0284c7;
+            color: #0284c7;
+            font-weight: 800;
+        }
+        @media print {
+            .no-print { display: none !important; }
+            body { background: white !important; color: black !important; }
+            .print-area { width: 100% !important; margin: 0 !important; padding: 0 !important; }
+        }
+    </style>
+</head>
+<body class="text-slate-100 min-h-screen flex flex-col justify-between selection:bg-sky-500 selection:text-white">
+
+    <!-- Dynamic Moving Background Elements -->
+    <div class="dynamic-bg-glow"></div>
+    <div class="dynamic-bg-glow-2"></div>
+
+    <!-- ================= AUTHENTICATION / LOGIN SCREEN ================= -->
+    <div id="authOverlay" class="fixed inset-0 bg-slate-950/95 backdrop-blur-xl z-50 flex items-center justify-center p-4">
+        <div class="max-w-md w-full bg-slate-900 border border-slate-800 rounded-3xl p-8 shadow-2xl space-y-6 text-right relative overflow-hidden">
+            <div class="absolute -top-12 -right-12 w-36 h-36 bg-sky-500/10 rounded-full blur-2xl"></div>
+            <div class="absolute -bottom-12 -left-12 w-36 h-36 bg-teal-500/10 rounded-full blur-2xl"></div>
+
+            <div class="text-center space-y-2 relative z-10">
+                <div class="w-16 h-16 bg-gradient-to-tr from-sky-500 to-teal-400 rounded-2xl mx-auto flex items-center justify-center shadow-lg shadow-sky-500/20 mb-3">
+                    <i class="fa-solid fa-user-doctor text-slate-950 text-2xl"></i>
+                </div>
+                <h2 class="text-2xl font-black text-white">تسجيل الدخول للنظام</h2>
+                <p class="text-slate-400 text-xs">أدخل بيانات الحساب للوصول إلى إدارة العيادات</p>
+            </div>
+
+            <form onsubmit="handleLoginSubmit(event)" class="space-y-4 relative z-10">
+                <!-- Account Role Selection -->
+                <div class="space-y-1">
+                    <label class="block text-xs font-bold text-slate-300">نوع الحساب / الفرع</label>
+                    <div class="relative">
+                        <i class="fa-solid fa-clinic-medical absolute right-3.5 top-3.5 text-slate-500 text-sm"></i>
+                        <select id="loginAccountRole" onchange="toggleUserIdInput()" class="w-full pr-10 pl-4 py-3 bg-slate-800/90 border border-slate-700 rounded-xl text-slate-100 text-sm font-semibold focus:outline-none focus:border-sky-500 transition">
+                            <option value="owner">حساب أ.د. ياسر الشهاوي (Owner)</option>
+                            <option value="portsaid">فرع بورسعيد (Port Said Clinic)</option>
+                            <option value="damietta">فرع دمياط (Damietta Clinic)</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- User ID Field (For Dr. Yasser Account) -->
+                <div id="userIdContainer" class="space-y-1">
+                    <label class="block text-xs font-bold text-slate-300">معرف المستخدم (User ID)</label>
+                    <div class="relative">
+                        <i class="fa-solid fa-id-card absolute right-3.5 top-3.5 text-slate-500 text-sm"></i>
+                        <input type="text" id="loginUserId" value="Yasser71" placeholder="أدخل معرف الحساب" class="w-full pr-10 pl-4 py-3 bg-slate-800/90 border border-slate-700 rounded-xl text-slate-100 text-sm focus:outline-none focus:border-sky-500 transition">
+                    </div>
+                </div>
+
+                <!-- Password Field -->
+                <div class="space-y-1">
+                    <label class="block text-xs font-bold text-slate-300">كلمة المرور (Password)</label>
+                    <div class="relative">
+                        <i class="fa-solid fa-lock absolute right-3.5 top-3.5 text-slate-500 text-sm"></i>
+                        <input type="password" id="loginPassword" required placeholder="••••••••" class="w-full pr-10 pl-4 py-3 bg-slate-800/90 border border-slate-700 rounded-xl text-slate-100 text-sm focus:outline-none focus:border-sky-500 transition">
+                    </div>
+                </div>
+
+                <div id="authErrorMessage" class="hidden text-rose-400 text-xs font-semibold text-center bg-rose-500/10 border border-rose-500/20 py-2 rounded-lg">
+                    <i class="fa-solid fa-triangle-exclamation me-1"></i> كلمة المرور أو كلمة السر غير صحيحة!
+                </div>
+
+                <button type="submit" class="w-full py-3.5 bg-gradient-to-r from-sky-500 to-teal-400 hover:from-sky-400 hover:to-teal-300 text-slate-950 font-extrabold rounded-xl shadow-lg shadow-sky-500/20 transition active:scale-[0.98] flex items-center justify-center gap-2 text-base">
+                    <span>تسجيل الدخول</span>
+                    <i class="fa-solid fa-arrow-left text-sm"></i>
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- ================= MAIN CLINIC PORTAL APPLICATION ================= -->
+    <div id="mainApplicationView" class="hidden min-h-screen flex flex-col justify-between">
+
+        <!-- HEADER / NAVBAR -->
+        <header class="bg-slate-900/90 backdrop-blur-md text-white border-b border-slate-800 sticky top-0 z-40 shadow-xl">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex flex-col sm:flex-row items-center justify-between gap-4">
+                <div class="flex items-center gap-3">
+                    <div class="w-12 h-12 bg-gradient-to-tr from-sky-500 to-teal-400 rounded-2xl flex items-center justify-center text-slate-950 font-black text-2xl shadow-lg shadow-sky-500/20">
+                        <i class="fa-solid fa-stethoscope"></i>
+                    </div>
+                    <div>
+                        <h1 id="headerTitleText" class="text-xl font-black text-slate-100">عيادات أ.د. ياسر الشهاوي</h1>
+                        <p id="headerSubText" class="text-xs text-sky-400 font-bold">استشاري النساء والتوليد والحقن المجهري</p>
+                    </div>
+                </div>
+
+                <div class="flex flex-wrap items-center gap-3 text-xs font-semibold">
+                    <!-- Manual & Auto Save Button -->
+                    <button onclick="manualSaveData()" class="bg-emerald-600 hover:bg-emerald-500 text-slate-950 font-black px-3.5 py-2 rounded-xl shadow-lg transition flex items-center gap-1.5">
+                        <i class="fa-solid fa-floppy-disk"></i> حفظ البيانات الآن (Save)
+                    </button>
+
+                    <!-- Active User Badge -->
+                    <div class="bg-slate-800 text-sky-300 px-3 py-1.5 rounded-xl border border-slate-700 flex items-center gap-1.5">
+                        <i class="fa-solid fa-user-circle"></i>
+                        <span id="activeAccountNameDisplay">أ.د. ياسر الشهاوي</span>
+                    </div>
+
+                    <!-- Owner Settings Button -->
+                    <button id="ownerSettingsBtn" onclick="openOwnerSettingsModal()" class="hidden bg-sky-600/20 hover:bg-sky-600/30 text-sky-300 border border-sky-500/30 px-3 py-1.5 rounded-xl transition flex items-center gap-1">
+                        <i class="fa-solid fa-gear"></i> الإعدادات الشاملة
+                    </button>
+
+                    <!-- LOGOUT BUTTON -->
+                    <button onclick="handleLogout()" class="bg-rose-500/20 hover:bg-rose-500/30 text-rose-300 border border-rose-500/30 px-3 py-1.5 rounded-xl transition flex items-center gap-1">
+                        <i class="fa-solid fa-right-from-bracket"></i> تسجيل خروج
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <!-- MAIN CONTAINER -->
+        <main class="flex-grow max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-8">
+
+            <!-- AI INSTANT SEARCH BAR FOR EXISTING PATIENTS -->
+            <section class="bg-slate-900 border border-slate-800 rounded-3xl p-5 shadow-2xl space-y-3 relative">
+                <div class="flex items-center justify-between">
+                    <label class="text-sm font-black text-sky-400 flex items-center gap-2">
+                        <i class="fa-solid fa-wand-magic-sparkles"></i> البحث الذكي والسريع عن المريض (AI Patient Lookup)
+                    </label>
+                    <span class="text-[11px] text-slate-400">ابحث بالاسم أو رقم الهاتف لاسترجاع البيانات تلقائياً</span>
+                </div>
+                <div class="relative">
+                    <i class="fa-solid fa-search absolute right-4 top-3.5 text-slate-400 text-base"></i>
+                    <input type="text" id="aiSearchInput" oninput="handleAiSearchInput(event)" placeholder="ابدأ بكتابة اسم المريض أو رقم الهاتف لاستعادة السجل بالكامل..." class="w-full pr-11 pl-4 py-3 bg-slate-950 border border-slate-800 rounded-2xl text-slate-100 text-sm focus:outline-none focus:border-sky-500 transition">
+                </div>
+                <!-- Dropdown Results -->
+                <div id="aiSearchResultsContainer" class="hidden absolute left-5 right-5 top-full mt-2 bg-slate-900 border border-slate-700 rounded-2xl shadow-2xl z-30 max-h-60 overflow-y-auto divide-y divide-slate-800"></div>
+            </section>
+
+            <!-- BRANCHES & SCHEDULE OVERVIEW -->
+            <section class="grid md:grid-cols-3 gap-6">
+                <div class="bg-slate-900 border border-slate-800 rounded-2xl p-5 space-y-3 shadow-xl">
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center gap-2 text-sky-400 font-bold text-base">
+                            <i class="fa-solid fa-hospital-user"></i> فرع بورسعيد
+                        </div>
+                        <span class="text-[10px] bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 px-2 py-0.5 rounded-full font-bold">متاح</span>
+                    </div>
+                    <div class="text-xs text-slate-400 space-y-1">
+                        <p class="flex justify-between"><span>السبت - الأحد - الاثنين:</span> <strong class="text-slate-200">8:00 م - 1:00 ص</strong></p>
+                        <p class="flex justify-between"><span>الثلاثاء - الأربعاء:</span> <strong class="text-slate-200">6:00 م - 9:00 م</strong></p>
+                        <p class="text-rose-400 text-[11px] pt-1">الخميس والجمعة: إجازة أسبوعية</p>
+                    </div>
+                </div>
+
+                <div class="bg-slate-900 border border-slate-800 rounded-2xl p-5 space-y-3 shadow-xl">
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center gap-2 text-teal-400 font-bold text-base">
+                            <i class="fa-solid fa-clinic-medical"></i> فرع دمياط
+                        </div>
+                        <span class="text-[10px] bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 px-2 py-0.5 rounded-full font-bold">متاح</span>
+                    </div>
+                    <div class="text-xs text-slate-400 space-y-1">
+                        <p class="flex justify-between"><span>السبت - الأحد - الاثنين:</span> <strong class="text-slate-200">5:00 م - 8:00 م</strong></p>
+                        <p class="flex justify-between"><span>الثلاثاء - الأربعاء:</span> <strong class="text-slate-200">9:00 م - 1:00 ص</strong></p>
+                        <p class="text-rose-400 text-[11px] pt-1">الخميس والجمعة: إجازة أسبوعية</p>
+                    </div>
+                </div>
+
+                <div class="bg-slate-900 border border-slate-800 rounded-2xl p-5 space-y-3 shadow-xl">
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center gap-2 text-indigo-400 font-bold text-base">
+                            <i class="fa-solid fa-hospital"></i> فرع القاهرة
+                        </div>
+                        <span class="text-[10px] bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 px-2 py-0.5 rounded-full font-bold">متاح</span>
+                    </div>
+                    <div class="text-xs text-slate-400 space-y-1">
+                        <p class="flex justify-between"><span>الخميس والجمعة:</span> <strong class="text-slate-200">9:00 م - 12:00 ص</strong></p>
+                        <p class="text-rose-400 text-[11px] pt-1">باقي أيام الأسبوع: إجازة</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- MAIN WORKSPACE TABS & NAVIGATION -->
+            <section class="bg-slate-900 border border-slate-800 rounded-3xl p-6 shadow-2xl space-y-6">
+                <div class="flex flex-wrap border-b border-slate-800 pb-4 gap-4 text-sm font-extrabold">
+                    <button id="tabBtnRegistration" onclick="switchTab('registration')" class="tab-active transition pb-2 flex items-center gap-2">
+                        <i class="fa-solid fa-user-plus"></i> تسجيل كشف وموعد
+                    </button>
+                    <button id="tabBtnRecords" onclick="switchTab('records')" class="text-slate-400 hover:text-sky-400 transition pb-2 flex items-center gap-2">
+                        <i class="fa-solid fa-address-book"></i> سجل المرضى والحجوزات
+                    </button>
+                    <button id="tabBtnActivity" onclick="switchTab('activity')" class="text-slate-400 hover:text-teal-400 transition pb-2 flex items-center gap-2">
+                        <i class="fa-solid fa-clock-rotate-left"></i> سجل النشاط والعمليات
+                    </button>
+                    <button id="tabBtnTrash" onclick="switchTab('trash')" class="text-slate-400 hover:text-amber-400 transition pb-2 flex items-center gap-2">
+                        <i class="fa-solid fa-trash-arrow-up"></i> سلة المحذوفات (<span id="trashCountBadge">0</span>)
+                    </button>
+                    <!-- 4TH SLOT: FINANCIAL ANALYTICS & DAILY PROFITS (DR. YASSER ACCOUNT ONLY) -->
+                    <button id="tabBtnFinance" onclick="switchTab('finance')" class="hidden text-slate-400 hover:text-emerald-400 transition pb-2 flex items-center gap-2">
+                        <i class="fa-solid fa-vault"></i> الحسابات والأرباح اليومية <span class="bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 text-[10px] px-2 py-0.5 rounded-full"><i class="fa-solid fa-crown me-0.5"></i> خاص بالمالِك</span>
+                    </button>
+                    <!-- SLOT 5: MANUAL ENHANCED EDITING DASHBOARD (DR. YASSER ACCOUNT ONLY) -->
+                    <button id="tabBtnManualEdit" onclick="checkManualEditAccess()" class="hidden text-slate-400 hover:text-sky-400 transition pb-2 flex items-center gap-2">
+                        <i class="fa-solid fa-sliders"></i> دليل التعديل اليدوي الشامل وتعديل الأسعار <span class="bg-sky-500/20 text-sky-300 border border-sky-500/30 text-[10px] px-2 py-0.5 rounded-full">تحكم الأسعار</span>
+                    </button>
+                    <!-- SLOT 6: ONLINE PATIENT RESERVATIONS (DR. YASSER ACCOUNT ONLY) -->
+                    <button id="tabBtnOnlineReservations" onclick="switchTab('onlineReservations')" class="hidden text-slate-400 hover:text-cyan-400 transition pb-2 flex items-center gap-2">
+                        <i class="fa-solid fa-globe"></i> حجز المرضى عبر الإنترنت <span class="bg-cyan-500/20 text-cyan-300 border border-cyan-500/30 text-[10px] px-2 py-0.5 rounded-full">الربط السحابي</span>
+                    </button>
+                </div>
+
+                <!-- SLOT 1: REGISTRATION & APPOINTMENT FORM -->
+                <div id="tabContentRegistration" class="space-y-6">
+                    <form onsubmit="handleRegistrationSubmit(event)" class="space-y-6">
+                        <div class="grid md:grid-cols-2 gap-6 text-sm">
+                            <div class="space-y-1.5">
+                                <label class="block font-bold text-slate-300">اسم المريض بالكامل <span class="text-rose-400">*</span></label>
+                                <input type="text" id="regPatientName" required placeholder="أدخل اسم المريض رباعي" class="w-full p-3 bg-slate-950 border border-slate-800 rounded-xl text-slate-100 focus:outline-none focus:border-sky-500">
+                            </div>
+
+                            <div class="space-y-1.5">
+                                <label class="block font-bold text-slate-300">رقم الهاتف <span class="text-rose-400">*</span></label>
+                                <input type="tel" id="regPatientPhone" required placeholder="01xxxxxxxxx" pattern="[0-9]{11}" class="w-full p-3 bg-slate-950 border border-slate-800 rounded-xl text-slate-100 focus:outline-none focus:border-sky-500">
+                            </div>
+
+                            <div class="space-y-1.5">
+                                <label class="block font-bold text-slate-300">اختر فرع العيادة <span class="text-rose-400">*</span></label>
+                                <select id="regBranchSelect" onchange="handleBranchChange()" required class="w-full p-3 bg-slate-950 border border-slate-800 rounded-xl text-slate-100 focus:outline-none focus:border-sky-500 font-semibold">
+                                    <option value="بورسعيد">فرع بورسعيد</option>
+                                    <option value="دمياط">فرع دمياط</option>
+                                    <option value="القاهرة">فرع القاهرة</option>
+                                </select>
+                            </div>
+
+                            <div class="space-y-1.5">
+                                <label class="block font-bold text-slate-300">تاريخ الموعد <span class="text-rose-400">*</span></label>
+                                <input type="date" id="regBookingDate" required onchange="updateBookingTimeSlots()" class="w-full p-3 bg-slate-950 border border-slate-800 rounded-xl text-slate-100 focus:outline-none focus:border-sky-500">
+                            </div>
+
+                            <div class="space-y-1.5">
+                                <label class="block font-bold text-slate-300">التوقيت المتاح (كل 15 دقيقة) <span class="text-rose-400">*</span></label>
+                                <select id="regBookingTime" required class="w-full p-3 bg-slate-950 border border-slate-800 rounded-xl text-slate-100 focus:outline-none focus:border-sky-500 font-semibold">
+                                </select>
+                            </div>
+
+                            <div class="space-y-1.5">
+                                <label class="block font-bold text-slate-300">العمر / الملاحظات الطبية</label>
+                                <input type="text" id="regPatientNotes" placeholder="العمر، التاريخ المرضي أو الملاحظات..." class="w-full p-3 bg-slate-950 border border-slate-800 rounded-xl text-slate-100 focus:outline-none focus:border-sky-500">
+                            </div>
+                        </div>
+
+                        <!-- SERVICES MULTI-CHOICE SELECTION WITH EXACT CLINIC PRICING -->
+                        <div class="space-y-3 bg-slate-950 p-5 rounded-2xl border border-slate-800">
+                            <label class="block font-black text-sky-400 text-sm">حدد الخدمات / الكشوفات المطلوبة (يمكن اختيار أكثر من خدمة):</label>
+                            <div id="servicesContainerList" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-3 text-xs">
+                            </div>
+
+                            <div class="flex justify-between items-center pt-3 border-t border-slate-800 text-sm font-bold">
+                                <span>إجمالي قيمة الخدمات الكلية:</span>
+                                <span id="calculatedTotalAmount" class="text-emerald-400 text-lg font-black">0 ج.م</span>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="w-full py-4 bg-gradient-to-r from-sky-500 to-teal-400 hover:from-sky-400 hover:to-teal-300 text-slate-950 font-black rounded-xl shadow-lg shadow-sky-500/20 transition text-base">
+                            <i class="fa-solid fa-circle-check me-1"></i> حفظ وتأكيد الحجز وإصدار الإيصال
+                        </button>
+                    </form>
+                </div>
+
+                <!-- SLOT 2: PATIENTS RECORDS & WHATSAPP RECEIPT DISPATCH -->
+                <div id="tabContentRecords" class="hidden space-y-6">
+                    <div class="flex flex-col sm:flex-row justify-between items-center gap-4 bg-slate-950 p-4 rounded-2xl border border-slate-800">
+                        <input type="text" id="recordsSearchFilter" oninput="renderPatientsTable()" placeholder="تصفية السجل باسم المريض أو الهاتف..." class="w-full sm:w-80 p-2.5 bg-slate-900 border border-slate-700 rounded-xl text-xs text-slate-100 outline-none">
+                        
+                        <div class="flex items-center gap-2">
+                            <button onclick="exportTableToExcel()" class="bg-emerald-600/20 text-emerald-300 border border-emerald-500/30 hover:bg-emerald-600/30 text-xs px-3 py-2 rounded-xl transition font-bold flex items-center gap-1">
+                                <i class="fa-solid fa-file-excel"></i> تصدير Excel
+                            </button>
+                            <button onclick="exportTableToPDF()" class="bg-purple-600/20 text-purple-300 border border-purple-500/30 hover:bg-purple-600/30 text-xs px-3 py-2 rounded-xl transition font-bold flex items-center gap-1">
+                                <i class="fa-solid fa-file-pdf"></i> تصدير PDF
+                            </button>
+                            <button onclick="window.print()" class="bg-sky-600/20 text-sky-300 border border-sky-500/30 hover:bg-sky-600/30 text-xs px-3 py-2 rounded-xl transition font-bold flex items-center gap-1">
+                                <i class="fa-solid fa-print"></i> طباعة السجل
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="overflow-x-auto rounded-2xl border border-slate-800">
+                        <table class="w-full text-right text-xs">
+                            <thead class="bg-slate-950 text-slate-400 font-bold border-b border-slate-800">
+                                <tr>
+                                    <th class="p-3.5">كود المريض</th>
+                                    <th class="p-3.5">اسم المريض</th>
+                                    <th class="p-3.5">الهاتف</th>
+                                    <th class="p-3.5">الفرع</th>
+                                    <th class="p-3.5">تاريخ ووقت الموعد</th>
+                                    <th class="p-3.5">الخدمات الكلية</th>
+                                    <th class="p-3.5">المبلغ</th>
+                                    <th class="p-3.5 text-center no-print">إجراءات وإيصال WhatsApp</th>
+                                </tr>
+                            </thead>
+                            <tbody id="patientsTableBody" class="divide-y divide-slate-800/60 font-semibold">
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- ACTIVITY LOG SLOT -->
+                <div id="tabContentActivity" class="hidden space-y-6">
+                    <div class="bg-slate-950 p-4 rounded-2xl border border-slate-800 flex items-center justify-between">
+                        <h3 class="text-sm font-extrabold text-teal-400"><i class="fa-solid fa-clock-rotate-left me-1"></i> سجل الأنشطة والعمليات للحساب الحالي</h3>
+                        <button onclick="clearActivityLog()" class="bg-rose-600/20 text-rose-300 text-xs px-3 py-1.5 rounded-lg border border-rose-500/30">مسح السجل</button>
+                    </div>
+                    <div class="overflow-x-auto rounded-2xl border border-slate-800">
+                        <table class="w-full text-right text-xs">
+                            <thead class="bg-slate-950 text-slate-400 font-bold border-b border-slate-800">
+                                <tr>
+                                    <th class="p-3.5">وقت العملية</th>
+                                    <th class="p-3.5">الحساب المستخدم</th>
+                                    <th class="p-3.5">تفاصيل النشاط</th>
+                                    <th class="p-3.5">الجهاز / النظام / المتصفح</th>
+                                    <th class="p-3.5">الحالة</th>
+                                </tr>
+                            </thead>
+                            <tbody id="activityTableBody" class="divide-y divide-slate-800/60 font-semibold">
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- SLOT 3: RECYCLE BIN / TRASH -->
+                <div id="tabContentTrash" class="hidden space-y-6">
+                    <div class="flex justify-between items-center bg-amber-500/10 border border-amber-500/20 p-4 rounded-2xl text-amber-300 text-xs font-bold">
+                        <span><i class="fa-solid fa-circle-info me-1"></i> سلة المحذوفات لاسترجاع المواعيد والسجلات التي تم حذفها بالخطأ</span>
+                        <button onclick="emptyTrashPermanently()" class="bg-rose-600 text-white px-3 py-1.5 rounded-lg text-xs font-bold">تفريغ السلة نهائياً</button>
+                    </div>
+
+                    <div class="overflow-x-auto rounded-2xl border border-slate-800">
+                        <table class="w-full text-right text-xs">
+                            <thead class="bg-slate-950 text-slate-400 font-bold border-b border-slate-800">
+                                <tr>
+                                    <th class="p-3.5">اسم المريض</th>
+                                    <th class="p-3.5">الهاتف</th>
+                                    <th class="p-3.5">الفرع</th>
+                                    <th class="p-3.5">الموعد</th>
+                                    <th class="p-3.5 text-center">إعادة استعادة</th>
+                                </tr>
+                            </thead>
+                            <tbody id="trashTableBody" class="divide-y divide-slate-800/60">
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- SLOT 4: FINANCIAL ANALYTICS & CUSTOM PERIOD PROFITS -->
+                <div id="tabContentFinance" class="hidden space-y-6">
+                    <div class="bg-slate-950 border border-slate-800 p-5 rounded-2xl flex flex-col lg:flex-row items-center justify-between gap-4">
+                        <div>
+                            <h3 class="font-extrabold text-white text-base flex items-center gap-2">
+                                <i class="fa-solid fa-calendar-days text-emerald-400"></i> تحديد فترة الأرباح والتقارير
+                            </h3>
+                            <p class="text-xs text-slate-400">اختر نطاق التاريخ (من - إلى) لعرض الإيرادات والأرباح بدقة</p>
+                        </div>
+                        <div class="flex flex-wrap items-center gap-3">
+                            <div class="flex items-center gap-1.5 text-xs">
+                                <span class="text-slate-400">من:</span>
+                                <input type="date" id="profitStartDate" onchange="calculateDailyProfits()" class="bg-slate-900 border border-slate-700 text-slate-100 text-xs p-2 rounded-xl font-bold">
+                            </div>
+                            <div class="flex items-center gap-1.5 text-xs">
+                                <span class="text-slate-400">إلى:</span>
+                                <input type="date" id="profitEndDate" onchange="calculateDailyProfits()" class="bg-slate-900 border border-slate-700 text-slate-100 text-xs p-2 rounded-xl font-bold">
+                            </div>
+                            <button onclick="setTodayProfitDate()" class="bg-emerald-600 hover:bg-emerald-500 text-slate-950 font-black text-xs px-3.5 py-2 rounded-xl transition">اليوم الحالي</button>
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                        <div class="bg-slate-950 p-5 rounded-2xl border border-slate-800 space-y-1">
+                            <span class="text-xs font-bold text-slate-400">أرباح الفترة المحددة</span>
+                            <div id="selectedDayProfitDisplay" class="text-2xl font-black text-emerald-400">0 ج.م</div>
+                            <span id="selectedDayPatientCount" class="text-[10px] text-slate-500">0 كشف / زيارة</span>
+                        </div>
+                        <div class="bg-slate-950 p-5 rounded-2xl border border-slate-800 space-y-1">
+                            <span class="text-xs font-bold text-slate-400">أرباح بورسعيد</span>
+                            <div id="portsaidProfitDisplay" class="text-2xl font-black text-sky-400">0 ج.م</div>
+                        </div>
+                        <div class="bg-slate-950 p-5 rounded-2xl border border-slate-800 space-y-1">
+                            <span class="text-xs font-bold text-slate-400">أرباح دمياط</span>
+                            <div id="damiettaProfitDisplay" class="text-2xl font-black text-teal-400">0 ج.م</div>
+                        </div>
+                        <div class="bg-slate-950 p-5 rounded-2xl border border-slate-800 space-y-1">
+                            <span class="text-xs font-bold text-slate-400">أرباح القاهرة</span>
+                            <div id="cairoProfitDisplay" class="text-2xl font-black text-indigo-400">0 ج.م</div>
+                        </div>
+                    </div>
+
+                    <div class="bg-slate-950 p-6 rounded-2xl border border-slate-800 space-y-4">
+                        <h4 class="font-bold text-slate-200 text-sm flex items-center gap-2">
+                            <i class="fa-solid fa-chart-column text-emerald-400"></i> منحنى الأرباح والإيرادات الشامل حسب الفترة
+                        </h4>
+                        <div class="h-64 relative">
+                            <canvas id="profitChartCanvas"></canvas>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SLOT 5: MANUAL ENHANCED EDITING & PRICE CUSTOMIZATION (DR. YASSER ACCOUNT ONLY) -->
+                <div id="tabContentManualEdit" class="hidden space-y-6">
+                    <div class="bg-slate-950 border border-slate-800 p-6 rounded-3xl space-y-6">
+                        <div class="flex items-center justify-between border-b border-slate-800 pb-4">
+                            <div>
+                                <h3 class="font-black text-white text-base flex items-center gap-2">
+                                    <i class="fa-solid fa-tags text-sky-400"></i> دليل التعديل اليدوي وتعديل أسعار الكشوفات والخدمات
+                                </h3>
+                                <p class="text-xs text-slate-400">تعديل أسعار الفروع والخدمات الطبية مباشرة وتحديثها في نظام الحجز فوراً</p>
+                            </div>
+                            <span class="bg-sky-500/20 text-sky-300 text-xs px-3 py-1 rounded-full font-bold">صلاحيات المالك</span>
+                        </div>
+
+                        <!-- PRICE EDITOR SECTION -->
+                        <div class="space-y-4">
+                            <h4 class="font-bold text-sky-400 text-sm"><i class="fa-solid fa-file-invoice-dollar me-1"></i> أسعار خدمات فرع بورسعيد</h4>
+                            <div id="priceEditorPortSaid" class="grid sm:grid-cols-2 gap-3 text-xs">
+                            </div>
+
+                            <h4 class="font-bold text-teal-400 text-sm pt-4"><i class="fa-solid fa-file-invoice-dollar me-1"></i> أسعار خدمات فرع دمياط</h4>
+                            <div id="priceEditorDamietta" class="grid sm:grid-cols-2 gap-3 text-xs">
+                            </div>
+
+                            <h4 class="font-bold text-indigo-400 text-sm pt-4"><i class="fa-solid fa-file-invoice-dollar me-1"></i> أسعار خدمات فرع القاهرة</h4>
+                            <div id="priceEditorCairo" class="grid sm:grid-cols-2 gap-3 text-xs">
+                            </div>
+                        </div>
+
+                        <button onclick="saveCustomPrices()" class="w-full py-4 bg-gradient-to-r from-sky-500 to-teal-400 hover:from-sky-400 hover:to-teal-300 text-slate-950 font-black rounded-xl shadow-lg transition text-sm">
+                            <i class="fa-solid fa-floppy-disk me-1"></i> حفظ وتحديث الأسعار في العيادات فوراً
+                        </button>
+                    </div>
+                </div>
+
+                <!-- SLOT 6: ONLINE PATIENT RESERVATIONS & MANAGEMENT -->
+                <div id="tabContentOnlineReservations" class="hidden space-y-6">
+                    <div class="bg-slate-950 border border-slate-800 p-6 rounded-3xl space-y-6">
+                        <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 border-b border-slate-800 pb-4">
+                            <div>
+                                <h3 class="font-black text-white text-base flex items-center gap-2">
+                                    <i class="fa-solid fa-globe text-cyan-400"></i> إدارة الحجوزات الإلكترونية (Online Reservations)
+                                </h3>
+                                <p class="text-xs text-slate-400">متابعة الحجوزات القادمة من موقع الحجز الخارجي وإدارة الإيرادات المتوقعة والفعلية</p>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <span id="onlineBookingStatusBadge" class="bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 text-xs px-3 py-1 rounded-full font-bold">
+                                    <i class="fa-solid fa-signal me-1"></i> بوابة الحجز نشطة
+                                </span>
+                                <button onclick="openOnlineIntegrationConfig()" class="bg-cyan-600/20 text-cyan-300 border border-cyan-500/30 hover:bg-cyan-600/30 text-xs px-3 py-1.5 rounded-xl transition font-bold flex items-center gap-1">
+                                    <i class="fa-solid fa-link"></i> إعدادات موقع الحجز
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- ONLINE REVENUE STATS SUMMARY -->
+                        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                            <div class="bg-slate-900 p-4 rounded-2xl border border-slate-800 space-y-1">
+                                <span class="text-xs font-bold text-slate-400">إجمالي الحجوزات الإلكترونية</span>
+                                <div id="onlineTotalCount" class="text-2xl font-black text-cyan-400">0</div>
+                                <span class="text-[10px] text-slate-500">حجز إلكتروني مسجل</span>
+                            </div>
+                            <div class="bg-slate-900 p-4 rounded-2xl border border-slate-800 space-y-1">
+                                <span class="text-xs font-bold text-amber-400">الإيرادات المتوقعة (Expected Revenue)</span>
+                                <div id="onlineExpectedRevenue" class="text-2xl font-black text-amber-400">0 ج.م</div>
+                                <span class="text-[10px] text-slate-500">مواعيد مؤكدة قيد الانتظار</span>
+                            </div>
+                            <div class="bg-slate-900 p-4 rounded-2xl border border-slate-800 space-y-1">
+                                <span class="text-xs font-bold text-emerald-400">الإيرادات الفعلية المؤكدة (Confirmed Revenue)</span>
+                                <div id="onlineConfirmedRevenue" class="text-2xl font-black text-emerald-400">0 ج.م</div>
+                                <span class="text-[10px] text-slate-500">تم الحضور والدفع بالعيادة</span>
+                            </div>
+                        </div>
+
+                        <!-- RESERVATIONS SEARCH & FILTER -->
+                        <div class="flex flex-col sm:flex-row justify-between items-center gap-4 bg-slate-900 p-4 rounded-2xl border border-slate-800">
+                            <input type="text" id="onlineSearchFilter" oninput="renderOnlineReservationsTable()" placeholder="تصفية الحجوزات باسم المريض أو الهاتف..." class="w-full sm:w-80 p-2.5 bg-slate-950 border border-slate-700 rounded-xl text-xs text-slate-100 outline-none">
+                            <div class="flex items-center gap-2">
+                                <select id="onlineStatusFilter" onchange="renderOnlineReservationsTable()" class="p-2.5 bg-slate-950 border border-slate-700 rounded-xl text-xs text-slate-100 font-bold outline-none">
+                                    <option value="ALL">جميع الحالات</option>
+                                    <option value="PENDING">معلق (Pending)</option>
+                                    <option value="CONFIRMED">مؤكد (Confirmed)</option>
+                                    <option value="COMPLETED">مكتمل وتم الدفع (Completed)</option>
+                                    <option value="CANCELLED">ملغي (Cancelled)</option>
+                                    <option value="NO_SHOW">لم يحضر (No Show)</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <!-- RESERVATIONS TABLE -->
+                        <div class="overflow-x-auto rounded-2xl border border-slate-800">
+                            <table class="w-full text-right text-xs">
+                                <thead class="bg-slate-950 text-slate-400 font-bold border-b border-slate-800">
+                                    <tr>
+                                        <th class="p-3.5">رقم الحجز</th>
+                                        <th class="p-3.5">اسم المريض</th>
+                                        <th class="p-3.5">الهاتف</th>
+                                        <th class="p-3.5">الفرع</th>
+                                        <th class="p-3.5">الموعد</th>
+                                        <th class="p-3.5">الخدمة</th>
+                                        <th class="p-3.5">المبلغ</th>
+                                        <th class="p-3.5">الحالة</th>
+                                        <th class="p-3.5 text-center">إجراءات التحكم</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="onlineReservationsTableBody" class="divide-y divide-slate-800/60 font-semibold">
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+        </main>
+
+        <footer class="border-t border-slate-800/80 py-6 text-center text-xs text-slate-500">
+            <p>© 2026 عيادات الأستاذ الدكتور ياسر الشهاوي | جميع الحقوق محفوظة ومزامنة سارية</p>
+        </footer>
+
+    </div>
+
+    <!-- MANUAL EDIT PASSWORD MODAL (PASSWORD: 5) -->
+    <div id="manualEditPasswordModal" class="fixed inset-0 bg-slate-950/90 backdrop-blur-md z-50 flex items-center justify-center hidden p-4">
+        <div class="bg-slate-900 border border-slate-800 rounded-3xl max-w-sm w-full p-6 space-y-4 text-right shadow-2xl">
+            <h3 class="font-extrabold text-base text-white flex items-center gap-2">
+                <i class="fa-solid fa-lock text-sky-400"></i> إدخال كلمة المرور لدليل التعديل
+            </h3>
+            <p class="text-xs text-slate-400">يرجى إدخال كلمة المرور المكونة من الرقم (5) فقط:</p>
+            <input type="password" id="manualEditSecretInput" placeholder="أدخل الرقم 5" class="w-full p-3 bg-slate-950 border border-slate-700 rounded-xl text-slate-100 text-center font-mono text-lg tracking-widest">
+            <div class="flex gap-2 pt-2">
+                <button onclick="verifyManualEditPassword()" class="w-full py-2.5 bg-sky-600 text-white font-bold rounded-xl text-xs hover:bg-sky-500 transition">تحقق ودخول</button>
+                <button onclick="document.getElementById('manualEditPasswordModal').classList.add('hidden')" class="w-full py-2.5 bg-slate-800 text-slate-300 font-bold rounded-xl text-xs hover:bg-slate-700 transition">إلغاء</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- OWNER FULL ADVANCED SETTINGS MODAL WITH FULL PASSWORD CHANGE OPTIONS & MANUAL SAVE/LOAD -->
+    <div id="ownerSettingsModal" class="fixed inset-0 bg-slate-950/90 backdrop-blur-md z-50 flex items-center justify-center hidden p-4 overflow-y-auto">
+        <div class="bg-slate-900 border border-slate-800 rounded-3xl max-w-2xl w-full p-6 space-y-6 shadow-2xl text-right my-8 max-h-[90vh] overflow-y-auto">
+            <div class="flex justify-between items-center border-b border-slate-800 pb-4">
+                <div>
+                    <h3 class="font-extrabold text-lg text-white"><i class="fa-solid fa-sliders text-sky-400 me-1"></i> لوحة تحكم وإعدادات النظام الشاملة (د. ياسر)</h3>
+                    <p class="text-xs text-slate-400">كامل الصلاحيات لإدارة كلمات السر وحفظ واستعادة البيانات بين الأجهزة</p>
+                </div>
+                <button onclick="closeOwnerSettingsModal()" class="text-slate-400 hover:text-white text-xl"><i class="fa-solid fa-times"></i></button>
+            </div>
+
+            <div class="space-y-4 text-xs">
+                <div class="bg-slate-950 p-4 rounded-2xl border border-slate-800 space-y-3">
+                    <h4 class="font-bold text-sky-400"><i class="fa-solid fa-key me-1"></i> إدارة وتغيير كلمات مرور الحسابات والفروع</h4>
+                    
+                    <div class="space-y-1">
+                        <label class="block text-slate-300 font-bold">كلمة مرور حساب المالك (أ.د. ياسر)</label>
+                        <input type="password" id="settingOwnerPasswordInput" placeholder="أدخل كلمة المرور الجديدة للمالك" class="w-full p-2.5 bg-slate-900 border border-slate-700 rounded-xl text-slate-100">
+                    </div>
+
+                    <div class="space-y-1">
+                        <label class="block text-slate-300 font-bold">كلمة مرور فرع بورسعيد</label>
+                        <input type="text" id="settingPortsaidPasswordInput" placeholder="أدخل كلمة مرور فرع بورسعيد" class="w-full p-2.5 bg-slate-900 border border-slate-700 rounded-xl text-slate-100">
+                    </div>
+
+                    <div class="space-y-1">
+                        <label class="block text-slate-300 font-bold">كلمة مرور فرع دمياط</label>
+                        <input type="text" id="settingDamiettaPasswordInput" placeholder="أدخل كلمة مرور فرع دمياط" class="w-full p-2.5 bg-slate-900 border border-slate-700 rounded-xl text-slate-100">
+                    </div>
+                </div>
+
+                <div class="bg-slate-950 p-4 rounded-2xl border border-slate-800 space-y-3">
+                    <h4 class="font-bold text-emerald-400"><i class="fa-solid fa-database me-1"></i> مركز الحفظ والاستعادة اليدوي (بين الأجهزة و GitHub Pages)</h4>
+                    <p class="text-[11px] text-slate-400">يمكنك حفظ البيانات يدوياً في المتصفح، أو تنزيل ملف قاعدة البيانات لنقله لجهاز آخر، أو رفع الملف لاستعادة بياناتك على أي جهاز فوراً:</p>
+                    <div class="grid sm:grid-cols-3 gap-2">
+                        <button onclick="manualSaveData()" class="py-2.5 bg-emerald-600 text-slate-950 font-black rounded-xl hover:bg-emerald-500 transition">حفظ يدوي في الجهاز</button>
+                        <button onclick="downloadDatabaseBackup()" class="py-2.5 bg-sky-600 text-white font-bold rounded-xl hover:bg-sky-500 transition">تنزيل ملف البيانات (JSON)</button>
+                        <label class="py-2.5 bg-teal-600 text-slate-950 font-black rounded-xl hover:bg-teal-500 transition text-center cursor-pointer">
+                            رفع واستعادة ملف
+                            <input type="file" id="importFileJson" accept=".json" onchange="importDatabaseBackup(event)" class="hidden">
+                        </label>
+                    </div>
+                </div>
+
+                <!-- ONLINE BOOKING INTEGRATION SETTINGS -->
+                <div class="bg-slate-950 p-4 rounded-2xl border border-slate-800 space-y-3">
+                    <h4 class="font-bold text-cyan-400"><i class="fa-solid fa-globe me-1"></i> ربط موقع حجز المرضى الخارجي (Online Booking Integration)</h4>
+                    <div class="space-y-1">
+                        <label class="block text-slate-300 font-bold">رابط موقع حجز المرضى العام (Patient Website URL)</label>
+                        <input type="url" id="settingPatientWebsiteUrlInput" placeholder="https://yasser-clinic-booking.web.app" class="w-full p-2.5 bg-slate-900 border border-slate-700 rounded-xl text-slate-100 font-mono text-xs">
+                    </div>
+                    <div class="flex items-center justify-between pt-1">
+                        <span class="text-slate-300 font-bold">تفعيل استقبال الحجوزات عبر الإنترنت:</span>
+                        <label class="relative inline-flex items-center cursor-pointer">
+                            <input type="checkbox" id="settingEnableOnlineBookingToggle" class="sr-only peer" checked>
+                            <div class="w-11 h-6 bg-slate-800 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:right-[2px] after:bg-white after:border-slate-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-cyan-500"></div>
+                        </label>
+                    </div>
+                    <p class="text-[11px] text-slate-500">ملاحظة المعمارية: كلا الموقعين يشتركان في نفس مشروع Firebase وقاعدة البيانات السحابية الحية لضمان مزامنة الفروع، الأسعار، والمواعيد الشاغرة دون التعارض بين حجزين.</p>
+                </div>
+
+                <button onclick="saveOwnerSettings()" class="w-full py-3 bg-sky-500 text-slate-950 font-black rounded-xl hover:bg-sky-400 transition text-sm">
+                    حفظ التغييرات الشاملة وكلمات السر
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ================= JAVASCRIPT APPLICATION LOGIC ================= -->
+    <script>
+        let CLINIC_PRICES = {
+            "بورسعيد": [
+                { id: "ps1", name: "كشف متابعة حمل", price: 500 },
+                { id: "ps2", name: "استشارة متابعة حمل", price: 250 },
+                { id: "ps3", name: "كشف تأخر إنجاب", price: 500 },
+                { id: "ps4", name: "استشارة تأخر إنجاب", price: 250 },
+                { id: "ps5", name: "استشارة نساء", price: 250 },
+                { id: "ps6", name: "باقة متابعة حمل كاملة", price: 7000 },
+                { id: "ps7", name: "سونار رباعي الأبعاد", price: 1200 },
+                { id: "ps8", name: "سونار بطن وحوض", price: 250 },
+                { id: "ps9", name: "سونار مهبلي", price: 250 },
+                { id: "ps10", name: "كشف نساء", price: 500 }
+            ],
+            "دمياط": [
+                { id: "dm1", name: "كشف بالسونار", price: 500 },
+                { id: "dm2", name: "استشارة بالسونار", price: 250 }
+            ],
+            "القاهرة": [
+                { id: "c1", name: "كشف بالسونار", price: 750 },
+                { id: "c2", name: "استشارة بالسونار", price: 400 }
+            ]
+        };
+
+        let ACCOUNT_PASSWORDS = {
+            owner: 'Yasser661972',
+            portsaid: '2006',
+            damietta: '54321'
+        };
+
+        let currentUserRole = null;
+        let patients = [];
+        let trashRecords = [];
+        let activityLogs = [];
+        let onlineReservations = [];
+        let onlineIntegrationConfig = {
+            patientWebsiteUrl: 'https://yasser-clinic-booking.web.app',
+            enableOnlineBooking: true
+        };
+        let profitChartInstance = null;
+
+        window.onload = function() {
+            loadAllData();
+            const todayStr = new Date().toISOString().split('T')[0];
+            document.getElementById('regBookingDate').value = todayStr;
+            document.getElementById('profitStartDate').value = todayStr;
+            document.getElementById('profitEndDate').value = todayStr;
+            setTodayProfitDate();
+            handleBranchChange();
+            updateBookingTimeSlots();
+            renderPriceEditorInputs();
+        };
+
+        function logActivity(actionDesc) {
+            const now = new Date().toLocaleString('ar-EG');
+            const roleName = currentUserRole === 'owner' ? 'أ.د. ياسر الشهاوي' : (currentUserRole === 'portsaid' ? 'فرع بورسعيد' : 'فرع دمياط');
+            activityLogs.unshift({ time: now, ts: Date.now(), role: roleName, desc: actionDesc, device: getDeviceInfo(), status: /فشل/.test(actionDesc) ? 'failed' : 'ok' });
+            try { saveAllData(); } catch (e) { console.error('Activity save error', e); }
+        }
+
+        function getDeviceInfo() {
+            const ua = navigator.userAgent || '';
+            let os = 'غير معروف', br = 'غير معروف', dev = 'كمبيوتر';
+            if (/iPhone|iPad|iPod/.test(ua)) { os = 'iOS'; dev = /iPad/.test(ua) ? 'iPad' : 'iPhone'; }
+            else if (/Android/.test(ua)) { os = 'Android'; dev = 'هاتف/تابلت Android'; }
+            else if (/Windows/.test(ua)) os = 'Windows';
+            else if (/Mac OS X/.test(ua)) os = 'macOS';
+            else if (/Linux/.test(ua)) os = 'Linux';
+            if (/Edg\//.test(ua)) br = 'Edge'; else if (/OPR\/|Opera/.test(ua)) br = 'Opera';
+            else if (/Chrome|CriOS/.test(ua)) br = 'Chrome'; else if (/Firefox|FxiOS/.test(ua)) br = 'Firefox';
+            else if (/Safari/.test(ua)) br = 'Safari';
+            return { dev, os, br };
+        }
+
+        function toggleUserIdInput() {
+            const role = document.getElementById('loginAccountRole').value;
+            const container = document.getElementById('userIdContainer');
+            if (role === 'owner') {
+                container.classList.remove('hidden');
+            } else {
+                container.classList.add('hidden');
+            }
+        }
+
+        function handleLoginSubmit(event) {
+            event.preventDefault();
+            const role = document.getElementById('loginAccountRole').value;
+            const userId = document.getElementById('loginUserId').value.trim();
+            const password = document.getElementById('loginPassword').value.trim();
+            const errorMsg = document.getElementById('authErrorMessage');
+
+            let authenticated = false;
+
+            if (role === 'owner') {
+                if ((userId.toLowerCase() === 'yasser71' || userId.toLowerCase() === 'dryasser' || userId === 'د. ياسر') && password === ACCOUNT_PASSWORDS.owner) {
+                    authenticated = true;
+                    currentUserRole = 'owner';
+                }
+            } else if (role === 'portsaid') {
+                if (password === ACCOUNT_PASSWORDS.portsaid) {
+                    authenticated = true;
+                    currentUserRole = 'portsaid';
+                }
+            } else if (role === 'damietta') {
+                if (password === ACCOUNT_PASSWORDS.damietta) {
+                    authenticated = true;
+                    currentUserRole = 'damietta';
+                }
+            }
+
+            if (authenticated) {
+                errorMsg.classList.add('hidden');
+                document.getElementById('authOverlay').classList.add('hidden');
+                document.getElementById('mainApplicationView').classList.remove('hidden');
+                loadAllData();
+                applyRolePermissions();
+                logActivity('تسجيل الدخول للنظام بنجاح');
+            } else {
+                errorMsg.classList.remove('hidden');
+                try { activityLogs.unshift({ time: new Date().toLocaleString('ar-EG'), ts: Date.now(), role: 'محاولة دخول (' + role + ')', desc: 'فشل تسجيل الدخول', device: getDeviceInfo(), status: 'failed' }); saveAllData(); } catch (e) {}
+            }
+        }
+
+        function handleLogout() {
+            logActivity('تسجيل الخروج من النظام');
+            currentUserRole = null;
+            document.getElementById('loginPassword').value = '';
+            document.getElementById('mainApplicationView').classList.add('hidden');
+            document.getElementById('authOverlay').classList.remove('hidden');
+        }
+
+        function applyRolePermissions() {
+            const ownerFinanceBtn = document.getElementById('tabBtnFinance');
+            const ownerManualEditBtn = document.getElementById('tabBtnManualEdit');
+            const ownerOnlineBtn = document.getElementById('tabBtnOnlineReservations');
+            const ownerSettingsBtn = document.getElementById('ownerSettingsBtn');
+            const activeUserDisplay = document.getElementById('activeAccountNameDisplay');
+
+            if (currentUserRole === 'owner') {
+                ownerFinanceBtn.classList.remove('hidden');
+                ownerManualEditBtn.classList.remove('hidden');
+                ownerOnlineBtn.classList.remove('hidden');
+                ownerSettingsBtn.classList.remove('hidden');
+                activeUserDisplay.innerText = "أ.د. ياسر الشهاوي (Owner)";
+            } else if (currentUserRole === 'portsaid') {
+                ownerFinanceBtn.classList.add('hidden');
+                ownerManualEditBtn.classList.add('hidden');
+                ownerOnlineBtn.classList.add('hidden');
+                ownerSettingsBtn.classList.add('hidden');
+                activeUserDisplay.innerText = "فرع بورسعيد";
+            } else if (currentUserRole === 'damietta') {
+                ownerFinanceBtn.classList.add('hidden');
+                ownerManualEditBtn.classList.add('hidden');
+                ownerOnlineBtn.classList.add('hidden');
+                ownerSettingsBtn.classList.add('hidden');
+                activeUserDisplay.innerText = "فرع دمياط";
+            }
+        }
+
+        function handleBranchChange() {
+            const branch = document.getElementById('regBranchSelect').value;
+            const servicesContainer = document.getElementById('servicesContainerList');
+            const availableServices = CLINIC_PRICES[branch] || [];
+
+            servicesContainer.innerHTML = availableServices.map(s => `
+                <label class="flex items-center gap-2 p-2 bg-slate-900 border border-slate-800 rounded-xl cursor-pointer hover:border-sky-500 transition">
+                    <input type="checkbox" name="selectedServices" value="${s.price}" data-name="${s.name}" onchange="calculateServicesTotal()" class="rounded bg-slate-950 border-slate-700 text-sky-500 focus:ring-0">
+                    <span class="text-slate-200">${s.name}</span>
+                    <span class="mr-auto font-bold text-emerald-400">${s.price} ج.م</span>
+                </label>
+            `).join('');
+
+            calculateServicesTotal();
+            updateBookingTimeSlots();
+        }
+
+        function calculateServicesTotal() {
+            const checkboxes = document.querySelectorAll('input[name="selectedServices"]:checked');
+            let total = 0;
+            checkboxes.forEach(cb => {
+                total += parseFloat(cb.value);
+            });
+            document.getElementById('calculatedTotalAmount').innerText = `${total} ج.م`;
+        }
+
+        function updateBookingTimeSlots() {
+            const branch = document.getElementById('regBranchSelect').value;
+            const selectedDateVal = document.getElementById('regBookingDate').value;
+            const timeSelect = document.getElementById('regBookingTime');
+            timeSelect.innerHTML = '';
+
+            if (selectedDateVal) {
+                const dateObj = new Date(selectedDateVal);
+                const dayOfWeek = dateObj.getDay(); // 0: Sunday, 1: Monday, ..., 4: Thursday, 5: Friday, 6: Saturday
+
+                // Check weekly vacations for each branch
+                // Port Said & Damietta: Thursday (4) and Friday (5) are vacations
+                if ((branch === 'بورسعيد' || branch === 'دمياط') && (dayOfWeek === 4 || dayOfWeek === 5)) {
+                    const dayName = dayOfWeek === 5 ? 'الجمعة' : 'الخميس';
+                    timeSelect.innerHTML = `<option value="" disabled selected>🚫 يوم ${dayName} إجازة أسبوعية رسمية بفرع ${branch} (غير متاح للحجز)</option>`;
+                    return;
+                }
+
+                // Cairo: Only open Thursday (4) and Friday (5), rest are off-days
+                if (branch === 'القاهرة' && (dayOfWeek !== 4 && dayOfWeek !== 5)) {
+                    timeSelect.innerHTML = `<option value="" disabled selected>🚫 هذا اليوم إجازة بفرع القاهرة (المواعيد المتاحة: الخميس والجمعة فقط)</option>`;
+                    return;
+                }
+            }
+
+            const slots = [];
+            for (let hour = 17; hour <= 24; hour++) {
+                for (let min = 0; min < 60; min += 15) {
+                    const displayHour = hour > 12 ? hour - 12 : hour;
+                    const period = hour >= 12 ? 'م' : 'ص';
+                    const timeStr = `${displayHour}:${min === 0 ? '00' : min} ${period}`;
+                    slots.push(timeStr);
+                }
+            }
+
+            timeSelect.innerHTML = slots.map(slot => `<option value="${slot}">${slot}</option>`).join('');
+        }
+
+        function handleRegistrationSubmit(event) {
+            event.preventDefault();
+
+            const timeSelect = document.getElementById('regBookingTime');
+            if (timeSelect.disabled || !timeSelect.value) {
+                alert("عذراً، هذا اليوم إجازة أسبوعية في الفرع المحدد ولا يمكن إضافة حجز فيه!");
+                return;
+            }
+
+            const name = document.getElementById('regPatientName').value.trim();
+            const phone = document.getElementById('regPatientPhone').value.trim();
+            const branch = document.getElementById('regBranchSelect').value;
+            const date = document.getElementById('regBookingDate').value;
+            const time = document.getElementById('regBookingTime').value;
+            const notes = document.getElementById('regPatientNotes').value.trim();
+
+            const selectedServicesCB = document.querySelectorAll('input[name="selectedServices"]:checked');
+            let selectedServicesNames = [];
+            let totalAmount = 0;
+
+            selectedServicesCB.forEach(cb => {
+                selectedServicesNames.push(cb.getAttribute('data-name'));
+                totalAmount += parseFloat(cb.value);
+            });
+
+            if (selectedServicesNames.length === 0) {
+                alert("يرجى اختيار خدمة واحدة على الأقل لكشف المريض!");
+                return;
+            }
+
+            const newPatient = {
+                id: 'P-' + Math.floor(100000 + Math.random() * 900000),
+                name,
+                phone,
+                branch,
+                date,
+                time,
+                notes,
+                services: selectedServicesNames.join(' + '),
+                amount: totalAmount,
+                createdAt: new Date().toISOString()
+            };
+
+            patients.unshift(newPatient);
+            logActivity(`تسجيل مريض جديد: ${name} (${branch})`);
+            saveAllData();
+
+            event.target.reset();
+            document.getElementById('regBookingDate').value = new Date().toISOString().split('T')[0];
+            handleBranchChange();
+            alert("تم حفظ الموعد وتسجيل المريض بنجاح والحفظ الدائم!");
+            switchTab('records');
+        }
+
+        function renderPatientsTable() {
+            const tbody = document.getElementById('patientsTableBody');
+            const search = document.getElementById('recordsSearchFilter').value.toLowerCase();
+
+            const filtered = patients.filter(p => 
+                p.name.toLowerCase().includes(search) || p.phone.includes(search)
+            );
+
+            tbody.innerHTML = filtered.map(p => `
+                <tr class="hover:bg-slate-800/40 transition">
+                    <td class="p-3.5 font-mono text-sky-400">${p.id}</td>
+                    <td class="p-3.5 font-bold text-white">${p.name}</td>
+                    <td class="p-3.5">${p.phone}</td>
+                    <td class="p-3.5"><span class="bg-slate-800 px-2.5 py-1 rounded-lg border border-slate-700">${p.branch}</span></td>
+                    <td class="p-3.5">${p.date} <span class="text-sky-400 me-1">(${p.time})</span></td>
+                    <td class="p-3.5 text-slate-300">${p.services}</td>
+                    <td class="p-3.5 font-black text-emerald-400">${p.amount} ج.م</td>
+                    <td class="p-3.5 text-center no-print space-x-1 space-x-reverse">
+                        <button type="button" onclick="sendWhatsAppById('${p.id}')" class="bg-emerald-600/20 text-emerald-400 hover:bg-emerald-600/30 border border-emerald-500/30 px-2.5 py-1.5 rounded-lg text-[11px] font-bold transition">
+                            <i class="fa-brands fa-whatsapp me-1"></i> إرسال الإيصال
+                        </button>
+                        <button type="button" onclick="deletePatientRecord('${p.id}')" class="bg-rose-600/20 text-rose-400 hover:bg-rose-600/30 border border-rose-500/30 px-2 py-1.5 rounded-lg text-[11px] transition">
+                            <i class="fa-solid fa-trash"></i>
+                        </button>
+                    </td>
+                </tr>
+            `).join('');
+        }
+
+        function sendWhatsAppReceiptLegacy(phone, name, branch, date, time, services, amount) {
+            let formattedPhone = phone.trim();
+            if (formattedPhone.startsWith('0')) {
+                formattedPhone = '2' + formattedPhone;
+            }
+
+            const message = `مرحباً بكِ أ./ ${name} 🌸%0Aإيصال حجز موعد - عيادات أ.د. ياسر الشهاوي 🩺%0A----------------------------------%0A📍 الفرع: ${branch}%0A📅 التاريخ: ${date}%0A⏰ الموعد: ${time}%0A🏥 الخدمات المطلوبة: ${services}%0A💵 المبلغ الكلي: ${amount} جنيه%0A----------------------------------%0Aنتمنى لكِ دوام الصحة والعافية! ❤️`;
+            const whatsappUrl = `https://api.whatsapp.com/send?phone=${formattedPhone}&text=${message}`;
+            window.open(whatsappUrl, '_blank');
+            logActivity(`إرسال إيصال WhatsApp للمريض: ${name}`);
+        }
+
+        function handleAiSearchInput(e) {
+            const query = e.target.value.toLowerCase().trim();
+            const container = document.getElementById('aiSearchResultsContainer');
+
+            if (!query) {
+                container.classList.add('hidden');
+                return;
+            }
+
+            const matches = patients.filter(p => p.name.toLowerCase().includes(query) || p.phone.includes(query));
+
+            if (matches.length === 0) {
+                container.classList.add('hidden');
+                return;
+            }
+
+            container.classList.remove('hidden');
+            container.innerHTML = matches.map(p => `
+                <div onclick="autoFillPatientData('${p.id}')" class="p-3 hover:bg-slate-800 cursor-pointer transition flex items-center justify-between text-xs">
+                    <div>
+                        <strong class="text-sky-400 text-sm block">${p.name}</strong>
+                        <span class="text-slate-400">هاتف: ${p.phone} | آخر زيارة: ${p.date}</span>
+                    </div>
+                    <span class="bg-slate-800 text-slate-300 px-2 py-1 rounded border border-slate-700">${p.branch}</span>
+                </div>
+            `).join('');
+        }
+
+        function autoFillPatientData(patientId) {
+            const patient = patients.find(p => p.id === patientId);
+            if (!patient) return;
+
+            document.getElementById('regPatientName').value = patient.name;
+            document.getElementById('regPatientPhone').value = patient.phone;
+            document.getElementById('regPatientNotes').value = patient.notes || '';
+
+            document.getElementById('aiSearchResultsContainer').classList.add('hidden');
+            document.getElementById('aiSearchInput').value = '';
+            alert(`تم استرجاع بيانات المريض (${patient.name}) تلقائياً!`);
+            switchTab('registration');
+        }
+
+        function deletePatientRecord(id) {
+            const index = patients.findIndex(p => p.id === id);
+            if (index !== -1) {
+                const item = patients.splice(index, 1)[0];
+                trashRecords.unshift(item);
+                logActivity(`حذف سجل المريض: ${item.name}`);
+                saveAllData();
+            }
+        }
+
+        function renderTrashTable() {
+            const tbody = document.getElementById('trashTableBody');
+            document.getElementById('trashCountBadge').innerText = trashRecords.length;
+
+            tbody.innerHTML = trashRecords.map(p => `
+                <tr class="hover:bg-slate-800/40 transition">
+                    <td class="p-3.5 font-bold text-white">${p.name}</td>
+                    <td class="p-3.5">${p.phone}</td>
+                    <td class="p-3.5">${p.branch}</td>
+                    <td class="p-3.5">${p.date}</td>
+                    <td class="p-3.5 text-center">
+                        <button onclick="restoreFromTrash('${p.id}')" class="bg-amber-600/20 text-amber-300 border border-amber-500/30 px-3 py-1.5 rounded-lg text-xs font-bold">
+                            <i class="fa-solid fa-rotate-left me-1"></i> استعادة
+                        </button>
+                    </td>
+                </tr>
+            `).join('');
+        }
+
+        function restoreFromTrash(id) {
+            const index = trashRecords.findIndex(p => p.id === id);
+            if (index !== -1) {
+                const item = trashRecords.splice(index, 1)[0];
+                patients.unshift(item);
+                logActivity(`استعادة سجل المريض من المحذوفات: ${item.name}`);
+                saveAllData();
+            }
+        }
+
+        function emptyTrashPermanently() {
+            if (confirm("هل أنت تأكد من تفريغ سلة المحذوفات نهائياً؟")) {
+                trashRecords = [];
+                logActivity('تفريغ سلة المحذوفات');
+                saveAllData();
+            }
+        }
+
+        function renderActivityTable() {
+            const tbody = document.getElementById('activityTableBody');
+            if (!tbody) return;
+            if (!activityLogs.length) { tbody.innerHTML = '<tr><td colspan="5" class="p-6 text-center text-slate-500">لا توجد أنشطة مسجلة بعد</td></tr>'; return; }
+            const clearBtn = document.querySelector('[onclick="clearActivityLog()"]');
+            if (clearBtn) clearBtn.classList.toggle('hidden', currentUserRole !== 'owner');
+            const myName = currentUserRole === 'portsaid' ? 'فرع بورسعيد' : (currentUserRole === 'damietta' ? 'فرع دمياط' : null);
+            const visibleLogs = myName ? activityLogs.filter(l => l.role === myName) : activityLogs;
+            tbody.innerHTML = visibleLogs.map(log => {
+                const d = log.device || {};
+                const dv = d.dev ? `${d.dev} · ${d.os} · ${d.br}` : '—';
+                const st = log.status === 'failed' ? '<span class="text-rose-400">فشل</span>' : '<span class="text-emerald-400">ناجحة</span>';
+                return `
+                <tr class="hover:bg-slate-800/40 transition">
+                    <td class="p-3.5 font-mono text-teal-400">${log.time}</td>
+                    <td class="p-3.5 font-bold text-sky-300">${log.role}</td>
+                    <td class="p-3.5 text-slate-200">${log.desc}</td>
+                    <td class="p-3.5 text-slate-400 whitespace-nowrap">${dv}</td>
+                    <td class="p-3.5 font-bold">${st}</td>
+                </tr>`;
+            }).join('');
+        }
+
+        function clearActivityLog() {
+            if (currentUserRole !== 'owner') { alert('مسح السجل متاح لحساب المالك فقط.'); return; }
+            if (!confirm('هل أنت متأكد من مسح سجل الأنشطة بالكامل؟')) return;
+            activityLogs = [];
+            saveAllData();
+            renderActivityTable();
+        }
+
+        function setTodayProfitDate() {
+            const todayStr = new Date().toISOString().split('T')[0];
+            document.getElementById('profitStartDate').value = todayStr;
+            document.getElementById('profitEndDate').value = todayStr;
+            calculateDailyProfits();
+        }
+
+        function calculateDailyProfits() {
+            const startDate = document.getElementById('profitStartDate').value;
+            const endDate = document.getElementById('profitEndDate').value;
+            
+            let periodTotal = 0;
+            let count = 0;
+            let portsaidTot = 0;
+            let damiettaTot = 0;
+            let cairoTot = 0;
+
+            patients.forEach(p => {
+                const amt = parseFloat(p.amount || 0);
+                if ((!startDate || p.date >= startDate) && (!endDate || p.date <= endDate)) {
+                    periodTotal += amt;
+                    count++;
+                }
+
+                if ((!startDate || p.date >= startDate) && (!endDate || p.date <= endDate)) {
+                    if (p.branch === 'بورسعيد') portsaidTot += amt;
+                    if (p.branch === 'دمياط') damiettaTot += amt;
+                    if (p.branch === 'القاهرة') cairoTot += amt;
+                }
+            });
+
+            document.getElementById('selectedDayProfitDisplay').innerText = `${periodTotal} ج.م`;
+            document.getElementById('selectedDayPatientCount').innerText = `${count} كشف / زيارة في الفترة المحددة`;
+
+            document.getElementById('portsaidProfitDisplay').innerText = `${portsaidTot} ج.م`;
+            document.getElementById('damiettaProfitDisplay').innerText = `${damiettaTot} ج.م`;
+            document.getElementById('cairoProfitDisplay').innerText = `${cairoTot} ج.م`;
+
+            renderProfitChart(startDate, endDate);
+        }
+
+        function renderProfitChart(startDate, endDate) {
+            const ctx = document.getElementById('profitChartCanvas')?.getContext('2d');
+            if (!ctx) return;
+
+            if (profitChartInstance) profitChartInstance.destroy();
+
+            let psSum = 0, dmSum = 0, cSum = 0;
+            patients.forEach(p => {
+                if ((!startDate || p.date >= startDate) && (!endDate || p.date <= endDate)) {
+                    const amt = parseFloat(p.amount || 0);
+                    if (p.branch === 'بورسعيد') psSum += amt;
+                    if (p.branch === 'دمياط') dmSum += amt;
+                    if (p.branch === 'القاهرة') cSum += amt;
+                }
+            });
+
+            profitChartInstance = new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: ['فرع بورسعيد', 'فرع دمياط', 'فرع القاهرة'],
+                    datasets: [{
+                        label: 'إجمالي الأرباح بالجنيه المصري',
+                        data: [psSum, dmSum, cSum],
+                        backgroundColor: ['#0284c7', '#0d9488', '#6366f1']
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: { legend: { display: false } }
+                }
+            });
+        }
+
+        function switchTab(tab) {
+            const tabs = ['registration', 'records', 'activity', 'trash', 'finance', 'manualEdit', 'onlineReservations'];
+            tabs.forEach(t => {
+                const btn = document.getElementById(`tabBtn${t.charAt(0).toUpperCase() + t.slice(1)}`);
+                const content = document.getElementById(`tabContent${t.charAt(0).toUpperCase() + t.slice(1)}`);
+                if (btn && content) {
+                    btn.classList.remove('tab-active');
+                    btn.classList.add('text-slate-400');
+                    content.classList.add('hidden');
+                }
+            });
+
+            const activeBtn = document.getElementById(`tabBtn${tab.charAt(0).toUpperCase() + tab.slice(1)}`);
+            const activeContent = document.getElementById(`tabContent${tab.charAt(0).toUpperCase() + tab.slice(1)}`);
+
+            if (activeBtn && activeContent) {
+                activeBtn.classList.add('tab-active');
+                activeBtn.classList.remove('text-slate-400');
+                activeContent.classList.remove('hidden');
+            }
+
+            if (tab === 'records') renderPatientsTable();
+            if (tab === 'activity') renderActivityTable();
+            if (tab === 'trash') renderTrashTable();
+            if (tab === 'finance') calculateDailyProfits();
+            if (tab === 'manualEdit') renderPriceEditorInputs();
+            if (tab === 'onlineReservations') renderOnlineReservationsTable();
+        }
+
+        // ================= ONLINE RESERVATIONS & INTEGRATION ENGINE =================
+        function renderOnlineReservationsTable() {
+            const tbody = document.getElementById('onlineReservationsTableBody');
+            if (!tbody) return;
+
+            const search = (document.getElementById('onlineSearchFilter')?.value || '').toLowerCase();
+            const statusFilter = document.getElementById('onlineStatusFilter')?.value || 'ALL';
+
+            let expectedRev = 0;
+            let confirmedRev = 0;
+
+            const filtered = onlineReservations.filter(res => {
+                const matchSearch = res.name.toLowerCase().includes(search) || res.phone.includes(search);
+                const matchStatus = statusFilter === 'ALL' || res.status === statusFilter;
+                return matchSearch && matchStatus;
+            });
+
+            // Calculate revenue statistics across all online reservations
+            onlineReservations.forEach(res => {
+                const amt = parseFloat(res.amount || 0);
+                if (res.status === 'CONFIRMED' || res.status === 'PENDING') {
+                    expectedRev += amt;
+                } else if (res.status === 'COMPLETED') {
+                    confirmedRev += amt;
+                }
+            });
+
+            document.getElementById('onlineTotalCount').innerText = onlineReservations.length;
+            document.getElementById('onlineExpectedRevenue').innerText = `${expectedRev} ج.م`;
+            document.getElementById('onlineConfirmedRevenue').innerText = `${confirmedRev} ج.م`;
+
+            if (filtered.length === 0) {
+                tbody.innerHTML = `
+                    <tr>
+                        <td colspan="9" class="text-center p-6 text-slate-500 font-semibold">
+                            لا توجد حجوزات إلكترونية مطابقة حالياً.
+                        </td>
+                    </tr>
+                `;
+                return;
+            }
+
+            const statusBadges = {
+                'PENDING': `<span class="bg-amber-500/20 text-amber-300 border border-amber-500/30 px-2 py-0.5 rounded-full text-[10px]">قيد الانتظار</span>`,
+                'CONFIRMED': `<span class="bg-sky-500/20 text-sky-300 border border-sky-500/30 px-2 py-0.5 rounded-full text-[10px]">مؤكد</span>`,
+                'COMPLETED': `<span class="bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 px-2 py-0.5 rounded-full text-[10px]">مكتمل وتم الدفع</span>`,
+                'CANCELLED': `<span class="bg-rose-500/20 text-rose-300 border border-rose-500/30 px-2 py-0.5 rounded-full text-[10px]">ملغي</span>`,
+                'NO_SHOW': `<span class="bg-slate-700 text-slate-400 border border-slate-600 px-2 py-0.5 rounded-full text-[10px]">لم يحضر</span>`
+            };
+
+            tbody.innerHTML = filtered.map(res => `
+                <tr class="hover:bg-slate-800/40 transition">
+                    <td class="p-3.5 font-mono text-cyan-400">${res.id}</td>
+                    <td class="p-3.5 font-bold text-white">${res.name}</td>
+                    <td class="p-3.5">${res.phone}</td>
+                    <td class="p-3.5"><span class="bg-slate-800 px-2 py-1 rounded border border-slate-700">${res.branch}</span></td>
+                    <td class="p-3.5">${res.date} <span class="text-cyan-400 me-1">(${res.time})</span></td>
+                    <td class="p-3.5 text-slate-300">${res.services}</td>
+                    <td class="p-3.5 font-black text-amber-400">${res.amount} ج.م</td>
+                    <td class="p-3.5">${statusBadges[res.status] || res.status}</td>
+                    <td class="p-3.5 text-center space-x-1 space-x-reverse">
+                        ${res.status !== 'COMPLETED' ? `
+                            <button onclick="updateOnlineReservationStatus('${res.id}', 'COMPLETED')" title="تأكيد الحضور والدفع" class="bg-emerald-600/20 text-emerald-400 hover:bg-emerald-600/30 border border-emerald-500/30 px-2 py-1 rounded text-[11px] font-bold">
+                                <i class="fa-solid fa-circle-check"></i> اكتمال
+                            </button>
+                        ` : ''}
+                        ${res.status !== 'CONFIRMED' && res.status !== 'COMPLETED' ? `
+                            <button onclick="updateOnlineReservationStatus('${res.id}', 'CONFIRMED')" title="تأكيد الموعد" class="bg-sky-600/20 text-sky-400 hover:bg-sky-600/30 border border-sky-500/30 px-2 py-1 rounded text-[11px] font-bold">
+                                <i class="fa-solid fa-check"></i> تأكيد
+                            </button>
+                        ` : ''}
+                        ${res.status !== 'CANCELLED' && res.status !== 'COMPLETED' ? `
+                            <button onclick="updateOnlineReservationStatus('${res.id}', 'CANCELLED')" title="إلغاء الحجز" class="bg-rose-600/20 text-rose-400 hover:bg-rose-600/30 border border-rose-500/30 px-2 py-1 rounded text-[11px]">
+                                <i class="fa-solid fa-ban"></i>
+                            </button>
+                        ` : ''}
+                    </td>
+                </tr>
+            `).join('');
+        }
+
+        function updateOnlineReservationStatus(resId, newStatus) {
+            const resIndex = onlineReservations.findIndex(r => r.id === resId);
+            if (resIndex === -1) return;
+
+            const res = onlineReservations[resIndex];
+            const oldStatus = res.status;
+            res.status = newStatus;
+
+            // If marked as COMPLETED/PAID, automatically move into actual patient registry
+            if (newStatus === 'COMPLETED' && oldStatus !== 'COMPLETED') {
+                const existingPatient = patients.find(p => p.phone === res.phone && p.date === res.date);
+                if (!existingPatient) {
+                    patients.unshift({
+                        id: 'P-ON-' + Math.floor(100000 + Math.random() * 900000),
+                        name: res.name,
+                        phone: res.phone,
+                        branch: res.branch,
+                        date: res.date,
+                        time: res.time,
+                        notes: 'حجز إلكتروني مكتمل مدفوع',
+                        services: res.services,
+                        amount: res.amount,
+                        createdAt: new Date().toISOString()
+                    });
+                }
+                logActivity(`إكمال حجز أونلاين ودفع الإيراد الفعلي للمريض: ${res.name}`);
+            } else if (newStatus === 'CANCELLED') {
+                logActivity(`إلغاء حجز أونلاين للمريض: ${res.name}`);
+            } else {
+                logActivity(`تحديث حالة حجز أونلاين للمريض: ${res.name} إلى ${newStatus}`);
+            }
+
+            saveAllData();
+            renderOnlineReservationsTable();
+        }
+
+        function openOnlineIntegrationConfig() {
+            openOwnerSettingsModal();
+        }
+
+        function openOwnerSettingsModal() {
+            document.getElementById('settingOwnerPasswordInput').value = ACCOUNT_PASSWORDS.owner;
+            document.getElementById('settingPortsaidPasswordInput').value = ACCOUNT_PASSWORDS.portsaid;
+            document.getElementById('settingDamiettaPasswordInput').value = ACCOUNT_PASSWORDS.damietta;
+            
+            document.getElementById('settingPatientWebsiteUrlInput').value = onlineIntegrationConfig.patientWebsiteUrl || '';
+            document.getElementById('settingEnableOnlineBookingToggle').checked = !!onlineIntegrationConfig.enableOnlineBooking;
+
+            document.getElementById('ownerSettingsModal').classList.remove('hidden');
+        }
+
+        function saveOwnerSettings() {
+            const newOwner = document.getElementById('settingOwnerPasswordInput').value.trim();
+            const newPortsaid = document.getElementById('settingPortsaidPasswordInput').value.trim();
+            const newDamietta = document.getElementById('settingDamiettaPasswordInput').value.trim();
+
+            if (newOwner) ACCOUNT_PASSWORDS.owner = newOwner;
+            if (newPortsaid) ACCOUNT_PASSWORDS.portsaid = newPortsaid;
+            if (newDamietta) ACCOUNT_PASSWORDS.damietta = newDamietta;
+
+            onlineIntegrationConfig.patientWebsiteUrl = document.getElementById('settingPatientWebsiteUrlInput').value.trim();
+            onlineIntegrationConfig.enableOnlineBooking = document.getElementById('settingEnableOnlineBookingToggle').checked;
+
+            const badge = document.getElementById('onlineBookingStatusBadge');
+            if (badge) {
+                if (onlineIntegrationConfig.enableOnlineBooking) {
+                    badge.className = "bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 text-xs px-3 py-1 rounded-full font-bold";
+                    badge.innerHTML = `<i class="fa-solid fa-signal me-1"></i> بوابة الحجز نشطة`;
+                } else {
+                    badge.className = "bg-rose-500/20 text-rose-300 border border-rose-500/30 text-xs px-3 py-1 rounded-full font-bold";
+                    badge.innerHTML = `<i class="fa-solid fa-pause me-1"></i> بوابة الحجز معطلة`;
+                }
+            }
+
+            saveAllData();
+            alert("تم حفظ كلمات السر وإعدادات النظام وإعدادات الربط أونلاين بنجاح!");
+            logActivity('تحديث إعدادات بوابة الحجز أونلاين وكلمات المرور');
+            closeOwnerSettingsModal();
+        }
+
+        // ================= REPAIRED / RESTORED FUNCTIONS =================
+        function escHtml(v) {
+            return String(v == null ? '' : v).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+        }
+
+        // Saves a file: uses the host's download capability when hosted in Claude, otherwise a normal browser download.
+        async function saveFileToDevice(filename, data, mime) {
+            try {
+                if (window.claude && typeof window.claude.use === 'function') {
+                    const dl = await window.claude.use('downloads');
+                    if (dl) { await dl.save({ filename, data }); return true; }
+                }
+            } catch (e) {
+                if (e && e.code === 'declined') return false;
+                console.warn('downloads capability failed, using fallback', e);
+            }
+            try {
+                const blob = new Blob([data], { type: mime || 'application/octet-stream' });
+                const url = URL.createObjectURL(blob);
+                const a = document.createElement('a');
+                a.href = url; a.download = filename;
+                document.body.appendChild(a); a.click(); a.remove();
+                setTimeout(() => URL.revokeObjectURL(url), 5000);
+                return true;
+            } catch (e) {
+                alert('تعذر تنزيل الملف على هذا المتصفح: ' + e.message);
+                return false;
+            }
+        }
+
+        function closeOwnerSettingsModal() {
+            document.getElementById('ownerSettingsModal').classList.add('hidden');
+        }
+
+        function checkManualEditAccess() {
+            if (currentUserRole !== 'owner') { alert('هذا القسم متاح لحساب المالك فقط.'); return; }
+            const input = document.getElementById('manualEditSecretInput');
+            input.value = '';
+            document.getElementById('manualEditPasswordModal').classList.remove('hidden');
+            setTimeout(() => input.focus(), 50);
+        }
+
+        function verifyManualEditPassword() {
+            const input = document.getElementById('manualEditSecretInput');
+            if (currentUserRole === 'owner' && input.value.trim() === '5') {
+                document.getElementById('manualEditPasswordModal').classList.add('hidden');
+                input.value = '';
+                switchTab('manualEdit');
+            } else {
+                alert('كلمة المرور غير صحيحة.');
+                input.value = '';
+            }
+        }
+
+        function renderPriceEditorInputs() {
+            const map = { 'بورسعيد': 'priceEditorPortSaid', 'دمياط': 'priceEditorDamietta', 'القاهرة': 'priceEditorCairo' };
+            Object.keys(map).forEach(branch => {
+                const box = document.getElementById(map[branch]);
+                if (!box) return;
+                box.innerHTML = (CLINIC_PRICES[branch] || []).map(s => `
+                    <label class="flex items-center justify-between gap-2 p-2 bg-slate-900 border border-slate-800 rounded-xl">
+                        <span class="text-slate-200">${escHtml(s.name)}</span>
+                        <span class="flex items-center gap-1">
+                            <input type="number" min="0" step="1" value="${Number(s.price) || 0}" data-branch="${escHtml(branch)}" data-id="${escHtml(s.id)}" class="price-edit-input w-24 p-1.5 bg-slate-950 border border-slate-700 rounded-lg text-slate-100 text-center font-mono">
+                            <span class="text-slate-500">ج.م</span>
+                        </span>
+                    </label>`).join('');
+            });
+        }
+
+        function saveCustomPrices() {
+            const inputs = document.querySelectorAll('.price-edit-input');
+            const updates = [];
+            for (const inp of inputs) {
+                const val = parseFloat(inp.value);
+                if (isNaN(val) || val < 0) { alert('يرجى إدخال أسعار صحيحة (أرقام صفر أو أكبر) في جميع الخانات.'); inp.focus(); return; }
+                updates.push({ branch: inp.dataset.branch, id: inp.dataset.id, price: val });
+            }
+            let changed = 0;
+            updates.forEach(u => {
+                const item = (CLINIC_PRICES[u.branch] || []).find(s => s.id === u.id);
+                if (item && item.price !== u.price) { item.price = u.price; changed++; }
+            });
+            saveAllData();
+            handleBranchChange();
+            logActivity(`تحديث أسعار الخدمات (${changed} سعر)`);
+            alert(changed ? `تم حفظ الأسعار الجديدة (${changed} تعديل) وتحديثها في نظام الحجز.` : 'لم يتم تغيير أي سعر.');
+        }
+
+        function manualSaveData() {
+            try {
+                saveAllData();
+                const check = localStorage.getItem('yasser_github_persistent_data');
+                if (!check) throw new Error('storage empty');
+                alert('تم حفظ البيانات في هذا الجهاز/المتصفح بنجاح.');
+            } catch (e) {
+                alert('تعذر الحفظ في مساحة تخزين المتصفح (قد يكون التخزين معطلاً أو ممتلئاً). نزّل ملف النسخة الاحتياطية (JSON) للاحتفاظ ببياناتك.');
+            }
+        }
+
+        async function downloadDatabaseBackup() {
+            const pkg = { patients, trashRecords, activityLogs, onlineReservations, onlineIntegrationConfig, CLINIC_PRICES, exportedAt: new Date().toISOString(), version: 1 };
+            const day = new Date().toISOString().split('T')[0];
+            const ok = await saveFileToDevice(`clinic-backup-${day}.json`, JSON.stringify(pkg, null, 2), 'application/json');
+            if (ok) logActivity('تنزيل نسخة احتياطية من قاعدة البيانات');
+        }
+
+        function importDatabaseBackup(event) {
+            const file = event.target.files && event.target.files[0];
+            if (!file) return;
+            const reader = new FileReader();
+            reader.onload = () => {
+                try {
+                    const data = JSON.parse(reader.result);
+                    if (!data || !Array.isArray(data.patients)) throw new Error('الملف لا يحتوي على سجل مرضى صالح');
+                    if (!confirm(`سيتم استبدال البيانات الحالية بالبيانات من الملف (${data.patients.length} مريض). سيتم حفظ نسخة من بياناتك الحالية تلقائياً قبل الاستعادة. هل تريد المتابعة؟`)) return;
+                    try {
+                        localStorage.setItem('yasser_pre_import_backup', localStorage.getItem('yasser_github_persistent_data') || '');
+                    } catch (e) {}
+                    patients = data.patients;
+                    trashRecords = Array.isArray(data.trashRecords) ? data.trashRecords : trashRecords;
+                    activityLogs = Array.isArray(data.activityLogs) ? data.activityLogs : activityLogs;
+                    onlineReservations = Array.isArray(data.onlineReservations) ? data.onlineReservations : onlineReservations;
+                    if (data.onlineIntegrationConfig) onlineIntegrationConfig = data.onlineIntegrationConfig;
+                    if (data.CLINIC_PRICES) CLINIC_PRICES = data.CLINIC_PRICES;
+                    saveAllData();
+                    handleBranchChange();
+                    renderPriceEditorInputs();
+                    renderActivityTable();
+                    renderOnlineReservationsTable();
+                    logActivity(`استعادة نسخة احتياطية (${patients.length} مريض)`);
+                    alert('تمت استعادة البيانات بنجاح.');
+                } catch (e) {
+                    alert('فشل رفع الملف: ' + e.message);
+                } finally {
+                    event.target.value = '';
+                }
+            };
+            reader.onerror = () => alert('تعذر قراءة الملف.');
+            reader.readAsText(file);
+        }
+
+        function getFilteredPatients() {
+            const search = (document.getElementById('recordsSearchFilter')?.value || '').toLowerCase();
+            return patients.filter(p => (p.name || '').toLowerCase().includes(search) || (p.phone || '').includes(search));
+        }
+
+        async function exportTableToExcel() {
+            const rows = getFilteredPatients();
+            if (!rows.length) { alert('لا توجد سجلات للتصدير.'); return; }
+            const q = v => '"' + String(v == null ? '' : v).replace(/"/g, '""') + '"';
+            const head = ['كود المريض', 'اسم المريض', 'الهاتف', 'الفرع', 'التاريخ', 'الوقت', 'الخدمات', 'المبلغ (ج.م)', 'ملاحظات'];
+            const lines = [head.map(q).join(',')].concat(rows.map(p => [p.id, p.name, p.phone, p.branch, p.date, p.time, p.services, p.amount, p.notes].map(q).join(',')));
+            const csv = '\uFEFF' + lines.join('\r\n');
+            const day = new Date().toISOString().split('T')[0];
+            const ok = await saveFileToDevice(`patients-${day}.csv`, csv, 'text/csv;charset=utf-8');
+            if (ok) logActivity(`تصدير سجل المرضى إلى Excel/CSV (${rows.length} سجل)`);
+        }
+
+        function exportTableToPDF() {
+            if (!getFilteredPatients().length) { alert('لا توجد سجلات للتصدير.'); return; }
+            switchTab('records');
+            const oldTitle = document.title;
+            document.title = 'سجل-المرضى-' + new Date().toISOString().split('T')[0];
+            logActivity('تصدير سجل المرضى كملف PDF (عبر الطباعة)');
+            setTimeout(() => {
+                try { window.print(); } catch (e) { alert('تعذر فتح نافذة الطباعة في هذا المتصفح.'); }
+                document.title = oldTitle;
+            }, 150);
+        }
+
+        function getWhatsAppNumber(raw) {
+            let d = String(raw || '').replace(/\D/g, '');
+            if (d.startsWith('00')) d = d.slice(2);
+            else if (d.startsWith('0')) d = '2' + d;
+            else if (d.length === 10 && d.startsWith('1')) d = '20' + d;
+            return d;
+        }
+
+        function sendWhatsAppById(id) {
+            const p = patients.find(x => x.id === id);
+            if (!p) { alert('لم يتم العثور على سجل المريض.'); return; }
+            sendWhatsAppReceipt(p.phone, p.name, p.branch, p.date, p.time, p.services, p.amount);
+        }
+
+        function sendWhatsAppReceipt(phone, name, branch, date, time, services, amount) {
+            const number = getWhatsAppNumber(phone);
+            if (number.length < 11) { alert('رقم الهاتف المسجل غير صالح لـ WhatsApp: ' + phone); return; }
+            const message = [
+                `مرحباً بكِ أ./ ${name} 🌸`,
+                'إيصال حجز موعد - عيادات أ.د. ياسر الشهاوي 🩺',
+                '----------------------------------',
+                `📍 الفرع: ${branch}`,
+                `📅 التاريخ: ${date}`,
+                `⏰ الموعد: ${time}`,
+                `🏥 الخدمات المطلوبة: ${services}`,
+                `💵 المبلغ الكلي: ${amount} جنيه`,
+                '----------------------------------',
+                'نتمنى لكِ دوام الصحة والعافية! ❤️'
+            ].join('\n');
+            const url = `https://api.whatsapp.com/send?phone=${number}&text=${encodeURIComponent(message)}`;
+            const a = document.createElement('a');
+            a.href = url; a.target = '_blank'; a.rel = 'noopener';
+            document.body.appendChild(a); a.click(); a.remove();
+            logActivity(`فتح رسالة WhatsApp للمريض (للمراجعة والإرسال): ${name}`);
+        }
+
+        // PERSISTENCE ENGINE FOR GITHUB PAGES & CROSS-DEVICE SYNC
+        function saveAllData() {
+            const dataPackage = {
+                patients,
+                trashRecords,
+                activityLogs,
+                onlineReservations,
+                onlineIntegrationConfig,
+                CLINIC_PRICES,
+                ACCOUNT_PASSWORDS,
+                timestamp: Date.now()
+            };
+            try {
+                localStorage.setItem('yasser_github_persistent_data', JSON.stringify(dataPackage));
+                localStorage.setItem('yasser_patients_backup', JSON.stringify(patients));
+            } catch (e) { console.error('Storage unavailable', e); }
+
+            renderPatientsTable();
+            renderTrashTable();
+            calculateDailyProfits();
+        }
+
+        function loadAllData() {
+            try {
+                const saved = localStorage.getItem('yasser_github_persistent_data');
+                if (saved) {
+                    const parsed = JSON.parse(saved);
+                    patients = parsed.patients || [];
+                    trashRecords = parsed.trashRecords || [];
+                    activityLogs = parsed.activityLogs || [];
+                    onlineReservations = parsed.onlineReservations || [];
+                    if (parsed.onlineIntegrationConfig) onlineIntegrationConfig = parsed.onlineIntegrationConfig;
+                    if (parsed.CLINIC_PRICES) CLINIC_PRICES = parsed.CLINIC_PRICES;
+                    if (parsed.ACCOUNT_PASSWORDS) ACCOUNT_PASSWORDS = parsed.ACCOUNT_PASSWORDS;
+                } else {
+                    patients = JSON.parse(localStorage.getItem('yasser_patients_backup') || '[]');
+                }
+            } catch (e) {
+                console.error("Data load error", e);
+            }
+
+            renderPatientsTable();
+            renderTrashTable();
+            renderActivityTable();
+            renderOnlineReservationsTable();
+        }
+    </script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jsQR/1.4.0/jsQR.min.js"></script>
+<script>
+/* ===== OWNER ADD-ON (add-only): QR, advanced log, notifications, devices, timeline, analytics ===== */
+(function(){
+const $=id=>document.getElementById(id),esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const LS=(k,d)=>{try{return JSON.parse(localStorage.getItem(k))??d}catch(e){return d}},SV=(k,v)=>{try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}};
+const isOwner=()=>currentUserRole==='owner',OWN='أ.د. ياسر الشهاوي',canView=p=>isOwner()||(currentUserRole==='portsaid'&&p.branch==='بورسعيد')||(currentUserRole==='damietta'&&p.branch==='دمياط');
+const dstr=ts=>new Date(ts-new Date(ts).getTimezoneOffset()*6e4).toISOString().slice(0,10);
+const box='bg-slate-900 border border-slate-800 rounded-2xl p-5',inp='bg-slate-950 border border-slate-700 rounded-lg px-3 py-2 text-xs text-white',btn='px-3 py-1.5 rounded-lg text-xs font-bold border ';
+const SUBS={log:'سجل النشاط المتقدم',notif:'الإشعارات',dev:'الأجهزة والجلسات',fin:'التحليلات المالية'};let sub='log',chart=null,pending=null;
+const tok=()=>Array.from(crypto.getRandomValues(new Uint8Array(16)),b=>b.toString(16).padStart(2,'0')).join('');
+const getQ=()=>LS('owx_qr',{});
+function qrFor(id,force){const q=getQ();if(!q[id]||force){q[id]={t:tok(),on:true,at:new Date().toISOString()};SV('owx_qr',q)}return q[id]}
+const CAT=[['أمني',/فشل|كلمة المرور|خطأ/],['مريض جديد',/تسجيل مريض|مريض جديد/],['حذف/إلغاء',/حذف|إلغاء/],['مالي',/سعر|أسعار|مصروف|دفع|إيراد/],['موعد',/حجز|موعد/]];
+function notifs(){const rd=LS('owx_read',{});return activityLogs.filter(l=>l.ts).map(l=>{let c=l.status==='failed'?'أمني':(CAT.find(x=>x[1].test(l.desc||''))||[])[0];if(!c&&l.role!==OWN)c='نشاط الموظفين';return c?{l,c,r:!!rd[l.ts]}:null}).filter(Boolean)}
+function badge(){const b=$('owxBadge');if(!b)return;const n=isOwner()?notifs().filter(x=>!x.r).length:0;b.textContent=n>99?'99+':n;b.classList.toggle('hidden',!n)}
+function mount(){const ref=$('tabBtnOnlineReservations'),rc=$('tabContentOnlineReservations');if(!ref||!rc||$('tabBtnOwx'))return;
+const b=document.createElement('button');b.id='tabBtnOwx';b.className='hidden text-slate-400 hover:text-violet-400 transition pb-2 flex items-center gap-2';b.onclick=open;
+b.innerHTML='<i class="fa-solid fa-toolbox"></i> أدوات المالك <span id="owxBadge" class="hidden bg-rose-500 text-white text-[10px] px-2 py-0.5 rounded-full">0</span>';ref.insertAdjacentElement('afterend',b);
+const c=document.createElement('div');c.id='tabContentOwx';c.className='hidden space-y-6';c.innerHTML='<div id="owxSubs" class="flex flex-wrap gap-2"></div><div id="owxBody" class="space-y-4"></div>';rc.insertAdjacentElement('afterend',c);
+const s=document.createElement('button');s.id='tabBtnOwxScan';s.className='hidden text-slate-400 hover:text-emerald-400 transition pb-2 flex items-center gap-2';s.onclick=openScan;s.innerHTML='<i class="fa-solid fa-camera"></i> مسح QR المريض';ref.insertAdjacentElement('afterend',s);
+const sc=document.createElement('div');sc.id='tabContentOwxScan';sc.className='hidden space-y-4';sc.innerHTML=`<div class="${box} space-y-3 max-w-md mx-auto"><p class="font-black text-white text-sm">مسح رمز QR لفتح سجل المريض</p><video id="owxVid" playsinline muted class="w-full rounded-xl bg-black aspect-square object-cover"></video><div class="flex gap-2"><button onclick="owxScan()" class="${btn}bg-emerald-600/20 border-emerald-500/40 text-emerald-300">تشغيل الكاميرا</button><button onclick="owxStop()" class="${btn}bg-slate-800 border-slate-600 text-slate-200">إيقاف</button></div><p id="owxScanMsg" class="text-xs text-slate-400"></p><div class="flex gap-2"><input id="owxManual" placeholder="أو الصق رابط/رمز QR" class="${inp} flex-1"><button onclick="owxManual()" class="${btn}bg-sky-600/20 border-sky-500/40 text-sky-300">فتح</button></div></div>`;c.insertAdjacentElement('afterend',sc);
+const m=document.createElement('div');m.id='owxModal';m.className='hidden fixed inset-0 z-[9999] bg-black/70 overflow-y-auto p-4';document.body.appendChild(m)}
+function show(cid,bid){document.querySelectorAll('[id^=tabContent]').forEach(e=>e.classList.add('hidden'));document.querySelectorAll('[id^=tabBtn]').forEach(e=>{e.classList.remove('tab-active');e.classList.add('text-slate-400')});
+$(cid).classList.remove('hidden');$(bid).classList.add('tab-active');$(bid).classList.remove('text-slate-400')}
+function open(){show('tabContentOwx','tabBtnOwx');go(sub)}
+function openScan(){show('tabContentOwxScan','tabBtnOwxScan');$('owxScanMsg').textContent='اضغط «تشغيل الكاميرا» ووجّه الكاميرا نحو رمز QR.'}
+function go(s){sub=s;$('owxSubs').innerHTML=Object.entries(SUBS).map(([k,v])=>`<button onclick="owxGo('${k}')" class="${btn}${k===s?'bg-violet-600 border-violet-500 text-white':'bg-slate-900 border-slate-700 text-slate-300'}">${v}</button>`).join('');
+({log:rLog,notif:rNotif,dev:rDev,fin:rFin})[s]();badge()}
+window.owxGo=go;
+function rLog(){const roles=[...new Set(activityLogs.map(l=>l.role))];$('owxBody').innerHTML=`<div class="${box} space-y-3"><div class="flex flex-wrap gap-2"><input id="lq" oninput="owxLog()" placeholder="بحث..." class="${inp}"><select id="lr" onchange="owxLog()" class="${inp}"><option value="">كل المستخدمين</option>${roles.map(r=>`<option>${esc(r)}</option>`).join('')}</select><select id="ls" onchange="owxLog()" class="${inp}"><option value="">كل الحالات</option><option value="ok">ناجح</option><option value="failed">فاشل</option></select><input id="ld1" type="date" onchange="owxLog()" class="${inp}"><input id="ld2" type="date" onchange="owxLog()" class="${inp}"></div><div id="lt" class="overflow-x-auto"></div></div>`;owxLog()}
+window.owxLog=function(){const q=$('lq').value.toLowerCase(),r=$('lr').value,s=$('ls').value,a=$('ld1').value,z=$('ld2').value;
+const rows=activityLogs.filter(l=>(!q||JSON.stringify(l).toLowerCase().includes(q))&&(!r||l.role===r)&&(!s||(l.status||'ok')===s)&&(!a||(l.ts&&dstr(l.ts)>=a))&&(!z||(l.ts&&dstr(l.ts)<=z)));
+$('lt').innerHTML=`<p class="text-[11px] text-slate-400 mb-2">${rows.length} من ${activityLogs.length} عملية</p><table class="w-full text-xs text-right"><thead class="text-slate-400"><tr><th class="p-2">المستخدم</th><th class="p-2">الإجراء</th><th class="p-2">الوقت</th><th class="p-2">الجهاز</th><th class="p-2">النظام</th><th class="p-2">المتصفح</th><th class="p-2">الحالة</th></tr></thead><tbody class="divide-y divide-slate-800">${rows.map(l=>{const d=l.device||{};return`<tr><td class="p-2">${esc(l.role)}</td><td class="p-2 text-white">${esc(l.desc)}</td><td class="p-2">${esc(l.time)}</td><td class="p-2">${esc(d.dev||'-')}</td><td class="p-2">${esc(d.os||'-')}</td><td class="p-2">${esc(d.br||'-')}</td><td class="p-2 ${l.status==='failed'?'text-rose-400':'text-emerald-400'}">${l.status==='failed'?'فاشل':'ناجح'}</td></tr>`}).join('')||'<tr><td class="p-4 text-slate-500" colspan="7">لا توجد نتائج</td></tr>'}</tbody></table>`};
+function rNotif(){const n=notifs();$('owxBody').innerHTML=`<div class="${box}"><div class="flex justify-between mb-3"><p class="text-sm font-black text-white">الإشعارات (${n.filter(x=>!x.r).length} غير مقروء)</p><button onclick="owxRead()" class="${btn}bg-slate-800 border-slate-600 text-slate-200">تعليم الكل كمقروء</button></div>${n.map(x=>`<div class="flex justify-between gap-3 py-2 border-t border-slate-800 text-xs ${x.r?'text-slate-500':'text-white font-bold'}"><span><span class="bg-violet-500/20 text-violet-300 px-2 py-0.5 rounded-full me-2">${x.c}</span>${esc(x.l.desc)} — ${esc(x.l.role)}</span><span>${esc(x.l.time)}</span></div>`).join('')||'<p class="text-slate-500 text-xs">لا توجد إشعارات بعد.</p>'}</div>`}
+window.owxRead=()=>{const rd=LS('owx_read',{});notifs().forEach(x=>rd[x.l.ts]=1);SV('owx_read',rd);go('notif')};
+function rDev(){const g={},me=getDeviceInfo();activityLogs.forEach(l=>{const d=l.device||{},k=[l.role,d.dev,d.os,d.br].join('|');(g[k]=g[k]||{role:l.role,d,last:0,n:0}).n++;g[k].last=Math.max(g[k].last,l.ts||0)});
+$('owxBody').innerHTML=`<div class="${box}"><p class="text-sm font-black text-white mb-1">الأجهزة التي سجّلت نشاطاً (من سجل النشاط الفعلي)</p><p class="text-[11px] text-amber-300 mb-3">إنهاء جلسات الأجهزة الأخرى عن بُعد يتطلب خادماً وتسجيل دخول سحابي؛ حالياً يمكنك فقط تسجيل الخروج من هذا الجهاز.</p><table class="w-full text-xs text-right"><thead class="text-slate-400"><tr><th class="p-2">الحساب</th><th class="p-2">الجهاز</th><th class="p-2">النظام</th><th class="p-2">المتصفح</th><th class="p-2">آخر نشاط</th><th class="p-2">الجلسة</th></tr></thead><tbody class="divide-y divide-slate-800">${Object.values(g).sort((a,b)=>b.last-a.last).map(x=>{const cur=x.d.dev===me.dev&&x.d.os===me.os&&x.d.br===me.br&&x.role===OWN;return`<tr><td class="p-2">${esc(x.role)}</td><td class="p-2">${esc(x.d.dev||'-')}</td><td class="p-2">${esc(x.d.os||'-')}</td><td class="p-2">${esc(x.d.br||'-')}</td><td class="p-2">${x.last?new Date(x.last).toLocaleString('ar-EG'):'-'}</td><td class="p-2 ${cur?'text-emerald-400':'text-slate-400'}">${cur?'هذا الجهاز (نشطة)':'غير معروفة'}</td></tr>`}).join('')}</tbody></table><button onclick="handleLogout()" class="${btn}mt-3 bg-rose-600/20 border-rose-500/40 text-rose-300">تسجيل الخروج من هذا الجهاز</button></div>`}
+function rFin(){const now=Date.now(),t=dstr(now),w=Array.from({length:7},(_,i)=>dstr(now-i*864e5)),m=t.slice(0,7),sum=f=>patients.filter(f).reduce((a,p)=>a+(+p.amount||0),0);
+const C=(l,v)=>`<div class="${box}"><p class="text-[11px] text-slate-400">${l}</p><p class="text-xl font-black text-emerald-400">${v}</p></div>`,br=['بورسعيد','دمياط','القاهرة'];
+$('owxBody').innerHTML=`<div class="grid grid-cols-2 md:grid-cols-4 gap-3">${C('إيراد اليوم',sum(p=>p.date===t)+' ج.م')}${C('آخر 7 أيام',sum(p=>w.includes(p.date))+' ج.م')}${C('هذا الشهر',sum(p=>(p.date||'').startsWith(m))+' ج.م')}${C('الإجمالي',sum(()=>1)+' ج.م')}</div><div class="grid grid-cols-3 gap-3">${br.map(b=>C(b,sum(p=>p.branch===b)+' ج.م')).join('')}</div><div class="${box}"><p class="text-xs text-slate-300 mb-2">الإيراد اليومي — آخر 30 يوماً</p><div style="height:240px"><canvas id="owxChart"></canvas></div></div><div class="${box} text-xs text-slate-400">المدفوعات المتبقية والمصروفات: <b class="text-amber-300">غير مسجّلة</b> — النظام الحالي لا يحفظ حالة الدفع أو المصروفات لكل كشف، فلا أعرض أرقاماً مخترعة. الإيراد هنا = مبالغ الكشوف المسجّلة بتاريخ الكشف.</div>`;
+const d=Array.from({length:30},(_,i)=>dstr(now-(29-i)*864e5));if(chart)chart.destroy();chart=new Chart($('owxChart'),{type:'bar',data:{labels:d.map(x=>x.slice(5)),datasets:[{label:'ج.م',data:d.map(x=>sum(p=>p.date===x)),backgroundColor:'#10b981'}]},options:{maintainAspectRatio:false,plugins:{legend:{display:false}}}})}
+let stream=null,raf=0,last='';
+function msg(t){const e=$('owxScanMsg');if(e)e.textContent=t}
+window.owxStop=function(){if(raf)cancelAnimationFrame(raf);raf=0;if(stream)stream.getTracks().forEach(t=>t.stop());stream=null;const v=$('owxVid');if(v)v.srcObject=null};
+function openById(id){const p=patients.find(x=>x.id===id);if(!p)return alert('هذا المريض غير موجود على هذا الجهاز.');if(!canView(p))return alert('هذا المريض يتبع فرعاً آخر ولا تملك صلاحية عرضه.');logActivity('مسح QR لفتح ملف المريض '+id);owxProfile(id)}
+function handle(txt){const m=String(txt).match(/(?:qr=)?\b([0-9a-f]{32})\b/);if(!m){msg('هذا ليس رمز QR تابعاً للعيادة.');return false}const q=getQ(),id=Object.keys(q).find(k=>q[k].t===m[1]);if(!id||!q[id].on){msg('رمز غير معروف أو ملغى.');return false}openById(id);return true}
+window.owxManual=()=>{if(handle($('owxManual').value.trim()))$('owxManual').value=''};
+window.owxScan=async function(){owxStop();const v=$('owxVid');try{stream=await navigator.mediaDevices.getUserMedia({video:{facingMode:'environment'}})}catch(e){return msg('تعذر فتح الكاميرا: تأكد من السماح بالكاميرا ومن أن الموقع يعمل عبر HTTPS.')}
+v.srcObject=stream;await v.play();msg('جارٍ البحث عن رمز QR...');const det='BarcodeDetector' in window?new BarcodeDetector({formats:['qr_code']}):null,cv=document.createElement('canvas'),cx=cv.getContext('2d',{willReadFrequently:true});
+const loop=async()=>{if(!stream)return;if(v.readyState>=2){let t=null;try{if(det){const r=await det.detect(v);if(r[0])t=r[0].rawValue}else if(window.jsQR){cv.width=v.videoWidth;cv.height=v.videoHeight;cx.drawImage(v,0,0);const d=cx.getImageData(0,0,cv.width,cv.height),r=jsQR(d.data,d.width,d.height);if(r)t=r.data}}catch(e){}
+if(t&&t!==last){last=t;if(handle(t)){owxStop();return}}}raf=requestAnimationFrame(loop)};loop()};
+function qrUrl(t){return location.href.split('#')[0]+'#qr='+t}
+window.owxProfile=function(id){const p=patients.find(x=>x.id===id);if(!p||!canView(p))return;const own=isOwner(),q=own?qrFor(id):null,T=s=>new Date(s).getTime()||0,ev=[[T(p.createdAt),'تسجيل المريض',esc(p.branch)],[T(p.date+'T00:00:00'),'موعد الكشف: '+esc(p.date)+' ('+esc(p.time)+')',esc(p.services)],[T(p.createdAt),'المبلغ المسجّل على الكشف',p.amount+' ج.م']];
+if(p.notes)ev.push([T(p.createdAt),'ملاحظات الحجز',esc(p.notes)]);(own?activityLogs:[]).filter(l=>l.desc&&(l.desc.includes(p.name)||l.desc.includes(p.id))).forEach(l=>ev.push([l.ts||0,'نشاط على السجل',esc(l.desc)+' — '+esc(l.role)]));ev.sort((a,b)=>a[0]-b[0]);
+const M=$('owxModal');M.classList.remove('hidden');M.innerHTML=`<div class="max-w-xl mx-auto ${box} space-y-4"><div class="flex justify-between"><p class="font-black text-white">${esc(p.name)} <span class="font-mono text-sky-400 text-xs">${esc(p.id)}</span></p><button onclick="owxClose()" class="text-slate-400">✕</button></div>${own?`<div class="text-center space-y-2"><div id="owxQR" class="inline-block bg-white p-3 rounded-xl"></div><p id="owxQRs" class="text-[11px] text-slate-400"></p><div class="flex flex-wrap gap-2 justify-center"><button onclick="owxDl('${id}')" class="${btn}bg-sky-600/20 border-sky-500/40 text-sky-300">تحميل</button><button onclick="owxPr('${id}')" class="${btn}bg-slate-800 border-slate-600 text-slate-200">طباعة</button><button onclick="owxShare('${id}')" class="${btn}bg-emerald-600/20 border-emerald-500/40 text-emerald-300">إرسال QR واتساب</button><button onclick="owxReg('${id}')" class="${btn}bg-amber-600/20 border-amber-500/40 text-amber-300">إعادة توليد</button><button onclick="owxRev('${id}')" class="${btn}bg-rose-600/20 border-rose-500/40 text-rose-300">${q.on?'إلغاء الرمز':'استعادة الرمز'}</button></div></div>`:''}<div><p class="text-xs font-black text-white mb-2">الخط الزمني</p>${ev.map(e=>`<div class="border-s-2 border-sky-500 ps-3 pb-3 text-xs"><p class="text-white font-bold">${e[1]}</p><p class="text-slate-400">${e[2]}${e[0]?' · '+new Date(e[0]).toLocaleDateString('ar-EG'):''}</p></div>`).join('')}<p class="text-[11px] text-slate-500">المستندات والتاريخ الطبي غير مخزّنة في النظام الحالي، لذلك لا تظهر.</p></div></div>`;if(own)draw(id)};
+function draw(id){const q=getQ()[id],el=$('owxQR');el.innerHTML='';$('owxQRs').textContent=q.on?'الرمز يحتوي على معرّف عشوائي فقط، ويتطلب دخول المالك للفتح.':'الرمز ملغى — لن يفتح أي سجل.';if(q.on)new QRCode(el,{text:qrUrl(q.t),width:200,height:200,correctLevel:QRCode.CorrectLevel.M});else el.innerHTML='<div class="w-[200px] h-[200px] flex items-center justify-center text-slate-500 text-xs">ملغى</div>'}
+const img=()=>{const c=$('owxQR').querySelector('canvas');return c?c.toDataURL('image/png'):null};
+window.owxClose=()=>$('owxModal').classList.add('hidden');
+window.owxDl=id=>{const u=img();if(!u)return alert('الرمز ملغى');const a=document.createElement('a');a.href=u;a.download='qr-'+id+'.png';a.click()};
+window.owxPr=id=>{const u=img();if(!u)return alert('الرمز ملغى');const w=window.open('');w.document.write(`<div style="text-align:center;font-family:sans-serif"><img src="${u}"><p>${esc(id)}</p></div>`);w.document.close();w.focus();w.print()};
+window.owxShare=id=>{const c=$('owxQR').querySelector('canvas'),q=getQ()[id],p=patients.find(x=>x.id===id);if(!c||!q.on)return alert('الرمز ملغى');const o=document.createElement('canvas');o.width=o.height=300;const x=o.getContext('2d');x.fillStyle='#fff';x.fillRect(0,0,300,300);x.drawImage(c,50,40,200,200);x.fillStyle='#000';x.font='16px sans-serif';x.textAlign='center';x.fillText(id,150,275);
+o.toBlob(async b=>{const f=new File([b],'qr-'+id+'.png',{type:'image/png'}),txt='رمز QR الخاص بملفك في عيادات أ.د. ياسر الشهاوي — أبرزه عند الزيارة.';logActivity('إرسال صورة QR للمريض '+id);
+if(navigator.canShare&&navigator.canShare({files:[f]})){try{await navigator.share({files:[f],text:txt});return}catch(e){if(e.name==='AbortError')return}}
+const a=document.createElement('a');a.href=URL.createObjectURL(b);a.download=f.name;a.click();let n=String(p.phone||'').replace(/\D/g,'');if(n.startsWith('0'))n='2'+n;window.open('https://api.whatsapp.com/send?phone='+n+'&text='+encodeURIComponent(txt),'_blank');alert('تم تنزيل صورة الـQR. أرفقها في محادثة واتساب المفتوحة.')})};
+window.owxReg=id=>{if(!confirm('سيتوقف الرمز القديم عن العمل. متابعة؟'))return;qrFor(id,true);logActivity('إعادة توليد رمز QR للمريض '+id);owxProfile(id)};
+window.owxRev=id=>{const q=getQ();q[id].on=!q[id].on;SV('owx_qr',q);logActivity((q[id].on?'استعادة':'إلغاء')+' رمز QR للمريض '+id);owxProfile(id)};
+function hash(){const m=location.hash.match(/^#qr=([0-9a-f]{32})$/);if(!m)return;const q=getQ(),id=Object.keys(q).find(k=>q[k].t===m[1]);if(!id||!q[id].on){alert('رمز غير صالح أو ملغى');return}
+if(currentUserRole){history.replaceState(null,'',location.pathname+location.search);openById(id)}else pending=id}
+const _ar=applyRolePermissions;applyRolePermissions=function(){const r=_ar.apply(this,arguments);mount();$('tabBtnOwx').classList.toggle('hidden',!isOwner());if(!isOwner())$('tabContentOwx').classList.add('hidden');$('tabBtnOwxScan').classList.toggle('hidden',!currentUserRole);if(!currentUserRole){$('tabContentOwxScan').classList.add('hidden');owxStop()}badge();if(currentUserRole&&pending){const i=pending;pending=null;history.replaceState(null,'',location.pathname+location.search);openById(i)}return r};
+const _st=switchTab;switchTab=function(){const b=$('tabBtnOwx');if(b){$('tabContentOwx').classList.add('hidden');b.classList.remove('tab-active');b.classList.add('text-slate-400')}const sb=$('tabBtnOwxScan');if(sb){$('tabContentOwxScan').classList.add('hidden');sb.classList.remove('tab-active');sb.classList.add('text-slate-400');owxStop()}return _st.apply(this,arguments)};
+const _rp=renderPatientsTable;renderPatientsTable=function(){const r=_rp.apply(this,arguments);if(isOwner())document.querySelectorAll('#patientsTableBody tr').forEach(tr=>{const id=tr.cells[0]?.textContent.trim(),c=tr.cells[tr.cells.length-1];if(id&&c&&!c.querySelector('.owx-p')){const b=document.createElement('button');b.type='button';b.className='owx-p '+btn+'bg-violet-600/20 border-violet-500/40 text-violet-300';b.innerHTML='<i class="fa-solid fa-qrcode"></i> الملف / QR';b.onclick=()=>owxProfile(id);c.appendChild(b)}});return r};
+const _wa=sendWhatsAppById;sendWhatsAppById=function(id){const p=patients.find(x=>x.id===id);if(!p)return _wa.apply(this,arguments);const q=getQ()[id]||qrFor(id);if(!q.on)return _wa.apply(this,arguments);
+const add=encodeURIComponent('\n\n🔳 رمز QR الخاص بملفك (أبرزه عند الزيارة):\n'+qrUrl(q.t)),fix=u=>/whatsapp\.com\/send/.test(u||'')?u+add:u,ow=window.open,oc=HTMLAnchorElement.prototype.click;
+window.open=function(u,...r){return ow.call(this,fix(u),...r)};HTMLAnchorElement.prototype.click=function(){if(this.href)this.href=fix(this.href);return oc.call(this)};
+try{return _wa.apply(this,arguments)}finally{window.open=ow;HTMLAnchorElement.prototype.click=oc}};
+const _sa=saveAllData;saveAllData=function(){const r=_sa.apply(this,arguments);try{badge();if(!$('tabContentOwx').classList.contains('hidden')&&sub!=='log'&&sub!=='fin')go(sub)}catch(e){}return r};
+mount();window.addEventListener('hashchange',hash);hash();
+})();
+</script>
+</body>
+</html>
